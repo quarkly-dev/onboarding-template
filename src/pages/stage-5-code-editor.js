@@ -667,173 +667,6 @@ export default (() => {
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
 						>
-							2
-						</Text>
-						<Box width="50%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
-								<Text
-									display="block"
-									font="--base"
-									margin="20px 0px 16px 0px"
-									width="100%"
-									color="--darkL2"
-								>
-									To add a new element, enter the following code under the icon in the code editor:
-								</Text>
-								<Text
-									display="block"
-									font="normal 300 18px/1.5 --fontFamily-mono"
-									margin="20px 0px 16px 0px"
-									width="100%"
-									color="--darkL2"
-								>
-									&lt;Text&gt;Trips&lt;/Text&gt;
-								</Text>
-								<Text
-									display="block"
-									font="--base"
-									margin="18px 0px 16px 0px"
-									width="100%"
-									color="--darkL2"
-								>
-									Use the following shortcuts to save the code:
-									<br />
-									Mac:{" "}
-									<Span
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
-										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
-									>
-										<Span
-											min-width="18px"
-											border-color="--color-lightD2"
-											border-radius="4px"
-											border-width="2px"
-											border-style="solid"
-											padding="2px 5px 2px 5px"
-											box-shadow="0px 1px 0 1px --color-lightD2"
-											display="inline-block"
-											text-align="center"
-											font="--capture"
-											color="--greyD2"
-											text-transform="uppercase"
-											letter-spacing="1px"
-											overflow-wrap="normal"
-											word-break="normal"
-											white-space="normal"
-											text-indent="0"
-											text-overflow="clip"
-											hyphens="manual"
-											margin="0px 0px 0px 3px"
-										>
-											⌘
-										</Span>
-									</Span>
-									{" "}
-									<Span
-										min-width="18px"
-										border-color="--color-lightD2"
-										border-radius="4px"
-										border-width="2px"
-										border-style="solid"
-										padding="2px 5px 2px 5px"
-										box-shadow="0px 1px 0 1px --color-lightD2"
-										display="inline-block"
-										text-align="center"
-										font="--capture"
-										color="--greyD2"
-										text-transform="uppercase"
-										letter-spacing="1px"
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
-										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
-										margin="0px 3px 0px 0px"
-									>
-										s
-									</Span>
-									{" "}, Windows:{" "}
-									<Span
-										min-width="18px"
-										border-color="--color-lightD2"
-										border-radius="4px"
-										border-width="2px"
-										border-style="solid"
-										padding="2px 5px 2px 5px"
-										box-shadow="0px 1px 0 1px --color-lightD2"
-										display="inline-block"
-										text-align="center"
-										font="--capture"
-										color="--greyD2"
-										text-transform="uppercase"
-										letter-spacing="1px"
-										margin="0px 0px 0px 3px"
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
-										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
-									>
-										Ctrl
-									</Span>
-									{" "}
-									<Span
-										min-width="18px"
-										border-color="--color-lightD2"
-										border-radius="4px"
-										border-width="2px"
-										border-style="solid"
-										padding="2px 5px 2px 5px"
-										box-shadow="0px 1px 0 1px --color-lightD2"
-										display="inline-block"
-										text-align="center"
-										font="--capture"
-										color="--greyD2"
-										text-transform="uppercase"
-										letter-spacing="1px"
-										margin="0px 3px 0px 0px"
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
-										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
-									>
-										s
-									</Span>
-								</Text>
-							</Box>
-						</Box>
-					</Box>
-					<Box
-						width="auto"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						quarkly-title="Item 1"
-						flex-wrap="nowrap"
-						margin="0px 0px 12px 0px"
-						sm-flex-direction="column"
-						sm-margin="0px 0px 18px 0px"
-					>
-						<Text
-							background="--color-indigo"
-							font="--base"
-							color="--lightD2"
-							padding="2px 8px 2px 8px"
-							border-radius="33px"
-							margin="16px 12px 16px 0px"
-							text-align="center"
-							flex="0 0 auto"
-							min-width="12px"
-							sm-margin="16px 12px 0px 0px"
-						>
 							3
 						</Text>
 						<Box width="50%" display="flex" sm-flex-direction="column">
@@ -854,7 +687,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									{"              "}<Text >{"\n              "}
+									&lt;Text&gt;{"\n              "}
 									<br />
 									{"              "}Trips{"\n              "}
 									<br />
@@ -2047,7 +1880,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				Sometimes, you may find it convenient to move a component or a group of component from one place to another. The cut and paste commands can be used for this purposes.{"\n\n\n"}
+				Sometimes, you may find it convenient to move a component or a group of component from one place to another. The cut and paste commands can be used for this purposes.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
