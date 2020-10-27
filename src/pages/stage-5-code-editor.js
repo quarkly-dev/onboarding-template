@@ -655,6 +655,184 @@ export default (() => {
 						sm-flex-direction="column"
 						sm-margin="0px 0px 18px 0px"
 					>
+						{"    "}
+						<Text
+							background="--color-indigo"
+							font="--base"
+							color="--lightD2"
+							padding="2px 8px 2px 8px"
+							border-radius="33px"
+							margin="16px 12px 16px 0px"
+							text-align="center"
+							flex="0 0 auto"
+							min-width="12px"
+							sm-margin="16px 12px 0px 0px"
+						>
+							{"        "}2{"\n    "}
+						</Text>
+						{"    "}
+						<Box width="50%" display="flex" sm-flex-direction="column">
+							{"        "}
+							<Box width="100%" padding="0px 24px 0px 0px">
+								{"            "}
+								<Text
+									display="block"
+									font="--base"
+									margin="20px 0px 16px 0px"
+									width="100%"
+									color="--darkL2"
+								>
+									{"                "}To add a new element, enter the following code under the icon in the code editor:{"\n            "}
+								</Text>
+								{"            "}
+								<Text
+									display="block"
+									font="normal 300 18px/1.5 --fontFamily-mono"
+									margin="20px 0px 16px 0px"
+									width="100%"
+									color="--darkL2"
+								>
+									{"                "}<Text>Trips</Text>{"\n            "}
+								</Text>
+								{"            "}
+								<Text
+									display="block"
+									font="--base"
+									margin="18px 0px 16px 0px"
+									width="100%"
+									color="--darkL2"
+								>
+									{"                "}Use the following shortcuts to save the code:{"\n                "}
+									<br />
+									{"                "}Mac:{" \n                "}
+									<Span
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										{"                    "}
+										<Span
+											min-width="18px"
+											border-color="--color-lightD2"
+											border-radius="4px"
+											border-width="2px"
+											border-style="solid"
+											padding="2px 5px 2px 5px"
+											box-shadow="0px 1px 0 1px --color-lightD2"
+											display="inline-block"
+											text-align="center"
+											font="--capture"
+											color="--greyD2"
+											text-transform="uppercase"
+											letter-spacing="1px"
+											overflow-wrap="normal"
+											word-break="normal"
+											white-space="normal"
+											text-indent="0"
+											text-overflow="clip"
+											hyphens="manual"
+											margin="0px 0px 0px 3px"
+										>
+											{"                        "}⌘{"\n                    "}
+										</Span>
+										{"                "}
+									</Span>
+									{"                    \n                "}
+									<Span
+										min-width="18px"
+										border-color="--color-lightD2"
+										border-radius="4px"
+										border-width="2px"
+										border-style="solid"
+										padding="2px 5px 2px 5px"
+										box-shadow="0px 1px 0 1px --color-lightD2"
+										display="inline-block"
+										text-align="center"
+										font="--capture"
+										color="--greyD2"
+										text-transform="uppercase"
+										letter-spacing="1px"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										margin="0px 3px 0px 0px"
+									>
+										{"                    "}s{"\n                "}
+									</Span>
+									{"                 "}, Windows:{" \n                "}
+									<Span
+										min-width="18px"
+										border-color="--color-lightD2"
+										border-radius="4px"
+										border-width="2px"
+										border-style="solid"
+										padding="2px 5px 2px 5px"
+										box-shadow="0px 1px 0 1px --color-lightD2"
+										display="inline-block"
+										text-align="center"
+										font="--capture"
+										color="--greyD2"
+										text-transform="uppercase"
+										letter-spacing="1px"
+										margin="0px 0px 0px 3px"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										{"                    "}Ctrl{"\n                "}
+									</Span>
+									{"                    \n                "}
+									<Span
+										min-width="18px"
+										border-color="--color-lightD2"
+										border-radius="4px"
+										border-width="2px"
+										border-style="solid"
+										padding="2px 5px 2px 5px"
+										box-shadow="0px 1px 0 1px --color-lightD2"
+										display="inline-block"
+										text-align="center"
+										font="--capture"
+										color="--greyD2"
+										text-transform="uppercase"
+										letter-spacing="1px"
+										margin="0px 3px 0px 0px"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										{"                    "}s{"\n                "}
+									</Span>
+									{"            "}
+								</Text>
+								{"        "}
+							</Box>
+							{"    "}
+						</Box>
+					</Box>
+					<Box
+						width="auto"
+						display="flex"
+						align-items="flex-start"
+						justify-content="flex-start"
+						quarkly-title="Item 1"
+						flex-wrap="nowrap"
+						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
+						sm-margin="0px 0px 18px 0px"
+					>
 						<Text
 							background="--color-indigo"
 							font="--base"
@@ -687,11 +865,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									&lt;Text&gt;{"\n              "}
+									&lt;Text&gt;
 									<br />
-									{"              "}Trips{"\n              "}
+									Trips
 									<br />
-									{"              "}&lt;/Text&gt;
+									&lt;/Text&gt;
 								</Text>
 							</Box>
 						</Box>
