@@ -69,7 +69,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 1 OF 5
+					STEP 1 OF 6
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -512,7 +512,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 2 OF 5
+					STEP 2 OF 6
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -611,7 +611,7 @@ export default (() => {
 									Box
 								</Span>
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-selected-box.jpg?v=2020-10-24T19:09:59.447Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-selected-box.svg?v=2020-10-27T19:10:47.815Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -807,7 +807,17 @@ export default (() => {
 							width="100%"
 							color="--darkL2"
 						>
-							Double-click on the elements and change the text according the the example.
+							<Em
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							>
+								Double-click
+							</Em>
+							{" "}on the elements and change the text according the the example.
 						</Text>
 					</Box>
 				</List>
@@ -928,7 +938,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 3 OF 5
+					STEP 3 OF 6
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -1021,7 +1031,7 @@ export default (() => {
 									{" "}tab
 								</Span>
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-typography-tab-closed.jpg?v=2020-10-24T19:24:46.250Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-typography-section.svg?v=2020-10-27T19:37:29.655Z" border-radius="4px" />
 							<Text
 								display="inline-block"
 								font="normal 300 14px/1.7 --fontFamily-sans"
@@ -1395,7 +1405,7 @@ export default (() => {
 							<Text
 								display="block"
 								font="--base"
-								margin="20px 0px 16px 0px"
+								margin="20px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
 							>
@@ -1418,60 +1428,7 @@ export default (() => {
 								>
 									Button
 								</Span>
-								. Change properties: Color and Letter Spacing (
-								<Em
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									Typography
-								</Em>
-								<Span
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									{" "}tab
-								</Span>
-								), Background (
-								<Span
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									<Em
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
-										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
-									>
-										Background{" "}
-									</Em>
-									tab
-								</Span>
-								) and Border radius (
-								<Em
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									Border tab
-								</Em>
-								).{" "}
+								. Change properties:
 							</Text>
 							<List
 								width="100%"
@@ -1531,8 +1488,8 @@ export default (() => {
 									</Text>
 								</Box>
 							</List>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-background-tab-closed.jpg?v=2020-10-24T19:24:46.251Z" border-radius="4px" />
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-border-tab-closed.jpg?v=2020-10-24T19:24:46.253Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-background-section.svg?v=2020-10-27T19:37:29.672Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-borders-section.svg?v=2020-10-27T19:37:29.672Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -1608,7 +1565,7 @@ export default (() => {
 								</Em>
 								property. Copy the value from the example.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-effects-tab-closed.jpg?v=2020-10-24T21:04:00.774Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-effects-section.svg?v=2020-10-27T19:37:29.668Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -1681,9 +1638,21 @@ export default (() => {
 									</Em>
 									tab
 								</Span>
-								. Specify margin 25px for the top field, padding 50px for the sides and 15px for the top and bottom fields.
+								. Specify margin{" "}
+								<Em>
+									25px
+								</Em>
+								{" "}for the top field, padding{" "}
+								<Em>
+									50px
+								</Em>
+								{" "}for the sides and{" "}
+								<Em>
+									15px
+								</Em>
+								{" "}for the top and bottom fields.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-indents-tab-closed.jpg?v=2020-10-24T21:04:17.597Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-indents-section.svg?v=2020-10-27T19:37:29.664Z" border-radius="4px" />
 						</Box>
 					</Box>
 				</List>
@@ -1814,7 +1783,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 4 OF 5
+					STEP 4 OF 6
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -1835,7 +1804,7 @@ export default (() => {
 				margin="0px 0px 20px 0px"
 				color="--dark"
 			>
-				Change the icon and font
+				Change the font
 			</Text>
 			<Text
 				as="p"
@@ -1844,7 +1813,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Apply the distinctive font for the heading and replace the icon with the more fitting one
+				Apply the distinctive font for the heading.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -1885,7 +1854,18 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Choose the heading, from the Styles panel go to the{" "}
+								Choose the heading, from the{" "}
+								<Em
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									Styles{" "}
+								</Em>
+								panel go to the{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -1896,7 +1876,13 @@ export default (() => {
 								>
 									Typography
 								</Em>
-								{"  "}tab and click on the [theme] icon. You have removed the link with the value from the Theme. Now add the new font to the project. For this, click on the value to open the panel. On the panel, click on the{" "}
+								{"  "}tab and click on the{" "}
+								<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-detach-theme-variable.svg?v=2020-10-27T19:47:00.021Z" margin="0px 0px 0px 0px" />
+								{" "}icon. You have removed the link with the value from the{" "}
+								<Em>
+									Theme
+								</Em>
+								. Now add the new font to the project. For this, click on the value to open the panel. On the panel, click on the{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -1909,7 +1895,14 @@ export default (() => {
 								</Em>
 								{" "}button.
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg" border-radius="4px" />
+							<Image
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-font-panel.svg?v=2020-10-27T20:03:03.678Z"
+								border-radius="4px"
+								object-fit="cover"
+								width="242px"
+								height="226px"
+								object-position="top"
+							/>
 						</Box>
 					</Box>
 					<Box
@@ -1948,7 +1941,6 @@ export default (() => {
 								</Em>
 								. Click on it and close the window. That's how we've added the new font to the project.
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -1986,8 +1978,188 @@ export default (() => {
 								</Em>
 								{" "}for the Family field.
 							</Text>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-choosing-font-family.svg?v=2020-10-27T20:30:36.826Z" border-radius="4px" />
 						</Box>
 					</Box>
+				</List>
+				<Box
+					width="66.66%"
+					text-align="center"
+					position="relative"
+					padding="0px 0px 0px 54px"
+					box-sizing="border-box"
+				>
+					<Text
+						text-align="center"
+						as="p"
+						font="--capture"
+						margin="0 auto 0px auto"
+						text-transform="uppercase"
+						color="--grey"
+						display="inline-block"
+						background="#FFF"
+						padding="6px 12px 6px 12px"
+						position="relative"
+						top="13px"
+						border-style="solid"
+						border-width="1px"
+						border-color="--color-lightD2"
+					>
+						WORKSPACE
+					</Text>
+					<Box
+						background="rgba(237, 242, 246, 0) repeating-linear-gradient(-45deg,--color-light 0px,--color-light 5px,rgba(0,0,0,0) 5px,rgba(0,0,0,0) 10px) center center space"
+						margin="0px 0px 20px 0px"
+						border-style="dashed"
+						border-width="1px"
+						border-color="--color-grey"
+						box-sizing="border-box"
+						padding="30px 30px 30px 30px"
+						min-height="320px"
+						text-align="left"
+						display="flex"
+					>
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
+							<Icon category="md" icon={MdFace} />
+							<Text font="--headline2" text-transform="uppercase" color="--light" text-align="center">
+								Into the Wild
+							</Text>
+							<Text font="--lead" color="--lightD2" text-align="center">
+								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+							</Text>
+							<Button
+								background="--color-secondary"
+								color="--darkL2"
+								padding="12px 34px 12px 34px"
+								border-radius="24px"
+								text-transform="uppercase"
+								letter-spacing="1.2px"
+								margin="24px 0px 0px 0px"
+								box-shadow="0 12px 3px -4px rgba(3, 18, 7, 0.3)"
+								opacity="1"
+							>
+								Join
+							</Button>
+						</Box>
+					</Box>
+					<Text
+						text-align="center"
+						as="p"
+						font="--capture"
+						margin="0 auto 0px auto"
+						text-transform="uppercase"
+						color="--grey"
+						display="inline-block"
+						background="#FFF"
+						padding="6px 12px 6px 12px"
+						position="relative"
+						top="13px"
+						border-style="solid"
+						border-width="1px"
+						border-color="--color-lightD2"
+					>
+						EXAMPLE
+					</Text>
+					<Box
+						background="rgba(237, 242, 246, 0) repeating-linear-gradient(-45deg,--color-light 0px,--color-light 5px,rgba(0,0,0,0) 5px,rgba(0,0,0,0) 10px) center center space"
+						border-style="dashed"
+						border-width="1px"
+						border-color="--color-grey"
+						box-sizing="border-box"
+						margin="0px 0px 20px 0px"
+						padding="30px 30px 30px 30px"
+						display="flex"
+						min-height="320px"
+						text-align="left"
+					>
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
+							<Icon category="md" icon={MdFace} />
+							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+								Into the Wild
+							</Text>
+							<Text font="--lead" color="--lightD2" text-align="center">
+								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+							</Text>
+							<Button
+								background="--color-secondary"
+								color="--darkL2"
+								padding="12px 34px 12px 34px"
+								border-radius="24px"
+								text-transform="uppercase"
+								letter-spacing="1.2px"
+								margin="24px 0px 0px 0px"
+								box-shadow="0 12px 3px -4px rgba(3, 18, 7, 0.3)"
+								opacity="1"
+							>
+								Join
+							</Button>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
+		</Section>
+		<Section padding="100px 0" sm-padding="40px 0">
+			<Override slot="SectionContent" align-items="flex-start" />
+			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
+				<Text
+					as="p"
+					font="--capture"
+					margin="0 0 20px 0"
+					text-transform="uppercase"
+					color="white"
+					letter-spacing="1px"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					display="inline-block"
+					padding="0px 0px 4px 0px"
+					position="relative"
+					z-index="1"
+				>
+					STEP 5 OF 6
+				</Text>
+				<Box
+					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
+					display="inline-block"
+					width="136px"
+					height="46px"
+					position="absolute"
+					top="-8px"
+					right="auto"
+					bottom="auto"
+					left="-29px"
+				/>
+			</Box>
+			<Text
+				as="h2"
+				font="--headline2"
+				md-font="--headline2"
+				margin="0px 0px 20px 0px"
+				color="--dark"
+			>
+				Change the icon
+			</Text>
+			<Text
+				as="p"
+				font="--lead"
+				margin="0px 0 30px 0"
+				width="50%"
+				color="--darkL2"
+			>
+				Replace the icon with the more fitting one.
+			</Text>
+			<Box display="flex" width="100%">
+				<List
+					as="ol"
+					list-style-type="none"
+					padding="0px 12px 0px 0px"
+					margin="0px 0px 16px 0px"
+					width="33.33%"
+					box-sizing="border-box"
+				>
 					<Box
 						width="auto"
 						display="flex"
@@ -2008,17 +2180,28 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 						>
-							4
+							1
 						</Text>
 						<Text
-							display="block"
+							display="inline-block"
 							font="--base"
 							margin="20px 0px 16px 0px"
 							width="100%"
 							color="--darkL2"
 						>
-							The only thing left is to change the icon. To do this, double-click it. The modal window featuring all icons will appear. Choose the{" "}
+							The only thing left is to change the icon. To do this,{" "}
 							<Em>
+								double-click
+							</Em>
+							{" "}it. The modal window featuring all icons will appear. Choose the{" "}
+							<Em
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
+								text-indent="0"
+								text-overflow="clip"
+								hyphens="manual"
+							>
 								Font Awesome
 							</Em>
 							{"  "}category and enter{" "}
@@ -2033,7 +2216,7 @@ export default (() => {
 								tree
 							</Em>
 							into the search bar. Click on the icon{" "}
-							<Icon vertical-align="middle" category="fa" icon={FaTree} display="inline-block" />
+							<Icon category="fa" icon={FaTree} display="inline-block" vertical-align="middle" />
 							{" "}
 						</Text>
 					</Box>
@@ -2057,7 +2240,7 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 						>
-							5
+							2
 						</Text>
 						<Text
 							display="block"
@@ -2109,7 +2292,7 @@ export default (() => {
 					>
 						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
 							<Icon category="md" icon={MdFace} />
-							<Text font="--headline2" text-transform="uppercase" color="--light" text-align="center">
+							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
@@ -2207,7 +2390,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 5 OF 5
+					STEP 6 OF 6
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -2902,17 +3085,6 @@ export default (() => {
 			/>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
 				<Text
-					as="h2"
-					font="--base"
-					md-font="--headline2"
-					color="--darkL2"
-					position="relative"
-					z-index="1"
-					margin="0px 0px 5px 0px"
-				>
-					Go to{" "}
-				</Text>
-				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"
 					overflow-wrap="normal"
 					word-break="normal"
@@ -2933,7 +3105,7 @@ export default (() => {
 					width="125.874px"
 					height="47.268px"
 					position="absolute"
-					top="26px"
+					top="-4px"
 					left="-13px"
 					right="auto"
 					bottom="auto"

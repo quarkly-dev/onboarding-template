@@ -694,7 +694,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									{"                "}<Text>Trips</Text>{"\n            "}
+									&lt;Text&gt;Trips&lt;/Text&gt;{"\n            "}
 								</Text>
 								{"            "}
 								<Text
@@ -2994,7 +2994,8 @@ export default (() => {
 			sm-padding="40px 0"
 			border-width="2px 0px 0px 0px"
 			border-style="solid"
-			border-color="--color-lightD1"
+			border-color="--color-lightD2"
+			background="--color-lightD1"
 		>
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">

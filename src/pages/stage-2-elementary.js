@@ -1957,17 +1957,6 @@ Click in the input field to open the window with settings.{" "}
 			</Components.CardExampleStep4>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
 				<Text
-					as="h2"
-					font="--base"
-					md-font="--headline2"
-					color="--darkL2"
-					position="relative"
-					z-index="1"
-					margin="0px 0px 5px 0px"
-				>
-					Go to{" "}
-				</Text>
-				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"
 					overflow-wrap="normal"
 					word-break="normal"
@@ -1988,7 +1977,7 @@ Click in the input field to open the window with settings.{" "}
 					width="125.874px"
 					height="47.268px"
 					position="absolute"
-					top="26px"
+					top="-4px"
 					left="-13px"
 					right="auto"
 					bottom="auto"
