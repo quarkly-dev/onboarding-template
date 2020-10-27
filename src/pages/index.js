@@ -11,7 +11,9 @@ export default (() => {
 			<title>
 				Intro | Onboarding Quarkly
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"At this stage, you are going to get to know the Quarkly interface and main features.\n"} />
+			<meta property={"og:title"} content={"Intro | Onboarding Quarkly"} />
+			<meta property={"og:description"} content={"At this stage, you are going to get to know the Quarkly interface and main features.\n"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.HeaderMenu />

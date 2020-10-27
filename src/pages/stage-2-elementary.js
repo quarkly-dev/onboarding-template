@@ -11,7 +11,9 @@ export default (() => {
 			<title>
 				Hover & Adaptive | Onboarding Quarkly
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"At this stage, you're going to learn how to change styles for the hover state and mobile devices.\n"} />
+			<meta property={"og:title"} content={"Hover & Adaptive | Onboarding Quarkly"} />
+			<meta property={"og:description"} content={"At this stage, you're going to learn how to change styles for the hover state and mobile devices.\n"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.HeaderMenu />
