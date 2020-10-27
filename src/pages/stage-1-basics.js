@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Em, Span, Image, Icon, List, Button, Strong, Link } from "@quarkly/widgets";
+import { Theme, Text, Box, Em, Span, Image, Icon, List, Button, Link, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -11,7 +11,7 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				Basics | Onboarding Quarkly
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
@@ -97,7 +97,11 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				To start, open the Layers panel and switch to the{" "}
+				To start, open{" "}
+				<Em>
+					the Layers panel
+				</Em>
+				{" "}and switch to the{" "}
 				<Em
 					overflow-wrap="normal"
 					word-break="normal"
@@ -661,13 +665,31 @@ export default (() => {
 									Layout
 								</Em>
 								{" "}tab on the Props Panel and set width to{" "}
-								<Strong>
-									100%
-								</Strong>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									<Em>
+										100%
+									</Em>
+								</Span>
 								{" "}and height to{" "}
-								<Strong>
-									320px
-								</Strong>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									<Em>
+										320px.
+									</Em>
+								</Span>
 							</Text>
 							<Image src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" />
 						</Box>
@@ -733,9 +755,9 @@ export default (() => {
 									Backgrounds
 								</Em>
 								, click in the input field to open the panel, choose Type{" "}
-								<Strong>
+								<Em>
 									URL
-								</Strong>
+								</Em>
 								, and copy-paste the image URL:
 							</Text>
 							<Link

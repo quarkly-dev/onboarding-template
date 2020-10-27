@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Em, Span, Image, List, Icon, Button, Strong } from "@quarkly/widgets";
+import { Theme, Text, Box, Em, Image, Span, List, Icon, Button, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -9,7 +9,7 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				Hover & Adaptive | Onboarding Quarkly
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
@@ -147,6 +147,13 @@ export default (() => {
 									background
 								</Em>
 								{" "}(
+								<Image
+									width="24px"
+									height="24px"
+									vertical-align="top"
+									src="https://artemzhigalin.ru/src/onboarding-tutorial-box.svg"
+									margin="0px 2px 0px 2px"
+								/>
 								<Span
 									color="--primary"
 									overflow-wrap="normal"
@@ -158,7 +165,7 @@ export default (() => {
 								>
 									Box
 								</Span>
-								) and switch the state to hover.
+								{"  "}) and switch the state to hover.
 							</Text>
 							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg" border-radius="4px" />
 							<Text
@@ -281,7 +288,11 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Go to the preview mode. For this, click on the key or combination of keys.
+								Go to{" "}
+								<Em>
+									the preview mode
+								</Em>
+								. For this, click on the key or combination of keys.
 								<br />
 								Mac:{" "}
 								<Span

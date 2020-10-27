@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Span, Image, List, Icon, Button } from "@quarkly/widgets";
+import { Theme, Text, Box, Span, Image, List, Icon, Button, Em } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -10,9 +10,10 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				Components | Onboarding Quarkly
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta property={"og:title"} content={"Components | Onboarding Quarkly"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.HeaderMenu />
@@ -1130,7 +1131,11 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				If you want to reset component changes to default, use the Reset All Overrides option
+				If you want to reset component changes to default, use the{" "}
+				<Em>
+					Reset All Overrides
+				</Em>
+				{" "}option
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -1176,7 +1181,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Choose the second component that you styled. Click on the “3 dots” icon. Select the Reset All Overrides option in the drop-down menu.
+									Choose the second component that you styled. Click on the “3 dots” icon. Select{" "}
+									<Em>
+										the Reset All Overrides
+									</Em>
+									{" "}option in the drop-down menu.
 								</Text>
 							</Box>
 							<Image
@@ -1385,7 +1394,11 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				Sometimes, you may need to turn a component back into a set of elements. This may be necessary for changing the structure of an element or adding new elements to the component. To do that, use the “Detach” feature.
+				Sometimes, you may need to turn a component back into a set of elements. This may be necessary for changing the structure of an element or adding new elements to the component. To do that, use{" "}
+				<Em>
+					the Detach
+				</Em>
+				{" "}feature.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -1431,7 +1444,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the second component. Click on the “3 dots” icon in the upper right corner of the right panel and select the Detach option.
+									Select the second component. Click on the “3 dots” icon in the upper right corner of the right panel and select{" "}
+									<Em>
+										the Detach
+									</Em>
+									{" "}option.
 								</Text>
 							</Box>
 							<Image

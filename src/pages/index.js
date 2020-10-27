@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, List, Box, Span, Strong, Image, Em, Link, Icon, Button } from "@quarkly/widgets";
+import { Theme, Text, Image, Box, List, Span, Em, Link, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -9,7 +9,7 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				Intro | Onboarding Quarkly
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
@@ -37,52 +37,55 @@ export default (() => {
 			<Text
 				as="p"
 				font="--lead"
-				margin="20px 0 0 0"
+				margin="20px 0 18px 0"
 				width="66.66%"
 				color="--lightD2"
 			>
-				{" "}Quarkly comes with a familiar interface of a design tool:
+				Quarkly comes with a familiar interface of a design tool:
 			</Text>
-			<List width="66.66%" margin="4px 0px 16px 0px" color="--light" list-style-type="none">
-				<Text
-					as="p"
-					color="--lightD2"
-					font="--lead"
-					margin="0px 0 0 0"
-					width="66.66%"
-				>
-					← layers and elements are on the left
-				</Text>
-				<Text
-					as="p"
-					color="--lightD2"
-					font="--lead"
-					margin="0px 0 0 0"
-					width="66.66%"
-				>
-					settings are on the right →
-				</Text>
-				<Text
-					as="p"
-					color="--lightD2"
-					font="--lead"
-					margin="0px 0 0 0"
-					width="66.66%"
-				>
-					the page is in the middle
-				</Text>
-			</List>
+			<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-interface-scheme.svg?v=2020-10-27T14:17:15.256Z" margin="0px 0px 24px 0px" />
 			<Text
 				as="p"
 				font="--lead"
-				margin="0px 0 0 0"
+				margin="0px 0 24px 0"
 				width="66.66%"
 				color="--lightD2"
 			>
-				Drag the page, zoom in and out on it. See the props panel when selecting an element. Undo/redo buttons and keyboard shortcuts are at your fingertips.
+				Drag the page, zoom in and out on it.
 				<br />
-				Try Quarkly and see for yourself!{"  "}
+				See the props panel when selecting an element.
+				<br />
+				Undo/redo buttons and keyboard shortcuts are at your fingertips.
 			</Text>
+			<Box position="relative">
+				<Text
+					as="p"
+					font="--headline3"
+					margin="0px 0 0 0"
+					color="--lightD2"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					position="relative"
+					z-index="1"
+				>
+					Try Quarkly and see for yourself!
+				</Text>
+				<Box
+					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0%/cover no-repeat scroll padding-box"
+					display="inline-block"
+					width="96px"
+					height="16px"
+					position="absolute"
+					top="auto"
+					right="-10px"
+					bottom="-1px"
+					left="auto"
+				/>
+			</Box>
 		</Section>
 		<Section padding="100px 0" sm-padding="40px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
@@ -241,9 +244,18 @@ export default (() => {
 								color="--darkL2"
 							>
 								Use the mouse to{" "}
-								<Strong>
-									move
-								</Strong>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									<Em>
+										move
+									</Em>
+								</Span>
 								{" "}the page
 							</Text>
 						</Box>
@@ -400,9 +412,18 @@ export default (() => {
 									color="--darkL2"
 								>
 									To{" "}
-									<Strong>
-										zoom in
-									</Strong>
+									<Span
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										<Em>
+											zoom in
+										</Em>
+									</Span>
 									, press{" "}
 									<br />
 									Mac:{" "}
@@ -539,9 +560,18 @@ export default (() => {
 									color="--darkL2"
 								>
 									To{" "}
-									<Strong>
-										zoom out
-									</Strong>
+									<Span
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										<Em>
+											zoom out
+										</Em>
+									</Span>
 									, press
 									<br />
 									Mac:{" "}
@@ -687,9 +717,18 @@ export default (() => {
 									color="--darkL2"
 								>
 									To get back to{" "}
-									<Strong>
-										100% zoom
-									</Strong>
+									<Span
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										<Em>
+											100% zoom
+										</Em>
+									</Span>
 									, press{" "}
 									<br />
 									Mac:{" "}
@@ -1017,9 +1056,18 @@ export default (() => {
 										Esc
 									</Span>
 									, the{" "}
-									<Strong>
-										theme panel
-									</Strong>
+									<Span
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										<Em>
+											theme panel
+										</Em>
+									</Span>
 									{" "}will appear.
 								</Text>
 								<Image width="auto" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-panel.svg?v=2020-10-23T14:43:56.784Z" border-radius="4px" height="auto" />
@@ -1372,7 +1420,15 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						The project consists of pages, while a page consists of elements. You can do a lot of actions with them — add, remove, nest and more.{" "}
+						The project consists of{" "}
+						<Em>
+							pages
+						</Em>
+						, while a page consists of{" "}
+						<Em>
+							elements
+						</Em>
+						. You can do a lot of actions with them — add, remove, nest and more.{" "}
 					</Text>
 				</List>
 				<Box
@@ -1795,12 +1851,30 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						From the Components tab you can take the elements to fill the page. There are two groups:{" "}
+						From the{" "}
 						<Em>
+							Components
+						</Em>
+						{" "}tab you can take the elements to fill the page. There are two groups:{" "}
+						<Em
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
 							Library
 						</Em>
 						{" "}with ready-to-use components and{" "}
-						<Em>
+						<Em
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+						>
 							Project
 						</Em>
 						{" "}with your custom components.
@@ -1899,7 +1973,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									There you can choose the components and add them to the project page. Just grab and drop them wherever you want.
+									There you can choose the{" "}
+									<Em>
+										components
+									</Em>
+									{" "}and add them to the project page. Just grab and drop them wherever you want.
 								</Text>
 								<Box position="relative">
 									<Text
@@ -1924,7 +2002,7 @@ export default (() => {
 										width="184px"
 										z-index="1"
 									>
-										↓  DROP HERE AN Element  ↓
+										↓  DROP AN Element HERE   ↓
 									</Text>
 									<Box
 										background="rgba(237, 242, 246, 0) repeating-linear-gradient(-45deg,--color-light 0px,--color-light 5px,rgba(0,0,0,0) 5px,rgba(0,0,0,0) 10px) center center space"
@@ -2039,7 +2117,11 @@ export default (() => {
 					>
 						The whole page also “lives” in the code.
 						<br />
-						In the code editor, you can do the same actions to components as you would normally do in the visual mode and even more.
+						In{" "}
+						<Em>
+							the code editor
+						</Em>
+						, you can do the same actions to components as you would normally do in the visual mode and even more.
 					</Text>
 				</List>
 				<Box
@@ -2466,7 +2548,11 @@ export default (() => {
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
-									{" "}to go to the preview mode.
+									{" "}to go to{" "}
+									<Em>
+										the preview mode
+									</Em>
+									.
 								</Text>
 								<Box width="100%">
 									<Text
@@ -2705,7 +2791,7 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						It often happens so that you want to revert the changes or redo your last actions.
+						Use these options if you want to revert the changes or redo your last actions.
 					</Text>
 				</List>
 				<Box
@@ -3238,17 +3324,6 @@ export default (() => {
 			</Box>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
 				<Text
-					as="h2"
-					font="--base"
-					md-font="--headline2"
-					color="--darkL2"
-					position="relative"
-					z-index="1"
-					margin="0px 0px 5px 0px"
-				>
-					Go to{" "}
-				</Text>
-				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"
 					overflow-wrap="normal"
 					word-break="normal"
@@ -3269,7 +3344,7 @@ export default (() => {
 					width="121.874px"
 					height="47.268px"
 					position="absolute"
-					top="26px"
+					top="-4px"
 					left="-13px"
 					right="auto"
 					bottom="auto"

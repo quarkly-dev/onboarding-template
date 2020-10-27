@@ -9,9 +9,10 @@ export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
 			<title>
-				Quarkly export
+				Code Editor | Onboarding Quarkly
 			</title>
 			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta property={"og:title"} content={"Code Editor | Onboarding Quarkly"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.HeaderMenu />
