@@ -1021,15 +1021,14 @@ export default (() => {
 					lg-width="100%"
 				>
 					<Box
-						width="auto"
+						width="100%"
 						display="flex"
 						align-items="flex-start"
 						justify-content="flex-start"
-						quarkly-title="Item 1"
-						flex-wrap="nowrap"
-						margin="0px 0px 12px 0px"
+						flex-direction="row"
+						quarkly-title="Item 2"
+						margin="0px 0px 24px 0px"
 						sm-flex-direction="column"
-						sm-margin="0px 0px 18px 0px"
 					>
 						<Text
 							background="--color-indigo"
@@ -1045,28 +1044,30 @@ export default (() => {
 						>
 							1
 						</Text>
-						<Box width="50%" display="flex" sm-flex-direction="column">
-							<Text
-								display="block"
-								font="--base"
-								margin="20px 0px 16px 0px"
-								width="100%"
-								color="--darkL2"
-							>
-								Go to the theme panel
-							</Text>
+						<Box width="100%" display="flex" sm-flex-direction="column" padding="0px 0px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
+								<Text
+									display="block"
+									font="--base"
+									margin="20px 0px 24px 0px"
+									width="100%"
+									color="--darkL2"
+								>
+									Go to the theme panel
+								</Text>
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.jpg?v=2020-10-28T13:11:01.912Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
+							</Box>
 						</Box>
 					</Box>
 					<Box
-						width="auto"
+						width="100%"
 						display="flex"
 						align-items="flex-start"
 						justify-content="flex-start"
-						quarkly-title="Item 1"
-						flex-wrap="nowrap"
-						margin="0px 0px 12px 0px"
+						flex-direction="row"
+						quarkly-title="Item 2"
+						margin="0px 0px 18px 0px"
 						sm-flex-direction="column"
-						sm-margin="0px 0px 18px 0px"
 					>
 						<Text
 							background="--color-indigo"
@@ -1082,8 +1083,8 @@ export default (() => {
 						>
 							2
 						</Text>
-						<Box width="50%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
+						<Box width="100%" display="flex" sm-flex-direction="column" padding="0px 0px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -1091,25 +1092,24 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									{"   "}Find the{"\n              "}
+									Find the{" "}
 									<Em>
-										{"                "}Breakpoints{"\n              "}
+										Breakpoints{" "}
 									</Em>
-									{"               "}Tab and add a new value. Name it “xs”{"\n            "}
+									Tab and add a new value. Name it “xs”
 								</Text>
 							</Box>
 						</Box>
 					</Box>
 					<Box
-						width="auto"
+						width="100%"
 						display="flex"
 						align-items="flex-start"
 						justify-content="flex-start"
-						quarkly-title="Item 1"
-						flex-wrap="nowrap"
+						flex-direction="row"
+						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
 						sm-flex-direction="column"
-						sm-margin="0px 0px 18px 0px"
 					>
 						<Text
 							background="--color-indigo"
@@ -1125,17 +1125,26 @@ export default (() => {
 						>
 							3
 						</Text>
-						<Box width="50%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
+						<Box width="100%" display="flex" sm-flex-direction="column" padding="0px 0px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
-									margin="20px 0px 16px 0px"
+									margin="20px 0px 18px 0px"
 									width="100%"
 									color="--darkL2"
 								>
-									Select the max-width type and enter value 360. This means that the maximum width the breakpoint will operate for is 360px.
+									Select the{" "}
+									<Em>
+										max-width
+									</Em>
+									{" "}type and enter value{" "}
+									<Em>
+										360
+									</Em>
+									. This means that the maximum width the breakpoint will operate for is 360px.
 								</Text>
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-xs.jpg?v=2020-10-28T13:18:05.572Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
 							</Box>
 						</Box>
 					</Box>
@@ -1477,7 +1486,10 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Go to the theme panel
+									Go to the{" "}
+									<Em>
+										theme panel
+									</Em>
 								</Text>
 							</Box>
 						</Box>
@@ -1516,7 +1528,14 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Find the Breakpoints section and add a new value. Name it “xl”
+									Find the{" "}
+									<Em>
+										Breakpoints
+									</Em>
+									{" "}section and add a new value. Name it{" "}
+									<Em>
+										“xl”
+									</Em>
 								</Text>
 							</Box>
 						</Box>
@@ -1555,7 +1574,15 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the min-width type and enter value 1366. This means that the minimum width the breakpoint will operate for is 1366px.
+									Select the{" "}
+									<Em>
+										min-width
+									</Em>
+									{" "}type and enter value{" "}
+									<Em>
+										1366
+									</Em>
+									. This means that the minimum width the breakpoint will operate for is 1366px.
 								</Text>
 							</Box>
 						</Box>
