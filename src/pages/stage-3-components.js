@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Span, Image, List, Icon, Button, Em } from "@quarkly/widgets";
+import { Theme, Text, Box, Span, Image, Em, List, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -220,7 +220,22 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Duplicate the created component twice. To do this, right-click on the component and select “Duplicate” from the context menu.
+									Duplicate the created component twice. To do this,{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										right-click
+									</Em>
+									{" "}on the component and select{" "}
+									<Em>
+										“Duplicate”
+									</Em>
+									{" "}from the context menu.
 								</Text>
 								<Text
 									display="inline-block"
@@ -394,7 +409,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Add the 32px right indent to the first two components
+									Add the{" "}
+									<Em>
+										32px
+									</Em>
+									{" "}right indent to the first two components
 								</Text>
 							</Box>
 						</Box>
@@ -913,7 +932,22 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the last component that you styled at the previous step. Click on the “3 dots” icon next to the component name. Choose “Push All to Master” in the drop-down menu.
+									Select the last component that you styled at the previous step. Click on the{" "}
+									<Em>
+										“3 dots”
+									</Em>
+									{" "}icon next to the component name. Choose{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										“Push All to Master”
+									</Em>
+									{" "}in the drop-down menu.
 								</Text>
 							</Box>
 							<Image
@@ -1162,8 +1196,19 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Choose the second component that you styled. Click on the “3 dots” icon. Select{" "}
+								Choose the second component that you styled. Click on the{" "}
 								<Em>
+									“3 dots”
+								</Em>
+								{" "}icon. Select{" "}
+								<Em
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
 									the Reset All Overrides
 								</Em>
 								{" "}option in the drop-down menu.
@@ -1372,9 +1417,16 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				Sometimes, you may need to turn a component back into a set of elements. This may be necessary for changing the structure of an element or adding new elements to the component. To do that, use{" "}
-				<Em>
-					the Detach
+				Sometimes, you may need to turn a component back into a set of elements. This may be necessary for changing the structure of an element or adding new elements to the component. To do that, use the{" "}
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
+					Detach
 				</Em>
 				{" "}feature.
 			</Text>
@@ -1422,8 +1474,19 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the second component. Click on the “3 dots” icon in the upper right corner of the right panel and select{" "}
+									Select the second component. Click on the{" "}
 									<Em>
+										“3 dots”
+									</Em>
+									{" "}icon in the upper right corner of the right panel and select{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										the Detach
 									</Em>
 									{" "}option.

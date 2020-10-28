@@ -108,7 +108,7 @@ export default (() => {
 					list-style-type="none"
 					padding="0px 12px 0px 0px"
 					margin="0px 0px 16px 0px"
-					width="80%"
+					width="100%"
 					box-sizing="border-box"
 					lg-width="100%"
 				>
@@ -142,7 +142,7 @@ export default (() => {
 								<Text
 									display="block"
 									font="--base"
-									margin="20px 0px 16px 0px"
+									margin="20px 0px 12px 0px"
 									width="100%"
 									color="--darkL2"
 								>
@@ -286,19 +286,10 @@ export default (() => {
 									</Span>
 								</Text>
 							</Box>
-							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								sm-margin="0px 0px 0px 0px"
-								object-position="0px 0px"
-								height="200px"
-							/>
 						</Box>
 					</Box>
 					<Box
-						width="auto"
+						width="80%"
 						display="flex"
 						align-items="flex-start"
 						justify-content="flex-start"
@@ -326,20 +317,20 @@ export default (() => {
 								<Text
 									display="block"
 									font="--base"
-									margin="20px 0px 16px 0px"
+									margin="20px 0px 24px 0px"
 									width="100%"
 									color="--darkL2"
 								>
 									Choose any element on the page or in the code editor. Note that the selection is done simultaneously both on the page and in the code editor.
 								</Text>
+								<Image
+									width="100%"
+									src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-selection.jpg?v=2020-10-28T13:44:51.444Z"
+									border-radius="4px"
+									margin="0px 0px 0px 0px"
+									object-position="0px 0px"
+								/>
 							</Box>
-							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								object-position="0px 0px"
-							/>
 						</Box>
 					</Box>
 				</List>
@@ -494,7 +485,7 @@ export default (() => {
 								<Text
 									display="block"
 									font="normal 300 18px/1.5 --fontFamily-mono"
-									margin="20px 0px 16px 0px"
+									margin="0px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
 								>
@@ -546,7 +537,7 @@ export default (() => {
 										</Span>
 										{"                "}
 									</Span>
-									{"                    \n                "}
+									{"                  "}+{"  \n                "}
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
@@ -596,7 +587,7 @@ export default (() => {
 									>
 										{"                    "}Ctrl{"\n                "}
 									</Span>
-									{"                    \n                "}
+									{"                    "}+{"\n                "}
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
@@ -667,7 +658,7 @@ export default (() => {
 								<Text
 									display="block"
 									font="normal 300 18px/1.5 --fontFamily-mono"
-									margin="20px 0px 16px 0px"
+									margin="0px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
 								>
@@ -1094,7 +1085,7 @@ export default (() => {
 											⌘
 										</Span>
 									</Span>
-									{" "}
+									{" "}+{" "}
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
@@ -1144,7 +1135,7 @@ export default (() => {
 									>
 										Ctrl
 									</Span>
-									{" "}
+									{" "}+{" \n\t\t\t\t\t\t\t "}
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
@@ -1170,6 +1161,7 @@ export default (() => {
 										f
 									</Span>
 								</Text>
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-search.jpg?v=2020-10-28T14:02:13.123Z" border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" />
 							</Box>
 						</Box>
 					</Box>
@@ -1228,18 +1220,28 @@ export default (() => {
 								>
 									font="72px sans-serif"
 								</Text>
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-find-replace.jpg?v=2020-10-28T13:51:55.637Z" border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" />
 								<Text
 									display="block"
 									font="--base"
-									margin="20px 0px 16px 0px"
+									margin="0px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
 								>
 									Click on the{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										Replace All
 									</Em>
-									{" "}button.
+									{" "}button{" \n\t\t\t\t\t\t\t "}
+									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-replace-all.jpg?v=2020-10-28T13:59:18.293Z" margin="0px 0px 0px 0px" />
+									.
 								</Text>
 							</Box>
 						</Box>
@@ -2033,6 +2035,7 @@ export default (() => {
 										>
 											⌘
 										</Span>
+										{" "}+{" "}
 									</Span>
 									{" "}
 									<Span
@@ -2084,7 +2087,7 @@ export default (() => {
 									>
 										Ctrl
 									</Span>
-									{" "}
+									{" "}+{" \n\t\t\t\t\t\t\t "}
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
@@ -2230,6 +2233,7 @@ export default (() => {
 										>
 											⌘
 										</Span>
+										{" "}+{" "}
 									</Span>
 									{" "}
 									<Span
@@ -2281,7 +2285,7 @@ export default (() => {
 									>
 										Ctrl
 									</Span>
-									{" "}
+									{" "}+{" \n\t\t\t\t\t\t\t "}
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
