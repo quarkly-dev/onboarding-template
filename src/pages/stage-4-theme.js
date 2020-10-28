@@ -150,7 +150,32 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									If an element is selected, the right panel will display the properties of this element. If you remove the selection from the element (ESC button), the theme panel will appear.
+									If an element is selected, the right panel will display the properties of this element. If you remove the selection from the element{" "}
+									<Span
+										min-width="18px"
+										border-color="--color-lightD2"
+										border-radius="4px"
+										border-width="2px"
+										border-style="solid"
+										padding="2px 5px 2px 5px"
+										box-shadow="0px 1px 0 1px --color-lightD2"
+										display="inline-block"
+										text-align="center"
+										font="--capture"
+										color="--greyD2"
+										text-transform="uppercase"
+										letter-spacing="1px"
+										margin="0px 0px 0px 3px"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										ESC
+									</Span>
+									{" "}button, the theme panel will appear.
 								</Text>
 								<Text
 									display="inline-block"
@@ -179,7 +204,9 @@ export default (() => {
 										Note
 									</Span>
 									<br />
-									Make sure the right panel isn’t hidden. If it’s hidden, click on the arrow icon in the center of the right border of the window.
+									Make sure the right panel isn’t hidden. If it’s hidden, click on the arrow{" "}
+									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-arrow-back.svg?v=2020-10-28T08:40:12.410Z" margin="0px 0px 0px 0px" />
+									{" "}icon in the center of the right border of the window.
 								</Text>
 							</Box>
 							<Image
@@ -226,7 +253,9 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Click the + icon in the{" "}
+									Click the{" "}
+									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-arrow-back.svg?v=2020-10-28T08:40:12.410Z" margin="0px 0px 0px 0px" />
+									{" "}icon in the{" "}
 									<Em>
 										Color Styles
 									</Em>
@@ -2011,17 +2040,6 @@ export default (() => {
 			/>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
 				<Text
-					as="h2"
-					font="--base"
-					md-font="--headline2"
-					color="--darkL2"
-					position="relative"
-					z-index="1"
-					margin="0px 0px 5px 0px"
-				>
-					Go to{" "}
-				</Text>
-				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"
 					overflow-wrap="normal"
 					word-break="normal"
@@ -2042,7 +2060,7 @@ export default (() => {
 					width="125.874px"
 					height="47.268px"
 					position="absolute"
-					top="26px"
+					top="-4px"
 					left="-13px"
 					right="auto"
 					bottom="auto"

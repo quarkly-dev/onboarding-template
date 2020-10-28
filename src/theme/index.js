@@ -176,5 +176,5 @@ export default {
 			}
 		}
 	},
-	"version": 32
+	"version": 37
 }

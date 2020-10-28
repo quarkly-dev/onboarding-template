@@ -99,8 +99,9 @@ export default (() => {
 			>
 				When you mouse over an element, it may be configured to change styles. In the{" "}
 				<Em>
-					preview mode
+					preview mode{" "}
 				</Em>
+				<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
 				, hover over the example card.{" "}
 				<br />
 				Like it? Let's create this effect together.
@@ -169,7 +170,7 @@ export default (() => {
 								</Span>
 								{"  "}) and switch the state to hover.
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-hover-state.jpg?v=2020-10-28T07:22:37.214Z" border-radius="4px" />
 							<Text
 								display="inline-block"
 								font="--base"
@@ -207,7 +208,7 @@ export default (() => {
 							<Text
 								display="block"
 								font="--base"
-								margin="20px 0px 16px 0px"
+								margin="0px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
 							>
@@ -257,7 +258,7 @@ export default (() => {
 								</Em>
 								{" "}property.
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-background-size.jpg?v=2020-10-28T07:25:46.072Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -286,15 +287,24 @@ export default (() => {
 							<Text
 								display="block"
 								font="--base"
-								margin="20px 0px 16px 0px"
+								margin="20px 0px 0px 0px"
 								width="100%"
 								color="--darkL2"
 							>
 								Go to{" "}
-								<Em>
+								<Em
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
 									the preview mode
 								</Em>
-								. For this, click on the key or combination of keys.
+								. For this, click on the button{" "}
+								<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
+								{" "}or combination of keys:
 								<br />
 								Mac:{" "}
 								<Span
@@ -406,7 +416,6 @@ export default (() => {
 									p
 								</Span>
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -802,7 +811,7 @@ export default (() => {
 								. 
 Click in the input field to open the window with settings.{" "}
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-transition-section.jpg?v=2020-10-28T07:30:15.538Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -1046,27 +1055,20 @@ Click in the input field to open the window with settings.{" "}
 						>
 							5
 						</Text>
-						<Text
-							display="block"
-							font="--base"
-							margin="20px 0px 16px 0px"
-							width="100%"
-							color="--darkL2"
-						>
-							Set{" "}
-							<Em>
-								Delay
-							</Em>
-							{" "}to{" "}
-							<Span
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
+						<Box>
+							<Text
+								display="block"
+								font="--base"
+								margin="20px 0px 16px 0px"
+								width="100%"
+								color="--darkL2"
 							>
-								<Em
+								Set{" "}
+								<Em>
+									Delay
+								</Em>
+								{" "}to{" "}
+								<Span
 									overflow-wrap="normal"
 									word-break="normal"
 									white-space="normal"
@@ -1074,20 +1076,30 @@ Click in the input field to open the window with settings.{" "}
 									text-overflow="clip"
 									hyphens="manual"
 								>
-									0s
-								</Em>
-							</Span>
-							<Span
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-							>
-								. This means the delay before the transition in seconds.
-							</Span>
-						</Text>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										0s
+									</Em>
+								</Span>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									. This means the delay before the transition in seconds.
+								</Span>
+							</Text>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-transition-filled.jpg?v=2020-10-28T07:30:24.899Z" border-radius="4px" />
+						</Box>
 					</Box>
 					<Box
 						width="auto"
@@ -1372,7 +1384,7 @@ Click in the input field to open the window with settings.{" "}
 								display="inline-block"
 								font="--base"
 								margin="20px 0px 16px 0px"
-								width="100%"
+								width="50%"
 								color="--darkL2"
 								sm-margin="12px 0px 12px 0px"
 								padding="0px 12px 0px 0px"
@@ -1380,8 +1392,7 @@ Click in the input field to open the window with settings.{" "}
 								Grab the page border and drag it to the left. As the page width decreases, the example card will rebuild itself. This happens thanks to custom styles at breakpoints. Let's reproduce this behavior.
 							</Text>
 							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-page-resize.png?v=2020-10-28T07:38:49.782Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
@@ -1418,20 +1429,14 @@ Click in the input field to open the window with settings.{" "}
 								display="inline-block"
 								font="--base"
 								margin="20px 0px 16px 0px"
-								width="100%"
+								width="50%"
 								color="--darkL2"
 								sm-margin="12px 0px 12px 0px"
 								padding="0px 12px 0px 0px"
 							>
 								Get back to the default page width. For this, click on the arrow icon next to the window sizes in the top bar and choose default.
 							</Text>
-							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								object-position="0px 0px"
-							/>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-default-breakpoint-state.jpg?v=2020-10-28T07:38:49.789Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -1458,37 +1463,40 @@ Click in the input field to open the window with settings.{" "}
 						>
 							3
 						</Text>
-						<Text
-							display="inline-block"
-							font="--base"
-							margin="20px 0px 16px 0px"
-							width="100%"
-							color="--darkL2"
-							sm-margin="12px 0px 12px 0px"
-						>
-							Now narrow the page width until you see the violet notification bar saying, "
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
+						<Box>
+							<Text
+								display="inline-block"
+								font="--base"
+								margin="20px 0px 16px 0px"
+								width="100%"
+								color="--darkL2"
+								sm-margin="12px 0px 12px 0px"
 							>
-								The changes will be applied to the screen width less than or equal to 992px (breakpoint — lg)
-							</Strong>
-							<Span
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-							>
-								.
-							</Span>
-							" This means you entered the zone where the LG breakpoint works.
-						</Text>
+								Now narrow the page width until you see the violet notification bar saying, "
+								<Strong
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									The changes will be applied to the screen width less than or equal to 992px (breakpoint — lg)
+								</Strong>
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									.
+								</Span>
+								" This means you entered the zone where the LG breakpoint works.
+							</Text>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-lg.jpg?v=2020-10-28T07:42:55.695Z" border-radius="4px" margin="0px 0px 16px 0px" object-position="0px 0px" />
+						</Box>
 					</Box>
 					<Box
 						width="auto"

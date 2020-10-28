@@ -35,6 +35,7 @@ export default (() => {
 				margin="20px 0 0 0"
 				width="33.33%"
 				color="--light"
+				text-transform="uppercase"
 			>
 				Quarkly Basics
 			</Text>
@@ -2542,7 +2543,7 @@ export default (() => {
 								</Span>
 								{"  "}will use flexbox — the more convenient way for aligning elements.
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg" border-radius="4px" />
+							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-dislpay-flex.jpg?v=2020-10-28T07:09:31.505Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -2581,7 +2582,7 @@ export default (() => {
 								</Em>
 								{" "}. Search for Flex direction and choose the column value
 							</Text>
-							<Image width="100%" src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" />
+							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-ai-js-center.jpg?v=2020-10-28T07:13:00.451Z" border-radius="4px" margin="0px 0px 24px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -2616,6 +2617,7 @@ export default (() => {
 							>
 								Choose the center value for Align items and Justify content properties.
 							</Text>
+							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-ai-jc-center.jpg?v=2020-10-28T07:13:51.003Z" border-radius="4px" margin="0px 0px 24px 0px" />
 							<Text
 								display="inline-block"
 								font="normal 300 14px/1.5 --fontFamily-sans"

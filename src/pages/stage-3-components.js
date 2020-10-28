@@ -109,7 +109,6 @@ export default (() => {
 					list-style-type="none"
 					padding="0px 12px 0px 0px"
 					margin="0px 0px 16px 0px"
-					width="80%"
 					box-sizing="border-box"
 					lg-width="100%"
 				>
@@ -139,7 +138,7 @@ export default (() => {
 							1
 						</Text>
 						<Box width="100%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -180,13 +179,11 @@ export default (() => {
 								</Text>
 							</Box>
 							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-convert-to-component.jpg?v=2020-10-28T07:54:39.456Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
 								object-position="0px 0px"
-								height="200px"
 							/>
 						</Box>
 					</Box>
@@ -215,7 +212,7 @@ export default (() => {
 							2
 						</Text>
 						<Box width="100%" display="flex" sm-flex-direction="column" padding="0px 0px 0px 0px">
-							<Box width="100%" padding="0px 24px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -361,13 +358,7 @@ export default (() => {
 									.
 								</Text>
 							</Box>
-							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								object-position="0px 0px"
-							/>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-context-menu-duplicate.jpg?v=2020-10-28T07:56:19.373Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -884,7 +875,7 @@ export default (() => {
 					list-style-type="none"
 					padding="0px 12px 0px 0px"
 					margin="0px 0px 16px 0px"
-					width="80%"
+					width="100%"
 					box-sizing="border-box"
 					lg-width="100%"
 				>
@@ -914,7 +905,7 @@ export default (() => {
 							1
 						</Text>
 						<Box width="100%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -926,13 +917,11 @@ export default (() => {
 								</Text>
 							</Box>
 							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-menu-push-all.jpg?v=2020-10-28T07:59:39.597Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
 								object-position="0px 0px"
-								height="200px"
 							/>
 						</Box>
 					</Box>
@@ -1139,68 +1128,56 @@ export default (() => {
 				{" "}option
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
-				<List
-					as="ol"
-					list-style-type="none"
-					padding="0px 12px 0px 0px"
-					margin="0px 0px 16px 0px"
-					width="80%"
-					box-sizing="border-box"
-					lg-width="100%"
+				<Box
+					width="auto"
+					display="flex"
+					align-items="flex-start"
+					justify-content="flex-start"
+					quarkly-title="Item 1"
+					flex-wrap="nowrap"
+					margin="0px 0px 32px 0px"
+					sm-flex-direction="column"
+					sm-margin="0px 0px 18px 0px"
 				>
-					<Box
-						width="auto"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						quarkly-title="Item 1"
-						flex-wrap="nowrap"
-						margin="0px 0px 12px 0px"
-						sm-flex-direction="column"
-						sm-margin="0px 0px 18px 0px"
+					<Text
+						background="--color-indigo"
+						font="--base"
+						color="--lightD2"
+						padding="2px 8px 2px 8px"
+						border-radius="33px"
+						margin="16px 12px 16px 0px"
+						text-align="center"
+						flex="0 0 auto"
+						min-width="12px"
+						sm-margin="16px 12px 0px 0px"
 					>
-						<Text
-							background="--color-indigo"
-							font="--base"
-							color="--lightD2"
-							padding="2px 8px 2px 8px"
-							border-radius="33px"
-							margin="16px 12px 16px 0px"
-							text-align="center"
-							flex="0 0 auto"
-							min-width="12px"
-							sm-margin="16px 12px 0px 0px"
-						>
-							1
-						</Text>
-						<Box width="100%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
-								<Text
-									display="block"
-									font="--base"
-									margin="20px 0px 16px 0px"
-									width="100%"
-									color="--darkL2"
-								>
-									Choose the second component that you styled. Click on the “3 dots” icon. Select{" "}
-									<Em>
-										the Reset All Overrides
-									</Em>
-									{" "}option in the drop-down menu.
-								</Text>
-							</Box>
-							<Image
+						1
+					</Text>
+					<Box width="100%" display="flex" sm-flex-direction="column">
+						<Box width="50%" padding="0px 24px 0px 0px">
+							<Text
+								display="block"
+								font="--base"
+								margin="20px 0px 16px 0px"
 								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								sm-margin="0px 0px 0px 0px"
-								object-position="0px 0px"
-								height="200px"
-							/>
+								color="--darkL2"
+							>
+								Choose the second component that you styled. Click on the “3 dots” icon. Select{" "}
+								<Em>
+									the Reset All Overrides
+								</Em>
+								{" "}option in the drop-down menu.
+							</Text>
 						</Box>
+						<Image
+							src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-menu-reset-all.jpg?v=2020-10-28T08:22:26.522Z"
+							border-radius="4px"
+							margin="24px 0px 0px 0px"
+							sm-margin="0px 0px 0px 0px"
+							object-position="0px 0px"
+						/>
 					</Box>
-				</List>
+				</Box>
 				<Box
 					width="100%"
 					text-align="center"
@@ -1437,7 +1414,7 @@ export default (() => {
 							1
 						</Text>
 						<Box width="100%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -1453,13 +1430,11 @@ export default (() => {
 								</Text>
 							</Box>
 							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-detach.jpg?v=2020-10-28T08:32:05.719Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
 								object-position="0px 0px"
-								height="200px"
 							/>
 						</Box>
 					</Box>
@@ -1500,15 +1475,6 @@ export default (() => {
 									Style the resulting elements as in the example below.
 								</Text>
 							</Box>
-							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								sm-margin="0px 0px 0px 0px"
-								object-position="0px 0px"
-								height="200px"
-							/>
 						</Box>
 					</Box>
 				</List>
@@ -2046,17 +2012,6 @@ export default (() => {
 			</List>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
 				<Text
-					as="h2"
-					font="--base"
-					md-font="--headline2"
-					color="--darkL2"
-					position="relative"
-					z-index="1"
-					margin="0px 0px 5px 0px"
-				>
-					Go to{" "}
-				</Text>
-				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"
 					overflow-wrap="normal"
 					word-break="normal"
@@ -2077,7 +2032,7 @@ export default (() => {
 					width="126.874px"
 					height="47.268px"
 					position="absolute"
-					top="26px"
+					top="-4px"
 					left="-13px"
 					right="auto"
 					bottom="auto"
