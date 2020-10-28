@@ -142,7 +142,7 @@ export default (() => {
 							1
 						</Text>
 						<Box width="100%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -210,18 +210,16 @@ export default (() => {
 								</Text>
 							</Box>
 							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-panel-example.jpg?v=2020-10-28T09:09:53.111Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
 								object-position="0px 0px"
-								height="200px"
 							/>
 						</Box>
 					</Box>
 					<Box
-						width="auto"
+						width="100%"
 						display="flex"
 						align-items="flex-start"
 						justify-content="flex-start"
@@ -245,7 +243,7 @@ export default (() => {
 							2
 						</Text>
 						<Box width="100%" display="flex" sm-flex-direction="column" padding="0px 0px 0px 0px">
-							<Box width="100%" padding="0px 24px 0px 0px">
+							<Box width="50%" padding="0px 24px 0px 0px">
 								<Text
 									display="block"
 									font="--base"
@@ -253,30 +251,43 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Click the{" "}
-									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-arrow-back.svg?v=2020-10-28T08:40:12.410Z" margin="0px 0px 0px 0px" />
-									{" "}icon in the{" "}
-									<Em>
+									Click the  icon in the{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										Color Styles
 									</Em>
 									{" "}section. Enter the variable name —{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										lightGreen
 									</Em>
 									{" "}and its value —{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										#8BC34A
 									</Em>
 									. In the same way, you can add other variables.
 								</Text>
 							</Box>
-							<Image
-								width="100%"
-								src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg"
-								border-radius="4px"
-								margin="24px 0px 0px 0px"
-								object-position="0px 0px"
-							/>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-new-value.jpg?v=2020-10-28T09:17:11.031Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -312,7 +323,29 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the button and, in the Background Color section, set a variable from the theme as the background color{" "}
+									Select the button and, in the{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Background Color
+									</Em>
+									{" "}section, set our variable from the{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										theme
+									</Em>
+									{" "}as the background color{" "}
 								</Text>
 							</Box>
 						</Box>
@@ -613,7 +646,10 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Go to the theme panel
+									Go to the{" "}
+									<Em>
+										theme panel
+									</Em>
 								</Text>
 							</Box>
 						</Box>
@@ -695,8 +731,15 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Enter a new value -{" "}
-									<Em>
+									Enter a new value —{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										#B2FF59
 									</Em>
 								</Text>
@@ -954,7 +997,18 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				Breakpoints are the conditions under which additional design options for your project appear. There are three breakpoints in a project by default: sm, md, and lg. Each works for its own window width, for example, sm: from 0 to 576px. Let’s add some more breakpoints.
+				<Em>
+					Breakpoints
+				</Em>
+				{" "}are the conditions under which additional design options for your project appear. There are three{" "}
+				<Em>
+					breakpoints
+				</Em>
+				{" "}in a project by default: sm, md, and lg. Each works for its own window width, for example, sm: from 0 to 576px. Let’s add some more{" "}
+				<Em>
+					breakpoints
+				</Em>
+				.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -992,17 +1046,15 @@ export default (() => {
 							1
 						</Text>
 						<Box width="50%" display="flex" sm-flex-direction="column">
-							<Box width="100%" padding="0px 24px 0px 0px">
-								<Text
-									display="block"
-									font="--base"
-									margin="20px 0px 16px 0px"
-									width="100%"
-									color="--darkL2"
-								>
-									Go to the theme panel
-								</Text>
-							</Box>
+							<Text
+								display="block"
+								font="--base"
+								margin="20px 0px 16px 0px"
+								width="100%"
+								color="--darkL2"
+							>
+								Go to the theme panel
+							</Text>
 						</Box>
 					</Box>
 					<Box
