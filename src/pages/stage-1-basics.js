@@ -144,6 +144,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -198,6 +203,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -380,6 +390,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -570,6 +585,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -623,6 +643,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -705,6 +730,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -931,6 +961,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1331,6 +1366,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1444,6 +1484,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -1520,6 +1565,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -1780,6 +1830,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1861,6 +1916,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1898,6 +1958,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -2120,6 +2185,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -2180,6 +2250,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -2414,6 +2489,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -2509,6 +2589,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -2548,6 +2633,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -2800,12 +2890,17 @@ export default (() => {
 							background="--color-indigo"
 							font="--base"
 							color="--light"
-							padding="2px 6px 2px 6px"
+							padding="2px 8px 2px 8px"
 							border-radius="33px"
 							margin="16px 12px 16px 0px"
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							★
 						</Text>
@@ -3030,13 +3125,81 @@ export default (() => {
 					Create an adaptive design
 				</Text>
 			</List>
-			<Image
+			<Text
+				as="p"
+				font="--lead"
+				margin="0px 0 16px 0"
+				width="50%"
+				color="--darkL2"
+			>
+				Turn on the Preview mode
+				<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
+				{" "}и наведите курсор на карточку ниже ↓
+			</Text>
+			<Box
 				width="100%"
-				src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
-				border-radius="4px"
-				max-width="540px"
+				background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/160%"
+				border-radius="8px"
+				display="flex"
+				flex-direction="column"
+				align-items="center"
+				justify-content="center"
+				box-sizing="border-box"
+				padding="48px 36px 72px 36px"
+				opacity="1"
+				hover-background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/190%"
+				transition="background 0.3s ease 0s"
+				sm-padding="36px 36px 48px 36px"
 				margin="0px 0px 48px 0px"
-			/>
+				max-width="440px"
+			>
+				<Icon
+					category="fa"
+					icon={FaTree}
+					font="64px sans-serif"
+					color="--light"
+					md-font="54px sans-serif"
+					sm-font="36px sans-serif"
+				/>
+				<Text
+					font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed"
+					text-transform="uppercase"
+					color="--light"
+					text-align="center"
+					margin="16px 0px 0px 0px"
+					md-font="normal 600 36px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-font="normal 600 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+				>
+					INTO THE WILD
+				</Text>
+				<Text
+					font="--lead"
+					color="--lightD2"
+					text-align="center"
+					md-font="normal 300 16px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-font="normal 300 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-margin="10px 0px 4px 0px"
+					md-margin="16px 0px 8px 0px"
+				>
+					A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
+				</Text>
+				<Button
+					background="--color-secondary"
+					color="--darkL2"
+					padding="12px 34px 12px 34px"
+					border-radius="24px"
+					text-transform="uppercase"
+					letter-spacing="1.2px"
+					margin="24px 0px 0px 0px"
+					opacity="1"
+					box-shadow="0 12px 3px -4px rgba(3, 18, 7, 0.3)"
+					md-font="normal 300 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-font="normal 300 12px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-padding="12px 18px 12px 18px"
+				>
+					JOIN
+				</Button>
+			</Box>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
 				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"

@@ -138,6 +138,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -239,6 +243,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -311,6 +319,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -638,6 +650,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -680,6 +696,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -723,8 +743,12 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
-							2
+							3
 						</Text>
 						<Box width="50%" display="flex" sm-flex-direction="column">
 							<Box width="100%" padding="0px 24px 0px 0px">
@@ -1005,15 +1029,49 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				<Em>
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
 					Breakpoints
 				</Em>
 				{" "}are the conditions under which additional design options for your project appear. There are three{" "}
-				<Em>
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
 					breakpoints
 				</Em>
-				{" "}in a project by default: sm, md, and lg. Each works for its own window width, for example, sm: from 0 to 576px. Let’s add some more{" "}
-				<Em>
+				{" "}in a project by default:
+				<br />
+				<List margin="0px 0px 20px 0px">
+					<Text margin="0px 0px 8px 0px">
+						sm (for smartphones){" "}
+					</Text>
+					<Text margin="0px 0px 8px 0px">
+						md (for tablets){" "}
+					</Text>
+					<Text margin="0px 0px 8px 0px">
+						and lg (for laptops).
+					</Text>
+				</List>
+				Each works for its own window width, for example, sm: from 0 to 576px. Let’s add some more{" "}
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
 					breakpoints
 				</Em>
 				.
@@ -1049,6 +1107,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1063,7 +1125,7 @@ export default (() => {
 								>
 									Go to the Theme panel
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.svg?v=2020-10-29T14:45:20.688Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.svg?v=2020-11-02T14:52:01.631Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
 							</Box>
 						</Box>
 					</Box>
@@ -1088,6 +1150,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1130,6 +1196,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -1143,14 +1213,30 @@ export default (() => {
 									color="--darkL2"
 								>
 									Select the{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										max-width
 									</Em>
 									{" "}type and enter value{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										360
 									</Em>
 									. This means that the maximum width the breakpoint will work for is 360px.
+									<br />
+									The element styles at this breakpoint will be displayed on smartphones with the screen width of up to 360px (regardless of PPI).{"\n\n\n\n\n\n"}
 								</Text>
 								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-xs.svg?v=2020-10-30T20:08:38.604Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
 							</Box>
@@ -1178,6 +1264,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -1486,6 +1576,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1528,6 +1622,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1574,6 +1672,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -1587,14 +1689,30 @@ export default (() => {
 									color="--darkL2"
 								>
 									Select the{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										min-width
 									</Em>
 									{" "}type and enter value{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										1366
 									</Em>
 									. This means that the minimum width the breakpoint will work for is 1366px.
+									<br />
+									The element styles at this breakpoint will be displayed on desktops with the screen width of 1366px and more.{"\n\n\n"}
 								</Text>
 							</Box>
 						</Box>
@@ -1621,6 +1739,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -1927,12 +2049,16 @@ export default (() => {
 							background="--color-indigo"
 							font="--base"
 							color="--light"
-							padding="2px 6px 2px 6px"
+							padding="2px 8px 2px 8px"
 							border-radius="33px"
 							margin="16px 12px 16px 0px"
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							★
 						</Text>

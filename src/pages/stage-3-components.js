@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Span, Image, Em, List, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Em, Span, Image, List, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -134,6 +134,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -146,7 +150,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the card container, right-click and select “Convert to Component”.
+									Select the card container, right-click and select{" "}
+									<Em>
+										“Convert to Component”
+									</Em>
+									.
 								</Text>
 								<Text
 									display="inline-block"
@@ -175,7 +183,8 @@ export default (() => {
 										Note
 									</Span>
 									<br />
-									You can convert only one element, but that element can contain other elements.
+									The conversion of several elements (multiselect) cannot be performed.
+You can convert only one element, but that element can contain other elements.
 								</Text>
 							</Box>
 							<Image
@@ -208,6 +217,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -397,6 +410,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -677,6 +694,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -928,6 +949,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -956,6 +981,74 @@ export default (() => {
 										“Push All to Master”
 									</Em>
 									{" "}from the drop-down menu.
+								</Text>
+								<Text
+									display="inline-block"
+									font="normal 300 14px/1.5 --fontFamily-sans"
+									margin="0px 0px 20px 0px"
+									color="--darkL2"
+									background="rgba(0, 119, 204, 0.04)"
+									padding="8px 14px 16px 14px"
+									border-radius="6px"
+									border-width="1px"
+									border-style="solid"
+									border-color="--color-lightD2"
+								>
+									<Span
+										font="--capture"
+										letter-spacing="1px"
+										color="--grey"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-transform="uppercase"
+									>
+										Note
+									</Span>
+									<br />
+									You can convert only one element,
+									<br />
+									but that element can contain other elements.
+								</Text>
+								<Text
+									display="inline-block"
+									font="normal 300 14px/1.5 --fontFamily-sans"
+									margin="0px 0px 0px 0px"
+									color="--darkL2"
+									background="rgba(0, 119, 204, 0.04)"
+									padding="8px 14px 16px 14px"
+									border-radius="6px"
+									border-width="1px"
+									border-style="solid"
+									border-color="--color-lightD2"
+								>
+									<Span
+										font="--capture"
+										letter-spacing="1px"
+										color="--grey"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-transform="uppercase"
+									>
+										TIP
+									</Span>
+									<br />
+									The{" "}
+									<Em>
+										Push to Master
+									</Em>
+									{" "}command sends only the changes made in the parent element. While the{" "}
+									<Em>
+										Push All to Master
+									</Em>
+									{" "}command sends all changes, both made in the parent and child elements.
 								</Text>
 							</Box>
 							<Image
@@ -1196,6 +1289,10 @@ export default (() => {
 						flex="0 0 auto"
 						min-width="12px"
 						sm-margin="16px 12px 0px 0px"
+						border-color="--color-darkL2"
+						border-style="solid"
+						border-width="1px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						1
 					</Text>
@@ -1220,6 +1317,43 @@ export default (() => {
 									the Reset All Overrides
 								</Em>
 								{" "}option from the drop-down menu.
+							</Text>
+							<Text
+								display="inline-block"
+								font="normal 300 14px/1.5 --fontFamily-sans"
+								margin="0px 0px 0px 0px"
+								color="--darkL2"
+								background="rgba(0, 119, 204, 0.04)"
+								padding="8px 14px 16px 14px"
+								border-radius="6px"
+								border-width="1px"
+								border-style="solid"
+								border-color="--color-lightD2"
+							>
+								<Span
+									font="--capture"
+									letter-spacing="1px"
+									color="--grey"
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-transform="uppercase"
+								>
+									TIP
+								</Span>
+								<br />
+								The{" "}
+								<Em>
+									Reset Overrides
+								</Em>
+								{" "}command is applied only to the parent element. While the{" "}
+								<Em>
+									Reset All to Master
+								</Em>
+								{" "}command is applied to the parent and all child elements.{"\n\n\n"}
 							</Text>
 						</Box>
 						<Image
@@ -1474,6 +1608,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1531,6 +1669,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1829,12 +1971,17 @@ export default (() => {
 							background="--color-indigo"
 							font="--base"
 							color="--light"
-							padding="2px 6px 2px 6px"
+							padding="2px 8px 2px 8px"
 							border-radius="33px"
 							margin="16px 12px 16px 0px"
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							★
 						</Text>

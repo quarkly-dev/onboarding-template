@@ -4,7 +4,7 @@ import { Theme, Link, Text, Image, Box, List, Span, Em, Icon, Button } from "@qu
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
-import { FaTree } from "react-icons/fa";
+import { FaYoutube, FaTree } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -16,7 +16,26 @@ export default (() => {
 			<meta property={"og:description"} content={"At this stage, you are going to get to know the Quarkly interface and main features.\n"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
-		<Components.HeaderMenu />
+		<Components.HeaderMenu>
+			<Override slot="SectionContent" lg-flex-direction="column" />
+			<Override slot="menu" lg-flex-wrap="wrap" />
+			<Override slot="menuOverride1" lg-padding="8px 8px 8px 8px">
+				1.Basics
+			</Override>
+			<Override slot="menuOverride12" lg-padding="8px 8px 8px 8px" />
+			<Override slot="menuOverride2" lg-padding="8px 8px 8px 8px">
+				2.Hover & Adaptive
+			</Override>
+			<Override slot="menuOverride3" lg-padding="8px 8px 8px 8px">
+				3.Components
+			</Override>
+			<Override slot="menuOverride4" lg-padding="8px 8px 8px 8px">
+				4.Theme
+			</Override>
+			<Override slot="menuOverride5" lg-padding="8px 8px 8px 8px">
+				5.Code Editor
+			</Override>
+		</Components.HeaderMenu>
 		<Section
 			padding="130px 0px 100px 0px"
 			sm-padding="40px 0"
@@ -24,6 +43,7 @@ export default (() => {
 			border-width="0px 0px 3px 0px"
 			border-style="solid"
 			border-color="--color-primary"
+			md-padding="80px 0px 60px 0px"
 		>
 			<Override slot="SectionContent" align-items="flex-start" flex-direction="column" />
 			<Text
@@ -33,6 +53,8 @@ export default (() => {
 				margin="20px 0 0 0"
 				width="66.66%"
 				color="--light"
+				lg-width="80%"
+				md-width="100%"
 			>
 				Introduction to Quarkly
 			</Text>
@@ -42,16 +64,20 @@ export default (() => {
 				margin="20px 0 18px 0"
 				width="66.66%"
 				color="--lightD2"
+				lg-width="80%"
+				md-width="100%"
 			>
 				Quarkly comes with the familiar interface of any design tool:
 			</Text>
-			<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-interface-scheme.svg?v=2020-10-27T14:17:15.256Z" margin="0px 0px 24px 0px" />
+			<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-interface-scheme.svg?v=2020-10-27T14:17:15.256Z" margin="0px 0px 24px 0px" sm-width="100%" />
 			<Text
 				as="p"
 				font="--lead"
 				margin="0px 0 24px 0"
 				width="66.66%"
 				color="--lightD2"
+				lg-width="80%"
+				md-width="100%"
 			>
 				Drag a page, zoom in and out.
 				<br />
@@ -73,6 +99,7 @@ export default (() => {
 					hyphens="manual"
 					position="relative"
 					z-index="1"
+					sm-font="--lead"
 				>
 					Try Quarkly and see for yourself!
 				</Text>
@@ -89,9 +116,9 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -99,6 +126,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -139,6 +167,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Pages set free
 					</Text>
@@ -148,6 +177,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 2px 0"
 					>
 						Drag the page wherever you want!
 					</Text>
@@ -161,6 +191,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<Box
 						width="auto"
@@ -170,6 +202,8 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						md-margin="0px 0px 0px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -181,16 +215,22 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-width="1px"
+							border-style="solid"
+							border-color="--color-darkL2"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+							sm-margin="12px 12px 0px 0px"
 						>
 							1
 						</Text>
-						<Box width="100%">
+						<Box width="100%" text-align="left">
 							<Text
 								display="inline-block"
 								font="--base"
 								margin="18px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Hold down the
 								<Span
@@ -223,6 +263,8 @@ export default (() => {
 						flex-direction="row"
 						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
+						md-margin="0px 0px 0px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -234,6 +276,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+							sm-margin="12px 12px 0px 0px"
 						>
 							2
 						</Text>
@@ -244,6 +291,7 @@ export default (() => {
 								margin="18px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Use the mouse to move the page
 							</Text>
@@ -257,6 +305,7 @@ export default (() => {
 						flex-direction="row"
 						flex-wrap="nowrap"
 						quarkly-title="Item 3"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -268,6 +317,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+							sm-margin="12px 12px 0px 0px"
 						>
 							3
 						</Text>
@@ -278,6 +332,7 @@ export default (() => {
 							width="100%"
 							color="--darkL2"
 							text-align="left"
+							sm-margin="12px 0px 16px 0px"
 						>
 							If you use a touchpad, move the page by placing two fingers on the touchpad and sliding{"  "}
 						</Text>
@@ -285,9 +340,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -295,6 +350,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -335,6 +391,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Zooming
 					</Text>
@@ -344,6 +401,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						Zoom in to take a closer look at the details and choose a specific element. Zoom out to get an overall view of the page design.
 					</Text>
@@ -357,6 +415,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<List
 						as="ol"
@@ -378,6 +438,8 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							md-margin="0px 0px 0px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -389,6 +451,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -399,6 +466,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									To{" "}
 									<Span
@@ -526,6 +594,8 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							md-margin="0px 0px 0px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -537,6 +607,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -547,6 +622,7 @@ export default (() => {
 									margin="18px 0px 8px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 8px 0px"
 								>
 									To{" "}
 									<Span
@@ -683,6 +759,8 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							md-margin="0px 0px 0px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -694,6 +772,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								3
 							</Text>
@@ -704,6 +787,7 @@ export default (() => {
 									margin="18px 0px 8px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 8px 0px"
 								>
 									To get back to{" "}
 									<Span
@@ -840,6 +924,7 @@ export default (() => {
 							flex-direction="row"
 							flex-wrap="nowrap"
 							quarkly-title="Item 3"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -851,6 +936,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								4
 							</Text>
@@ -861,6 +951,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 								text-align="left"
+								sm-margin="12px 0px 16px 0px"
 							>
 								On a touchpad, you can zoom in and out with pinch and spread gestures.
 							</Text>
@@ -873,6 +964,7 @@ export default (() => {
 							flex-direction="row"
 							flex-wrap="nowrap"
 							quarkly-title="Item 3"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -884,6 +976,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								5
 							</Text>
@@ -894,6 +991,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Or, you can select a custom zoom level in the top bar.
 								</Text>
@@ -904,9 +1002,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -914,6 +1012,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -954,6 +1054,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Theme
 					</Text>
@@ -963,6 +1064,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						It’s more convenient when a project has a limited number of text styles, colors, and effects. For this we created a theme.
 					</Text>
@@ -976,6 +1078,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -997,6 +1101,7 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1008,6 +1113,11 @@ export default (() => {
 								flex="0 0 auto"
 								min-width="12px"
 								text-align="center"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -1015,9 +1125,10 @@ export default (() => {
 								<Text
 									display="inline-block"
 									font="--base"
-									margin="18px 0px 16px 0px"
+									margin="18px 0px 24px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									If an element is selected, the right panel will display the properties of this element. If you deselect the element by pressing{" "}
 									<Span
@@ -1059,7 +1170,79 @@ export default (() => {
 									</Span>
 									{" "}will appear.
 								</Text>
-								<Image width="auto" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-panel.svg?v=2020-10-23T14:43:56.784Z" border-radius="4px" height="auto" />
+								<Image
+									width="auto"
+									src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-panel.svg?v=2020-10-23T14:43:56.784Z"
+									border-radius="4px"
+									height="auto"
+									margin="0px 0px 0px 0px"
+								/>
+								<Text
+									display="block"
+									font="normal 300 14px/1.5 --fontFamily-sans"
+									margin="18px 0px 24px 0px"
+									color="--darkL2"
+									background="rgba(0, 119, 204, 0.04)"
+									padding="8px 14px 16px 14px"
+									border-radius="6px"
+									border-width="1px"
+									border-style="solid"
+									border-color="--color-lightD2"
+									position="relative"
+								>
+									<Icon
+										category="fa"
+										icon={FaYoutube}
+										color="--greyD2"
+										font="22px sans-serif"
+										margin="0px 8px 0px 0px"
+										display="inline-block"
+										position="absolute"
+									/>
+									<Span
+										font="--capture"
+										letter-spacing="1px"
+										color="--grey"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-transform="uppercase"
+										display="inline-block"
+										margin="0px 0px 0px 31px"
+									>
+										YOUTUBE
+									</Span>
+									<br />
+									<Text
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-decoration-line="initial"
+										margin="0 0px 0px 0px"
+									>
+										About Theme
+									</Text>
+									<Link
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-decoration-line="initial"
+										color="--primary"
+										href="https://youtu.be/fyLLNYVNG30"
+										target="_blank"
+									>
+										https://youtu.be/fyLLNYVNG30
+									</Link>
+								</Text>
 							</Box>
 						</Box>
 						<Box
@@ -1070,6 +1253,7 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 0px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1081,6 +1265,11 @@ export default (() => {
 								flex="0 0 auto"
 								min-width="12px"
 								text-align="center"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -1091,6 +1280,7 @@ export default (() => {
 									margin="18px 0px 8px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 8px 0px"
 								>
 									There you will find various groups like colors, text styles, backgrounds, shadows, etc. Each group has variables. Here's what you can do with a variable:
 								</Text>
@@ -1124,6 +1314,7 @@ export default (() => {
 							flex-direction="row"
 							flex-wrap="nowrap"
 							quarkly-title="Item 3"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1135,6 +1326,11 @@ export default (() => {
 								flex="0 0 auto"
 								min-width="12px"
 								text-align="center"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								3
 							</Text>
@@ -1145,6 +1341,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Last but not least are the{" "}
 									<Em
@@ -1159,7 +1356,7 @@ export default (() => {
 									</Em>
 									These will help you create a mobile-friendly view of your website.
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.svg?v=2020-10-29T14:45:20.688Z" border-radius="4px" margin="0px 0px 20px 0px" object-position="0px 0px" />
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.svg?v=2020-10-29T14:45:20.688Z" border-radius="4px" margin="0px 0px 24px 0px" object-position="0px 0px" />
 								<Text
 									display="inline-block"
 									font="normal 300 14px/1.5 --fontFamily-sans"
@@ -1224,9 +1421,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -1234,6 +1431,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
+					md-margin="0px 0px 16px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -1274,6 +1473,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Props panel
 					</Text>
@@ -1283,6 +1483,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						To change the styles and functions of the elements, navigate to the right panel.{" "}
 					</Text>
@@ -1296,6 +1497,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -1308,6 +1511,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-margin="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -1317,6 +1521,7 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1328,6 +1533,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -1338,6 +1548,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Click on an element to choose it, and its Props panel will show up.{" "}
 								</Text>
@@ -1352,6 +1563,8 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
+							sm-margin="0px 0px 0px 0px"
 						>
 							<Text
 								background="--color-indigo"
@@ -1363,6 +1576,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -1373,6 +1591,7 @@ export default (() => {
 									margin="18px 0px 8px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 8px 0px"
 								>
 									The panel has two tabs:
 								</Text>
@@ -1410,9 +1629,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -1420,6 +1639,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -1460,6 +1680,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Pages and layers
 					</Text>
@@ -1469,6 +1690,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						A project consists of{" "}
 						<Em>
@@ -1490,6 +1712,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -1511,6 +1735,7 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1522,6 +1747,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -1532,6 +1762,7 @@ export default (() => {
 									margin="18px 0px 0px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 0px 0px"
 								>
 									To open the panel with{" "}
 									<Em
@@ -1703,6 +1934,7 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1714,6 +1946,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -1724,6 +1961,7 @@ export default (() => {
 									margin="18px 0px 8px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 8px 0px"
 								>
 									Here’s what you can do with pages and layers (elements):
 								</Text>
@@ -1770,6 +2008,7 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1781,6 +2020,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								3
 							</Text>
@@ -1788,9 +2032,10 @@ export default (() => {
 								<Text
 									display="block"
 									font="--base"
-									margin="18px 0px 16px 0px"
+									margin="18px 0px 24px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 24px 0px"
 								>
 									Drag the{" "}
 									<Em>
@@ -1805,7 +2050,7 @@ export default (() => {
 								<Text
 									display="inline-block"
 									font="normal 300 14px/1.5 --fontFamily-sans"
-									margin="0px 0px 0px 0px"
+									margin="0px 0px 12px 0px"
 									color="--darkL2"
 									background="rgba(0, 119, 204, 0.04)"
 									padding="8px 14px 16px 14px"
@@ -1853,15 +2098,81 @@ export default (() => {
 									</Em>
 									{" "}page.
 								</Text>
+								<Text
+									display="block"
+									font="normal 300 14px/1.5 --fontFamily-sans"
+									margin="8px 0px 16px 0px"
+									color="--darkL2"
+									background="rgba(0, 119, 204, 0.04)"
+									padding="8px 14px 16px 14px"
+									border-radius="6px"
+									border-width="1px"
+									border-style="solid"
+									border-color="--color-lightD2"
+									position="relative"
+								>
+									<Icon
+										category="fa"
+										icon={FaYoutube}
+										color="--greyD2"
+										font="22px sans-serif"
+										margin="0px 8px 0px 0px"
+										display="inline-block"
+										position="absolute"
+									/>
+									<Span
+										font="--capture"
+										letter-spacing="1px"
+										color="--grey"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-transform="uppercase"
+										display="inline-block"
+										margin="0px 0px 0px 31px"
+									>
+										YOUTUBE
+									</Span>
+									<br />
+									<Text
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-decoration-line="initial"
+										margin="0 0px 0px 0px"
+									>
+										Nesting Pages
+									</Text>
+									<Link
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-decoration-line="initial"
+										color="--primary"
+										href="https://youtu.be/BZZ3Sdd1g64"
+										target="_blank"
+									>
+										https://youtu.be/BZZ3Sdd1g64
+									</Link>
+								</Text>
 							</Box>
 						</Box>
 					</List>
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -1869,6 +2180,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -1909,6 +2221,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Components
 					</Text>
@@ -1918,6 +2231,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						From the{" "}
 						<Em>
@@ -1957,6 +2271,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -1969,6 +2285,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-margin="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -1978,6 +2295,7 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -1989,6 +2307,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -1999,16 +2322,17 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-tree.svg?v=2020-10-24T19:00:40.575Z" margin="0px 0px 0px 0px" />
-									{" "}and go to the
+									{" "}and go to the{" "}
 									<Em>
 										Components
 									</Em>
 									{" "}tab.
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-components-tab.svg?v=2020-10-23T20:29:02.009Z" border-radius="4px" />
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-components-tab.svg?v=2020-10-23T20:29:02.009Z" border-radius="4px" sm-width="100%" />
 							</Box>
 						</Box>
 						<Box
@@ -2019,6 +2343,8 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
+							sm-margin="0px 0px 0px 0px"
 						>
 							<Text
 								background="--color-indigo"
@@ -2030,6 +2356,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -2040,6 +2371,7 @@ export default (() => {
 									margin="18px 0px 36px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 36px 0px"
 								>
 									Here you can choose the{" "}
 									<Em>
@@ -2125,9 +2457,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -2135,6 +2467,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -2175,6 +2508,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Code editor
 					</Text>
@@ -2184,6 +2518,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						The whole page also “lives” in the code.
 						<br />
@@ -2203,6 +2538,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -2224,6 +2561,8 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
+							sm-margin="0px 0px 0px 0px"
 						>
 							<Text
 								background="--color-indigo"
@@ -2235,6 +2574,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -2245,6 +2589,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor.svg?v=2020-10-24T19:03:09.997Z" margin="0px 0px 0px 0px" />
@@ -2263,6 +2608,8 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
+							sm-margin="0px 0px 0px 0px"
 						>
 							<Text
 								background="--color-indigo"
@@ -2274,6 +2621,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -2284,6 +2636,7 @@ export default (() => {
 									margin="18px 0px 0px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Look at the syntax of the page code. It’s the{" "}
 									<Em>
@@ -2301,6 +2654,7 @@ export default (() => {
 							flex-direction="row"
 							flex-wrap="nowrap"
 							quarkly-title="Item 3"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -2312,6 +2666,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								3
 							</Text>
@@ -2322,6 +2681,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									If you add something new or edit the existing code,
 									<br />
@@ -2501,9 +2861,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -2511,6 +2871,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -2551,6 +2912,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Preview
 					</Text>
@@ -2560,6 +2922,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						Use this feature to see how the page will look for your site visitors and check out how the visual effects work.
 					</Text>
@@ -2573,6 +2936,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -2594,6 +2959,7 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -2605,6 +2971,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -2615,6 +2986,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
@@ -2770,6 +3142,7 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -2781,6 +3154,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -2791,6 +3169,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									You may want to preview how your site looks on different devices. Use presets for this.{" "}
 								</Text>
@@ -2801,9 +3180,9 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -2811,6 +3190,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="50%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -2851,6 +3231,7 @@ export default (() => {
 						md-font="--headline2"
 						margin="0px 0px 20px 0px"
 						color="--darkL2"
+						sm-font="--headline3"
 					>
 						Undo / Redo
 					</Text>
@@ -2860,6 +3241,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
+						md-margin="0px 0 0px 0"
 					>
 						Use these options if you want to undo the changes or redo your most recent actions.
 					</Text>
@@ -2873,6 +3255,8 @@ export default (() => {
 					display="flex"
 					flex-direction="column"
 					align-items="flex-start"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<List
 						as="ol"
@@ -2894,6 +3278,7 @@ export default (() => {
 							quarkly-title="Item 1"
 							flex-wrap="nowrap"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -2905,6 +3290,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								1
 							</Text>
@@ -2915,6 +3305,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-undo.svg?v=2020-10-24T19:06:12.231Z" margin="0px 0px 0px 0px" />
@@ -3064,6 +3455,7 @@ export default (() => {
 							flex-direction="row"
 							quarkly-title="Item 2"
 							margin="0px 0px 12px 0px"
+							sm-flex-direction="column"
 						>
 							<Text
 								background="--color-indigo"
@@ -3075,6 +3467,11 @@ export default (() => {
 								text-align="center"
 								flex="0 0 auto"
 								min-width="12px"
+								border-color="--color-darkL2"
+								border-style="solid"
+								border-width="1px"
+								text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+								sm-margin="12px 12px 0px 0px"
 							>
 								2
 							</Text>
@@ -3085,6 +3482,7 @@ export default (() => {
 									margin="18px 0px 16px 0px"
 									width="100%"
 									color="--darkL2"
+									sm-margin="12px 0px 16px 0px"
 								>
 									To redo your most recent actions, click{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-redo.svg?v=2020-10-24T19:06:12.230Z" margin="0px 0px 0px 0px" />
@@ -3281,7 +3679,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 120px 0">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -3322,6 +3720,7 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--darkL2"
+				sm-font="--headline3"
 			>
 				It’s time to move to the next stage
 			</Text>
@@ -3331,10 +3730,12 @@ export default (() => {
 				margin="0px 0 0px 0"
 				width="50%"
 				color="--darkL2"
+				lg-width="80%"
+				md-width="100%"
 			>
 				Congrats! You’ve been introduced to Quarkly. In the next stage, you’re going to get to know the platform better — you’ll try your hand at creating a card and learn how to:
 			</Text>
-			<List margin="0px 0px 16px 0px" font="--base">
+			<List margin="0px 0px 16px 0px" font="--base" md-width="calc(100% - 40px)" md-padding="0px 0px 0px 40px">
 				<Text>
 					Add elements
 				</Text>
@@ -3354,6 +3755,8 @@ export default (() => {
 				margin="0px 0 16px 0"
 				width="50%"
 				color="--darkL2"
+				lg-width="80%"
+				md-width="100%"
 			>
 				As a result, you’ll be creating the following card:
 			</Text>
@@ -3370,12 +3773,19 @@ export default (() => {
 				opacity="1"
 				max-width="360px"
 				margin="0px 0px 48px 0px"
+				sm-width="auto"
 			>
 				<Icon category="fa" icon={FaTree} font="64px sans-serif" color="--light" />
-				<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+				<Text
+					font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed"
+					text-transform="uppercase"
+					color="--light"
+					text-align="center"
+					sm-height="100%"
+				>
 					Into the Wild
 				</Text>
-				<Text font="--lead" color="--lightD2" text-align="center">
+				<Text font="--lead" color="--lightD2" text-align="center" sm-height="100%">
 					A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 				</Text>
 				<Button

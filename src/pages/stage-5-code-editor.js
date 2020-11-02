@@ -43,7 +43,7 @@ export default (() => {
 				width="66.66%"
 				color="--lightD2"
 			>
-				The page and code in the code editor are synchronized. Each element of the page is represented by a props tag. Let's take a closer look at the features of the code editor.
+				The page and code in the code editor are synchronized. Each element of the page is represented by a tag with props. Let's take a closer look at the features of the code editor.
 			</Text>
 		</Section>
 		<Section padding="100px 0" sm-padding="40px 0">
@@ -134,6 +134,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -309,6 +313,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -424,6 +432,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -464,6 +476,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							{"        "}2{"\n    "}
 						</Text>
@@ -641,6 +657,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -985,6 +1005,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1034,6 +1058,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1204,6 +1232,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -1285,6 +1317,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -1917,6 +1953,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1966,6 +2006,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -2203,6 +2247,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -2363,6 +2411,10 @@ export default (() => {
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -2688,12 +2740,17 @@ export default (() => {
 							background="--color-indigo"
 							font="--base"
 							color="--light"
-							padding="2px 6px 2px 6px"
+							padding="2px 8px 2px 8px"
 							border-radius="33px"
 							margin="16px 12px 16px 0px"
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							★
 						</Text>

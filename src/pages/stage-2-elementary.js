@@ -1,10 +1,10 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Em, Image, Span, List, Icon, Button, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Em, Image, Span, Icon, List, Button, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
-import { FaTree } from "react-icons/fa";
+import { FaYoutube, FaTree } from "react-icons/fa";
 export default (() => {
 	return <Theme theme={theme}>
 		<Helmet>
@@ -134,6 +134,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -216,6 +221,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -295,6 +305,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -452,6 +467,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -459,7 +479,7 @@ export default (() => {
 							<Text
 								display="block"
 								font="--base"
-								margin="20px 0px 0px 0px"
+								margin="20px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
 							>
@@ -468,7 +488,7 @@ export default (() => {
 							<Text
 								display="inline-block"
 								font="normal 300 14px/1.5 --fontFamily-sans"
-								margin="20px 0px 16px 0px"
+								margin="20px 0px 0px 0px"
 								color="--darkL2"
 								background="rgba(0, 119, 204, 0.04)"
 								padding="8px 14px 16px 14px"
@@ -513,6 +533,72 @@ export default (() => {
 									</Em>
 									{" "}tab
 								</Span>
+							</Text>
+							<Text
+								display="block"
+								font="normal 300 14px/1.5 --fontFamily-sans"
+								margin="20px 0px 16px 0px"
+								color="--darkL2"
+								background="rgba(0, 119, 204, 0.04)"
+								padding="8px 14px 16px 14px"
+								border-radius="6px"
+								border-width="1px"
+								border-style="solid"
+								border-color="--color-lightD2"
+								position="relative"
+							>
+								<Icon
+									category="fa"
+									icon={FaYoutube}
+									color="--greyD2"
+									font="22px sans-serif"
+									margin="0px 8px 0px 0px"
+									display="inline-block"
+									position="absolute"
+								/>
+								<Span
+									font="--capture"
+									letter-spacing="1px"
+									color="--grey"
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-transform="uppercase"
+									display="inline-block"
+									margin="0px 0px 0px 31px"
+								>
+									YOUTUBE
+								</Span>
+								<br />
+								<Text
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-decoration-line="initial"
+									margin="0 0px 0px 0px"
+								>
+									Style Props. Transition
+								</Text>
+								<Link
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-decoration-line="initial"
+									color="--primary"
+									href="https://youtu.be/kDEtTCMTEY8?t=40"
+									target="_blank"
+								>
+									https://youtu.be/kDEtTCMTEY8?t=40
+								</Link>
 							</Text>
 						</Box>
 					</Box>
@@ -762,6 +848,11 @@ export default (() => {
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -859,6 +950,11 @@ Click in the input field to open the settings window.{" "}
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -943,6 +1039,11 @@ Click in the input field to open the settings window.{" "}
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -1006,6 +1107,11 @@ Click in the input field to open the settings window.{" "}
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -1078,6 +1184,11 @@ Click in the input field to open the settings window.{" "}
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							5
 						</Text>
@@ -1146,6 +1257,11 @@ Click in the input field to open the settings window.{" "}
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							6
 						</Text>
@@ -1158,6 +1274,72 @@ Click in the input field to open the settings window.{" "}
 								color="--darkL2"
 							>
 								Mouse over the card to see how this effect works.
+							</Text>
+							<Text
+								display="block"
+								font="normal 300 14px/1.5 --fontFamily-sans"
+								margin="20px 0px 16px 0px"
+								color="--darkL2"
+								background="rgba(0, 119, 204, 0.04)"
+								padding="8px 14px 16px 14px"
+								border-radius="6px"
+								border-width="1px"
+								border-style="solid"
+								border-color="--color-lightD2"
+								position="relative"
+							>
+								<Icon
+									category="fa"
+									icon={FaYoutube}
+									color="--greyD2"
+									font="22px sans-serif"
+									margin="0px 8px 0px 0px"
+									display="inline-block"
+									position="absolute"
+								/>
+								<Span
+									font="--capture"
+									letter-spacing="1px"
+									color="--grey"
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-transform="uppercase"
+									display="inline-block"
+									margin="0px 0px 0px 31px"
+								>
+									YOUTUBE
+								</Span>
+								<br />
+								<Text
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-decoration-line="initial"
+									margin="0 0px 0px 0px"
+								>
+									Style Props. Transition
+								</Text>
+								<Link
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+									text-decoration-line="initial"
+									color="--primary"
+									href="https://youtu.be/esh5UtPaXcU?t=197"
+									target="_blank"
+								>
+									https://youtu.be/esh5UtPaXcU?t=197
+								</Link>
 							</Text>
 						</Box>
 					</Box>
@@ -1406,6 +1588,10 @@ Click in the input field to open the settings window.{" "}
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
 						</Text>
@@ -1427,6 +1613,9 @@ Click in the input field to open the settings window.{" "}
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
 								object-position="0px 0px"
+								border-width="1px"
+								border-style="solid"
+								border-color="--color-grey"
 							/>
 						</Box>
 					</Box>
@@ -1451,6 +1640,10 @@ Click in the input field to open the settings window.{" "}
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
 						</Text>
@@ -1490,6 +1683,10 @@ Click in the input field to open the settings window.{" "}
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
 						</Text>
@@ -1557,6 +1754,10 @@ Click in the input field to open the settings window.{" "}
 							flex="0 0 auto"
 							min-width="12px"
 							sm-margin="16px 12px 0px 0px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
 						</Text>
@@ -1787,12 +1988,17 @@ Click in the input field to open the settings window.{" "}
 							background="--color-indigo"
 							font="--base"
 							color="--light"
-							padding="2px 6px 2px 6px"
+							padding="2px 8px 2px 8px"
 							border-radius="33px"
 							margin="16px 12px 16px 0px"
 							text-align="center"
 							flex="0 0 auto"
 							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							★
 						</Text>
