@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Em, Span, Image, Icon, List, Button, Link, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Em, Image, Span, Icon, List, Button, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -35,7 +35,6 @@ export default (() => {
 				margin="20px 0 0 0"
 				width="33.33%"
 				color="--light"
-				text-transform="uppercase"
 			>
 				Quarkly Basics
 			</Text>
@@ -46,7 +45,7 @@ export default (() => {
 				width="66.66%"
 				color="--lightD2"
 			>
-				Project pages consist of styled elements. Here you will learn how to add elements to the page, fill them with information, and style.
+				Project pages consist of styled elements. Here you will learn how to add elements to the page, fill them with information, and style them.
 			</Text>
 		</Section>
 		<Section padding="100px 0" sm-padding="40px 0">
@@ -100,11 +99,11 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				To start, open{" "}
+				To start, open the{" "}
 				<Em>
-					the Layers panel
+					Layers{" "}
 				</Em>
-				{" "}and switch to the{" "}
+				{" "}panel and switch to the{" "}
 				<Em
 					overflow-wrap="normal"
 					word-break="normal"
@@ -113,9 +112,9 @@ export default (() => {
 					text-overflow="clip"
 					hyphens="manual"
 				>
-					Components tab.
+					Components
 				</Em>
-				{" "}Next, drag elements to the workspace.
+				{" "}tab. Next, drag elements into the workspace.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -156,21 +155,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Open the Layers panel, switch to the{" "}
-								<Span
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									<Em>
-										Components
-									</Em>
-									{" "}tab
-								</Span>
-								, choose{" "}
+								Сhoose
 								<Image
 									width="24px"
 									height="24px"
@@ -187,9 +172,9 @@ export default (() => {
 									text-overflow="clip"
 									hyphens="manual"
 								>
-									Box,
+									Box
 								</Span>
-								{" "}grab it and drag to the workspace.
+								{" "}and drag and drop it into the workspace.
 							</Text>
 							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-drag&drop.svg?v=2020-10-24T19:07:24.859Z" border-radius="4px" />
 						</Box>
@@ -353,7 +338,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								The first element —
+								The first text element —
 								<Image
 									width="24px"
 									height="24px"
@@ -372,7 +357,7 @@ export default (() => {
 								>
 									Text
 								</Span>
-								{"  "}— is going to be the heading, while the second one — the card description.
+								{"  "}— is going to be the heading, while the second one will be the card description.
 							</Text>
 						</Box>
 					</Box>
@@ -405,7 +390,7 @@ export default (() => {
 							width="100%"
 							color="--darkL2"
 						>
-							Double-click on the elements and change the text as it's shown in the example.
+							Double-click on the text and button elements to change their content according to the example.
 						</Text>
 					</Box>
 				</List>
@@ -422,15 +407,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+						border-radius="6px"
 					>
 						Workspace
 					</Text>
@@ -452,15 +439,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -482,7 +471,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button>
 								Join
@@ -543,7 +532,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Now that we have created the card structure let's style it a little bit: add{" "}
+				Now we’ve created the card structure, let's style it a bit by adding a{" "}
 				<Em>
 					background
 				</Em>
@@ -645,7 +634,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Navigate to{"  "}
+								Navigate to the{"  "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -667,7 +656,7 @@ export default (() => {
 								>
 									Layout
 								</Em>
-								{" "}tab on the Props Panel and set width to{" "}
+								{" "}tab on the Props panel and set the width to{" "}
 								<Span
 									overflow-wrap="normal"
 									word-break="normal"
@@ -680,7 +669,7 @@ export default (() => {
 										100%
 									</Em>
 								</Span>
-								{" "}and height to{" "}
+								{" "}and the height to{" "}
 								<Span
 									overflow-wrap="normal"
 									word-break="normal"
@@ -727,26 +716,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Now, having selected{" "}
-								<Span
-									color="--primary"
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									<Image
-										width="24px"
-										height="24px"
-										vertical-align="top"
-										src="https://artemzhigalin.ru/src/onboarding-tutorial-box.svg"
-										margin="0px 2px 0px 2px"
-									/>
-									Box
-								</Span>
-								, go to{" "}
+								Now go to{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -761,7 +731,7 @@ export default (() => {
 								<Em>
 									URL
 								</Em>
-								, and copy-paste the image URL:
+								, and copy-paste this image URL:
 							</Text>
 							<Link
 								href="#"
@@ -779,48 +749,6 @@ export default (() => {
 							</Link>
 						</Box>
 					</Box>
-					<Box
-						width="auto"
-						display="flex"
-						align-items="flex-start"
-						justify-content="flex-start"
-						flex-direction="row"
-						flex-wrap="nowrap"
-						quarkly-title="Item 3"
-					>
-						<Text
-							background="--color-indigo"
-							font="--base"
-							color="--lightD2"
-							padding="2px 8px 2px 8px"
-							border-radius="33px"
-							margin="16px 12px 16px 0px"
-							text-align="center"
-							flex="0 0 auto"
-							min-width="12px"
-						>
-							4
-						</Text>
-						<Text
-							display="block"
-							font="--base"
-							margin="20px 0px 16px 0px"
-							width="100%"
-							color="--darkL2"
-						>
-							<Em
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-							>
-								Double-click
-							</Em>
-							{" "}on the elements and change the text according the the example.
-						</Text>
-					</Box>
 				</List>
 				<Box
 					width="66.66%"
@@ -835,15 +763,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -865,7 +795,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button>
 								Join
@@ -878,15 +808,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -902,13 +834,13 @@ export default (() => {
 						min-height="320px"
 						text-align="left"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?fit=crop&w=750&q=80) center/cover" border-radius="12px" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?fit=crop&w=750&q=80) center/cover" height="320px">
 							<Icon category="md" icon={MdFace} />
 							<Text>
 								Into the Wild
 							</Text>
 							<Text>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button>
 								Join
@@ -969,7 +901,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Let's put your knowledge of styles to use and try to style the button and text as it's shown in the example.
+				Let's put your knowledge of styles into practice and try to style the button and text as to match the example.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -1060,7 +992,7 @@ export default (() => {
 									TIP
 								</Span>
 								<br />
-								You can copy and paste styles from the example using the shortcuts:
+								You can copy and paste styles from the example using these shortcuts:
 								<br />
 								Mac:
 								<br />
@@ -1429,7 +1361,7 @@ export default (() => {
 								>
 									Button
 								</Span>
-								. Change properties:
+								. Change the following properties:
 							</Text>
 							<List
 								width="100%"
@@ -1485,7 +1417,7 @@ export default (() => {
 										hyphens="manual"
 										margin="0px 0px 0px 0px"
 									>
-										Border radius (Border)
+										Border radius (Borders)
 									</Text>
 								</Box>
 							</List>
@@ -1670,15 +1602,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Workspace
 					</Text>
@@ -1700,7 +1634,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button>
 								Join
@@ -1713,15 +1647,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1743,7 +1679,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -1814,7 +1750,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Apply the distinctive font for the heading.
+				Apply the distinctive font to the heading.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -1855,7 +1791,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Choose the heading, from the{" "}
+								Select the heading. On the{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -1879,11 +1815,11 @@ export default (() => {
 								</Em>
 								{"  "}tab and click on the{" "}
 								<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-detach-theme-variable.svg?v=2020-10-27T19:47:00.021Z" margin="0px 0px 0px 0px" />
-								{" "}icon. You have removed the link with the value from the{" "}
+								{" "}icon to remove the link to the value from the{" "}
 								<Em>
 									Theme
 								</Em>
-								. Now add the new font to the project. For this, click on the value to open the panel. On the panel, click on the{" "}
+								. Now add the new font to the project. To do this, click on the font value to open the panel. On the panel, click on the{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -1940,7 +1876,7 @@ export default (() => {
 								<Em>
 									Open Sans Condenced
 								</Em>
-								. Click on it and close the window. That's how we've added the new font to the project.
+								. Click on it and close the window. Now the new font has been added to the project.
 							</Text>
 						</Box>
 					</Box>
@@ -1973,7 +1909,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Now choose the new font for the heading. Open the panel with font settings and choose{"  "}
+								Now choose the new font for the heading. Open the panel with the font settings and choose{"  "}
 								<Em>
 									googleOpenSansCondenced
 								</Em>
@@ -1996,15 +1932,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2026,7 +1964,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -2049,15 +1987,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -2079,7 +2019,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -2150,7 +2090,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Replace the icon with the more fitting one.
+				Replace the icon with a more fitting one.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -2190,11 +2130,11 @@ export default (() => {
 							width="100%"
 							color="--darkL2"
 						>
-							The only thing left is to change the icon. To do this,{" "}
+							To change the icon,{" "}
 							<Em>
 								double-click
 							</Em>
-							{" "}it. The modal window featuring all icons will appear. Choose the{" "}
+							{" "}it. A modal window featuring all icons will appear. Choose the{" "}
 							<Em
 								overflow-wrap="normal"
 								word-break="normal"
@@ -2205,7 +2145,7 @@ export default (() => {
 							>
 								Font Awesome
 							</Em>
-							{"  "}category and enter{" "}
+							{"  "}category and enter{"  "}
 							<Em
 								overflow-wrap="normal"
 								word-break="normal"
@@ -2250,7 +2190,7 @@ export default (() => {
 							width="100%"
 							color="--darkL2"
 						>
-							Style the color and button size according to the example
+							Style the icon color and size according to the example.
 						</Text>
 					</Box>
 				</List>
@@ -2267,15 +2207,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2297,7 +2239,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -2320,15 +2262,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -2350,7 +2294,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -2421,7 +2365,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				By default, the content aligns along the left side. Change this to center align{" "}
+				By default, the content is left-aligned. Change this to center-aligned{" "}
 				<Span
 					overflow-wrap="normal"
 					word-break="normal"
@@ -2440,7 +2384,7 @@ export default (() => {
 					/>
 					Box
 				</Span>
-				{" "}with the help of display flex
+				{" "}with the help of display flex.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -2481,7 +2425,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Choose{" "}
+								Select
 								<Span
 									color="--primary"
 									overflow-wrap="normal"
@@ -2522,7 +2466,7 @@ export default (() => {
 								>
 									Styles
 								</Em>
-								{" "}panel. Specify the flex value for the display property. This means that{" "}
+								{" "}panel. Choose the flex value for the display property. This means that
 								<Image
 									width="24px"
 									height="24px"
@@ -2541,9 +2485,9 @@ export default (() => {
 								>
 									Box
 								</Span>
-								{"  "}will use flexbox — the more convenient way for aligning elements.
+								{"  "}will use flexbox — the more convenient way to align elements.
 							</Text>
-							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-dislpay-flex.jpg?v=2020-10-28T07:09:31.505Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-display-flex.svg?v=2020-10-29T09:06:15.535Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -2576,13 +2520,13 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Once we've chosen the Flex value for display, the new properties appeared under{"  "}
+								Once you've chosen the flex value for display, new properties will appear under{"  "}
 								<Em>
-									Layout
+									Layout.
 								</Em>
-								{" "}. Search for Flex direction and choose the column value
+								{" "}Search for Flex direction and choose the column value.
 							</Text>
-							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-ai-js-center.jpg?v=2020-10-28T07:13:00.451Z" border-radius="4px" margin="0px 0px 24px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-direction-column.svg?v=2020-10-29T09:17:53.875Z" border-radius="4px" margin="0px 0px 24px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -2617,7 +2561,7 @@ export default (() => {
 							>
 								Choose the center value for Align items and Justify content properties.
 							</Text>
-							<Image width="100%" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-ai-jc-center.jpg?v=2020-10-28T07:13:51.003Z" border-radius="4px" margin="0px 0px 24px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-ai-jc-center.svg?v=2020-10-29T09:18:06.412Z" border-radius="4px" margin="0px 0px 24px 0px" />
 							<Text
 								display="inline-block"
 								font="normal 300 14px/1.5 --fontFamily-sans"
@@ -2645,7 +2589,7 @@ export default (() => {
 									TIP
 								</Span>
 								<br />
-								Experiment with different values to understand how this works.
+								Experiment with different values to get familiar with how this works.
 							</Text>
 						</Box>
 					</Box>
@@ -2663,15 +2607,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2693,7 +2639,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -2716,15 +2662,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -2757,7 +2705,7 @@ export default (() => {
 								Into the Wild
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -2828,7 +2776,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				You've created your first card and studied the basics of web design. What about a little practice now?{" "}
+				You've created your first card and learnt the basics of web design. How about practicing a little now?{" "}
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -2869,7 +2817,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Build a new card on your own. If you forget something scroll back to top and revise the materials. Happy designing!
+								Build a new card on your own. If you forget something scroll back to the top and revise the materials. Happy designing!
 							</Text>
 							<Text
 								display="inline-block"
@@ -2916,15 +2864,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2945,15 +2895,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -2994,7 +2946,7 @@ export default (() => {
 								</Strong>
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -3065,17 +3017,17 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Congrats! You've done great job getting to the know the Quarkly basics. At the next stage, you are going to deepen your knowledge and learn how to:
+				Congrats! You've done a great job getting to know the Quarkly basics. In the next stage you're going to deepen your knowledge and learn how to:
 			</Text>
 			<List margin="0px 0px 16px 0px" color="--darkL2" font="--base">
 				<Text>
 					Style states: hover, focused and other
 				</Text>
 				<Text>
-					Make the transition between states smooth
+					Make a smooth transition between states
 				</Text>
 				<Text>
-					Create adaptive design
+					Create an adaptive design
 				</Text>
 			</List>
 			<Image
@@ -3114,5 +3066,27 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });

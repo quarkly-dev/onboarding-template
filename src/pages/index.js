@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Image, Box, List, Span, Em, Link, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Image, Box, List, Span, Em, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -34,7 +34,7 @@ export default (() => {
 				width="66.66%"
 				color="--light"
 			>
-				Introduction to Interface
+				Introduction to Quarkly
 			</Text>
 			<Text
 				as="p"
@@ -43,7 +43,7 @@ export default (() => {
 				width="66.66%"
 				color="--lightD2"
 			>
-				Quarkly comes with a familiar interface of a design tool:
+				Quarkly comes with the familiar interface of any design tool:
 			</Text>
 			<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-interface-scheme.svg?v=2020-10-27T14:17:15.256Z" margin="0px 0px 24px 0px" />
 			<Text
@@ -53,9 +53,9 @@ export default (() => {
 				width="66.66%"
 				color="--lightD2"
 			>
-				Drag the page, zoom in and out on it.
+				Drag a page, zoom in and out.
 				<br />
-				See the props panel when selecting an element.
+				See the Props panel when selecting an element.
 				<br />
 				Undo/redo buttons and keyboard shortcuts are at your fingertips.
 			</Text>
@@ -245,20 +245,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Use the mouse to{" "}
-								<Span
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
-								>
-									<Em>
-										move
-									</Em>
-								</Span>
-								{" "}the page
+								Use the mouse to move the page
 							</Text>
 						</Box>
 					</Box>
@@ -292,7 +279,7 @@ export default (() => {
 							color="--darkL2"
 							text-align="left"
 						>
-							If you use touchpad, move the page by placing two fingers on the touchpad and sliding{"  "}
+							If you use a touchpad, move the page by placing two fingers on the touchpad and sliding{"  "}
 						</Text>
 					</Box>
 				</Box>
@@ -358,7 +345,7 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						Zoom in to take a closer look at the details and choose a specific element, and zoom out to get an overall view of the page design.
+						Zoom in to take a closer look at the details and choose a specific element. Zoom out to get an overall view of the page design.
 					</Text>
 				</List>
 				<Box
@@ -875,7 +862,7 @@ export default (() => {
 								color="--darkL2"
 								text-align="left"
 							>
-								On the touchpad, you can zoom in and out with pinch and spread gestures.
+								On a touchpad, you can zoom in and out with pinch and spread gestures.
 							</Text>
 						</Box>
 						<Box
@@ -908,7 +895,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Also, you may want to specify a custom zoom level in the top bar.
+									Or, you can select a custom zoom level in the top bar.
 								</Text>
 								<Image width="auto" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-zoom-options.svg?v=2020-10-23T14:06:12.870Z" border-radius="4px" height="auto" />
 							</Box>
@@ -977,7 +964,7 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						It’s convenient when a project has a limited number of text styles, colors, and effects. For this we created a theme.
+						It’s more convenient when a project has a limited number of text styles, colors, and effects. For this we created a theme.
 					</Text>
 				</List>
 				<Box
@@ -1032,7 +1019,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									If an element is selected, the right panel will display the properties of this element. If you remove the selection from the element{" "}
+									If an element is selected, the right panel will display the properties of this element. If you deselect the element by pressing{" "}
 									<Span
 										border-color="--color-lightD2"
 										border-radius="4px"
@@ -1067,7 +1054,7 @@ export default (() => {
 										hyphens="manual"
 									>
 										<Em>
-											theme panel
+											Theme panel
 										</Em>
 									</Span>
 									{" "}will appear.
@@ -1105,26 +1092,26 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									There you will find various groups with variables: colors, text styles, backgrounds, shadows, etc. Variables can be:
+									There you will find various groups like colors, text styles, backgrounds, shadows, etc. Each group has variables. Here's what you can do with a variable:
 								</Text>
 								<List margin="0px 0px 16px 0px" list-style-type="disc" padding="0px 0px 0px 20px" color="--darkL2">
 									<Text font="--base" margin="0px 0 8px 0px">
-										Added
+										Add
 									</Text>
 									<Text font="--base" margin="0px 0 8px 0px">
-										Removed
+										Remove
 									</Text>
 									<Text font="--base" margin="0px 0 8px 0px">
-										Sorted
+										Sort
 									</Text>
 									<Text font="--base" margin="0px 0 8px 0px">
-										Edited
+										Edit
 									</Text>
 									<Text font="--base" margin="0px 0 8px 0px">
-										Duplicated
+										Duplicat
 									</Text>
 									<Text font="--base" margin="0px 0 8px 0px">
-										Renamed
+										Rename
 									</Text>
 								</List>
 							</Box>
@@ -1151,26 +1138,87 @@ export default (() => {
 							>
 								3
 							</Text>
-							<Text
-								display="block"
-								font="--base"
-								margin="18px 0px 16px 0px"
-								width="100%"
-								color="--darkL2"
-							>
-								Last but not least in the theme are{" "}
-								<Em
-									overflow-wrap="normal"
-									word-break="normal"
-									white-space="normal"
-									text-indent="0"
-									text-overflow="clip"
-									hyphens="manual"
+							<Box>
+								<Text
+									display="block"
+									font="--base"
+									margin="18px 0px 16px 0px"
+									width="100%"
+									color="--darkL2"
 								>
-									breakpoints.{" "}
-								</Em>
-								They will help you create a mobile-friendly view of your website.
-							</Text>
+									Last but not least are the{" "}
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										breakpoints.{" "}
+									</Em>
+									These will help you create a mobile-friendly view of your website.
+								</Text>
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.svg?v=2020-10-29T14:45:20.688Z" border-radius="4px" margin="0px 0px 20px 0px" object-position="0px 0px" />
+								<Text
+									display="inline-block"
+									font="normal 300 14px/1.5 --fontFamily-sans"
+									margin="0px 0px 0px 0px"
+									color="--darkL2"
+									background="rgba(0, 119, 204, 0.04)"
+									border-color="--color-lightD2"
+									border-radius="6px"
+									border-style="solid"
+									border-width="1px"
+									padding="8px 14px 16px 14px"
+								>
+									<Span
+										font="--capture"
+										letter-spacing="1px"
+										color="--grey"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+										text-transform="uppercase"
+									>
+										Tip
+									</Span>
+									<br />
+									To learn more about breakpoints, go to{" "}
+									<Em>
+										Stage 4. Theme
+									</Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									/>
+									<Span
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										<Link
+											href="stage-5-code-editor"
+											overflow-wrap="normal"
+											word-break="normal"
+											white-space="normal"
+											text-indent="0"
+											text-overflow="clip"
+											hyphens="manual"
+										/>
+									</Span>
+								</Text>
+							</Box>
 						</Box>
 					</List>
 				</Box>
@@ -1236,7 +1284,7 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						To change styles and functions of the elements, navigate to the right panel.{" "}
+						To change the styles and functions of the elements, navigate to the right panel.{" "}
 					</Text>
 				</List>
 				<Box
@@ -1291,7 +1339,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Choose an element and its props panel will show up.{" "}
+									Click on an element to choose it, and its Props panel will show up.{" "}
 								</Text>
 								<Image width="auto" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-props-panel.svg?v=2020-10-23T20:59:55.902Z" border-radius="4px" height="auto" />
 							</Box>
@@ -1422,15 +1470,15 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						The project consists of{" "}
+						A project consists of{" "}
 						<Em>
 							pages
 						</Em>
-						, while a page consists of{" "}
+						, and a page consists of{" "}
 						<Em>
 							elements
 						</Em>
-						. You can do a lot of actions with them — add, remove, nest and more.{" "}
+						. You can apply a lot of actions to elements — add, remove, nest, and more.{" "}
 					</Text>
 				</List>
 				<Box
@@ -1481,16 +1529,34 @@ export default (() => {
 								<Text
 									display="inline-block"
 									font="--base"
-									margin="18px 0px 16px 0px"
+									margin="18px 0px 0px 0px"
 									width="100%"
 									color="--darkL2"
 								>
 									To open the panel with{" "}
-									<Em>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
 										pages and layers
 									</Em>
-									, press the button  in the top bar.
+									, press the button{" "}
+									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-tree.svg?v=2020-10-24T19:00:40.575Z" margin="0px 0px 0px 0px" />
+									{" "}in the top bar.
 								</Text>
+								<Image
+									src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-tree-panel.svg?v=2020-10-23T21:18:23.248Z"
+									border-radius="4px"
+									margin="16px 0px 24px 0px"
+									width="300px"
+									height="42px"
+									object-fit="none"
+									object-position="0% 0%"
+								/>
 								<Text
 									display="inline-block"
 									font="normal 300 14px/1.5 --fontFamily-sans"
@@ -1681,7 +1747,7 @@ export default (() => {
 										Rename
 									</Text>
 									<Text font="--base" margin="0px 0 8px 0px">
-										Change settings (for Pages)
+										Change settings (pages only)
 									</Text>
 								</List>
 								<Text
@@ -1732,9 +1798,9 @@ export default (() => {
 									</Em>
 									{" "}to the{" "}
 									<Em>
-										Parent page
+										Parent page{" "}
 									</Em>
-									, this way you’ll create a nested page. Similarly, you can create nested elements.
+									to create a nested page. Similarly, you can create nested elements.
 								</Text>
 								<Text
 									display="inline-block"
@@ -1774,7 +1840,7 @@ export default (() => {
 									>
 										Home
 									</Em>
-									{" "}page is the main page that cannot be moved and nested, the same applies to the{" "}
+									{" "}page is the main page that cannot be moved or nested. The same applies to the{" "}
 									<Em
 										overflow-wrap="normal"
 										word-break="normal"
@@ -1868,7 +1934,7 @@ export default (() => {
 						>
 							Library
 						</Em>
-						{" "}with ready-to-use components and{" "}
+						{" "}with ready-to-use components, and{" "}
 						<Em
 							overflow-wrap="normal"
 							word-break="normal"
@@ -1934,9 +2000,9 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Open the tab clicking the button{" "}
+									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-tree.svg?v=2020-10-24T19:00:40.575Z" margin="0px 0px 0px 0px" />
-									{" "}and go to{" "}
+									{" "}and go to the
 									<Em>
 										Components
 									</Em>
@@ -1975,11 +2041,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									There you can choose the{" "}
+									Here you can choose the{" "}
 									<Em>
 										components
 									</Em>
-									{" "}and add them to the project page. Just grab and drop them wherever you want.
+									{" "}and add them to the project page. Just drag and drop them wherever you want.
 								</Text>
 								<Box position="relative">
 									<Text
@@ -1988,21 +2054,23 @@ export default (() => {
 										font="--capture"
 										margin="0 auto 0px auto"
 										text-transform="uppercase"
-										color="--grey"
+										color="--light"
 										display="inline-block"
-										background="#FFF"
+										background="--color-indigo"
 										padding="6px 12px 6px 12px"
 										position="absolute"
 										top="-14px"
 										border-style="solid"
 										border-width="1px"
-										border-color="--color-lightD2"
+										border-color="--color-darkL2"
 										bottom="auto"
 										left={0}
 										right={0}
 										height="12px"
 										width="184px"
 										z-index="1"
+										text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+										border-radius="6px"
 									>
 										↓  DROP AN Element HERE   ↓
 									</Text>
@@ -2049,7 +2117,7 @@ export default (() => {
 										TIP
 									</Span>
 									<br />
-									To add a component, you can also click on it. In this case, it will be placed at the very bottom of the page.
+									To add a component, you can also click on it. This will place it at the very bottom of the page.
 								</Text>
 							</Box>
 						</Box>
@@ -2119,11 +2187,11 @@ export default (() => {
 					>
 						The whole page also “lives” in the code.
 						<br />
-						In{" "}
+						In the{" "}
 						<Em>
-							the code editor
+							code editor
 						</Em>
-						, you can do the same actions to components as you would normally do in the visual mode and even more.
+						, you can perform the same actions to components as you would normally do in the visual mode, and even more.
 					</Text>
 				</List>
 				<Box
@@ -2180,9 +2248,9 @@ export default (() => {
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor.svg?v=2020-10-24T19:03:09.997Z" margin="0px 0px 0px 0px" />
-									{" "}on the top bar to open{" "}
+									{" "}on the top bar to open the{" "}
 									<Em>
-										the code editor
+										code editor
 									</Em>
 								</Text>
 							</Box>
@@ -2217,11 +2285,11 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									See the syntax of the page code. It’s{" "}
+									Look at the syntax of the page code. It’s the{" "}
 									<Em>
 										JSX
 									</Em>
-									. Everything you add or modify should be made according to this syntax.{" "}
+									{" "}syntax. It looks like usual HTML, but actually it uses React elements. Everything you add or modify should be according to this syntax.
 								</Text>
 							</Box>
 						</Box>
@@ -2493,7 +2561,7 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						Use this feature to see how the page is going to appear for your site visitors and check out how visual effects work.
+						Use this feature to see how the page will look for your site visitors and check out how the visual effects work.
 					</Text>
 				</List>
 				<Box
@@ -2550,9 +2618,9 @@ export default (() => {
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
-									{" "}to go to{" "}
+									{" "}to go to the{" "}
 									<Em>
-										the preview mode
+										Preview mode
 									</Em>
 									.
 								</Text>
@@ -2793,7 +2861,7 @@ export default (() => {
 						width="100%"
 						color="--darkL2"
 					>
-						Use these options if you want to revert the changes or redo your last actions.
+						Use these options if you want to undo the changes or redo your most recent actions.
 					</Text>
 				</List>
 				<Box
@@ -2850,7 +2918,7 @@ export default (() => {
 								>
 									Click the button{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-undo.svg?v=2020-10-24T19:06:12.231Z" margin="0px 0px 0px 0px" />
-									{" "}to revert the changes.
+									{" "}to undo the changes.
 								</Text>
 								<Text
 									display="inline-block"
@@ -2879,7 +2947,7 @@ export default (() => {
 										TIP
 									</Span>
 									<br />
-									To speed up the work process, use shortcuts.{"  "}
+									To speed up the process, use shortcuts.{"  "}
 									<br />
 									Mac:{" "}
 									<Span
@@ -3018,7 +3086,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									To redo your last actions, click{" "}
+									To redo your most recent actions, click{" "}
 									<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-redo.svg?v=2020-10-24T19:06:12.230Z" margin="0px 0px 0px 0px" />
 								</Text>
 								<Text
@@ -3264,7 +3332,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Congrats! You’ve been introduced to Quarkly. At the next stage, you’re going to get to know the platform better — try your hand at creating a card and learn how to:
+				Congrats! You’ve been introduced to Quarkly. In the next stage, you’re going to get to know the platform better — you’ll try your hand at creating a card and learn how to:
 			</Text>
 			<List margin="0px 0px 16px 0px" font="--base">
 				<Text>
@@ -3287,7 +3355,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				As a result, you’ll get the following card:
+				As a result, you’ll be creating the following card:
 			</Text>
 			<Box
 				width="100%"
@@ -3308,7 +3376,7 @@ export default (() => {
 					Into the Wild
 				</Text>
 				<Text font="--lead" color="--lightD2" text-align="center">
-					A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+					A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 				</Text>
 				<Button
 					background="--color-secondary"
@@ -3353,5 +3421,27 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });

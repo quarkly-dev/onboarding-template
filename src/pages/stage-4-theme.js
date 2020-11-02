@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Span, Image, Em, List, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Span, Image, Em, List, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -45,7 +45,7 @@ export default (() => {
 			>
 				Add variables and breakpoints!
 				<br />
-				Actually, you already used variables from the theme, just didn’t realize it.
+				Actually, you already used variables from the theme, you just didn’t realize it.
 				<br />
 				Let's take a closer look at what they are for and how to use them.
 			</Text>
@@ -104,7 +104,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				If you’re going to use a certain color, text style, shadow style, etc. in your project many times, you can add it to your theme
+				If you’re going to use a certain color, text style, shadow style, etc. in your project many times, you can add it to your theme.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -150,7 +150,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									If an element is selected, the right panel will display the properties of this element. If you remove the selection from the element{" "}
+									If an element is selected, the right panel will display the properties of this element. If you deselect the element by pressing
 									<Span
 										min-width="18px"
 										border-color="--color-lightD2"
@@ -175,7 +175,7 @@ export default (() => {
 									>
 										ESC
 									</Span>
-									{" "}button, the theme panel will appear.
+									{" "}, the Theme panel will appear.
 								</Text>
 								<Text
 									display="inline-block"
@@ -210,7 +210,7 @@ export default (() => {
 								</Text>
 							</Box>
 							<Image
-								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-panel-example.jpg?v=2020-10-28T09:09:53.111Z"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-panel-example.svg?v=2020-10-29T09:53:41.343Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
@@ -284,10 +284,10 @@ export default (() => {
 									>
 										#8BC34A
 									</Em>
-									. In the same way, you can add other variables.
+									. You can add other variables in the same way.
 								</Text>
 							</Box>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-new-value.jpg?v=2020-10-28T09:17:11.031Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-theme-new-value.svg?v=2020-10-29T13:39:38.768Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -334,7 +334,7 @@ export default (() => {
 									>
 										Background Color
 									</Em>
-									{" "}section, set our variable from the{" "}
+									{" "}section, set the variable from the{" "}
 									<Em
 										overflow-wrap="normal"
 										word-break="normal"
@@ -364,15 +364,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -430,7 +432,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -456,15 +458,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -523,7 +527,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -600,7 +604,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				The advantage of using theme variables is that their values can be changed and the changes will be applied wherever the variables were used
+				The advantage of using theme variables is that their values can be changed and the changes will be applied wherever the variables are used.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -648,7 +652,7 @@ export default (() => {
 								>
 									Go to the{" "}
 									<Em>
-										theme panel
+										Theme panel
 									</Em>
 								</Text>
 							</Box>
@@ -692,7 +696,7 @@ export default (() => {
 									<Em>
 										lightGreen
 									</Em>
-									{" "}variable you’ve created at the previous step to edit its value.
+									{" "}variable you created in the previous step to edit its value.
 								</Text>
 							</Box>
 						</Box>
@@ -760,15 +764,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -827,7 +833,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -853,15 +859,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -920,7 +928,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -1053,9 +1061,9 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Go to the theme panel
+									Go to the Theme panel
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.jpg?v=2020-10-28T13:11:01.912Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoints-section.svg?v=2020-10-29T14:45:20.688Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
 							</Box>
 						</Box>
 					</Box>
@@ -1096,7 +1104,7 @@ export default (() => {
 									<Em>
 										Breakpoints{" "}
 									</Em>
-									Tab and add a new value. Name it “xs”
+									tab and add a new value. Name it “xs”.
 								</Text>
 							</Box>
 						</Box>
@@ -1142,9 +1150,9 @@ export default (() => {
 									<Em>
 										360
 									</Em>
-									. This means that the maximum width the breakpoint will operate for is 360px.
+									. This means that the maximum width the breakpoint will work for is 360px.
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-xs.jpg?v=2020-10-28T13:18:05.572Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-xs.svg?v=2020-10-30T20:08:38.604Z" border-radius="4px" margin="0px 0px 0px 0px" object-position="0px 0px" />
 							</Box>
 						</Box>
 					</Box>
@@ -1182,7 +1190,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the created breakpoint (xs) and style the card as in the example
+									Select the created breakpoint (xs) and style the card to match the example.
 								</Text>
 							</Box>
 						</Box>
@@ -1201,15 +1209,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1268,7 +1278,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -1294,15 +1304,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1363,7 +1375,7 @@ export default (() => {
 								md-margin="16px 0px 8px 0px"
 								sm-text-align="left"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -1440,7 +1452,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				At the previous step, you’ve created a breakpoint of the max-width type. Now, let’s add a breakpoint of the min-width type. Such breakpoints are valid from the specified width to infinity.
+				In the previous step, you created a breakpoint of the max-width type. Now, let’s add a breakpoint of the min-width type. Such breakpoints are valid from the specified width to infinity.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -1488,7 +1500,7 @@ export default (() => {
 								>
 									Go to the{" "}
 									<Em>
-										theme panel
+										Theme panel
 									</Em>
 								</Text>
 							</Box>
@@ -1582,7 +1594,7 @@ export default (() => {
 									<Em>
 										1366
 									</Em>
-									. This means that the minimum width the breakpoint will operate for is 1366px.
+									. This means that the minimum width the breakpoint will work for is 1366px.
 								</Text>
 							</Box>
 						</Box>
@@ -1621,7 +1633,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the created breakpoint (xl) and style the card as in the example
+									Select the created breakpoint (xl) and style the card to match the example.
 								</Text>
 							</Box>
 						</Box>
@@ -1640,15 +1652,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1707,7 +1721,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -1733,15 +1747,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1805,7 +1821,7 @@ export default (() => {
 								xl-font="normal 300 28px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
 								xl-max-width="720px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								color="--darkL2"
@@ -1884,7 +1900,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				You’ve worked through on how to use variables and breakpoints from the theme. What about a little practice now?
+				You’ve worked through how to use variables and breakpoints from the theme. How about practicing a little  now?
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -1986,15 +2002,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2016,15 +2034,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -2085,7 +2105,7 @@ export default (() => {
 				margin="0px 0px 20px 0px"
 				color="--dark"
 			>
-				Move on to the next stage
+				Move to the next stage
 			</Text>
 			<Text
 				as="p"
@@ -2094,7 +2114,7 @@ export default (() => {
 				width="66.66%"
 				color="--darkL2"
 			>
-				You did a great job with the themes in Quarkly. At the next stage, you will learn:{" "}
+				You did a great job with the themes in Quarkly. In the next stage, you'll learn:{" "}
 			</Text>
 			<List margin="0px 0px 16px 0px" font="--base">
 				<Text color="--darkL2">
@@ -2110,14 +2130,7 @@ export default (() => {
 					How to call the option window
 				</Text>
 			</List>
-			<Image
-				width="100%"
-				src="https://artemzhigalin.ru/src/onboarding-tutorial-1-1-dragdrop.svg"
-				border-radius="4px"
-				max-width="540px"
-				margin="0px 0px 48px 0px"
-			/>
-			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
+			<Box position="relative" display="inline-block" margin="48px 0px 0px 0px" quarkly-title="Step">
 				<Text
 					font="italic 700 28px/1.2 --fontFamily-sans"
 					overflow-wrap="normal"
@@ -2146,5 +2159,27 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });

@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Image, Span, List, Icon, Button, Em } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Image, Span, List, Icon, Button, Em } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -100,7 +100,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				All page elements are represented in the code editor. Let's see how this page looks like.
+				All page elements are represented in the code editor. Let's see what this page looks like.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -177,7 +177,7 @@ export default (() => {
 										TIP
 									</Span>
 									<br />
-									You can also open the editor by pressing the following shortcuts:
+									You can also open the editor with the following shortcuts:
 									<br />
 									Mac:
 									<Span
@@ -390,7 +390,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				In the code editor, you can add elements and set their properties just like on a page. Let's try to add a new element to the card
+				In the code editor, you can add elements and set their properties just like on a page. Let's try to add a new element to the card.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -436,7 +436,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select an icon in the card
+									Select an icon on the card.
 								</Text>
 							</Box>
 						</Box>
@@ -662,11 +662,23 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									&lt;Text&gt;
+									&lt;Text
 									<br />
-									Trips
+									{"                "}color="--light"
 									<br />
-									&lt;/Text&gt;
+									{"    "}text-align="center"
+									<br />
+									{"    "}margin="16px 0px 0px 0px"
+									<br />
+									{"    "}text-transform="uppercase"
+									<br />
+									{"    "}letter-spacing="1.5px"
+									<br />
+									{"          "}&gt;
+									<br />
+									{"            "}Trips
+									<br />
+									{"          "}&lt;/Text&gt;
 								</Text>
 							</Box>
 						</Box>
@@ -685,15 +697,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -780,15 +794,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -832,9 +848,8 @@ export default (() => {
 								color="--light"
 								text-align="center"
 								margin="16px 0px 0px 0px"
-								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
-								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -936,7 +951,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				It’s very convenient to work with elements and properties in the code editor: you can change, delete, move, duplicate, and paste elements into other elements. Let’s try to do it
+				It’s really easy to work with elements and properties in the code editor. You can change, delete, move, duplicate, and paste elements into other elements. Let’s try to do that now.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -982,7 +997,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select an icon in the first card
+									Select an icon on the first card
 								</Text>
 							</Box>
 						</Box>
@@ -1033,15 +1048,7 @@ export default (() => {
 								>
 									Select the following line:
 								</Text>
-								<Text
-									display="block"
-									font="normal 300 18px/1.5 --fontFamily-mono"
-									margin="20px 0px 16px 0px"
-									width="100%"
-									color="--darkL2"
-								>
-									font="52px sans-serif"
-								</Text>
+								<Image border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-font-icon.png?v=2020-11-02T08:42:12.028Z" />
 								<Text
 									display="block"
 									font="--base"
@@ -1049,7 +1056,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Now, search and replace it. To do that, click the following shortcuts:
+									Now, search and replace it. To do that, use the following shortcuts:
 									<br />
 									Mac:{" "}
 									<Span
@@ -1161,7 +1168,7 @@ export default (() => {
 										f
 									</Span>
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-search.jpg?v=2020-10-28T14:02:13.123Z" border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" />
+								<Image border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-search-2x.png?v=2020-10-29T15:10:28.677Z" />
 							</Box>
 						</Box>
 					</Box>
@@ -1209,7 +1216,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									In the window that will appear, open the second field clicking on the arrow &gt;. And in the Replace field, enter:
+									In the window that appears, open the second field by clicking on the arrow &gt;. And in the Replace field, enter:
 								</Text>
 								<Text
 									display="block"
@@ -1220,7 +1227,7 @@ export default (() => {
 								>
 									font="72px sans-serif"
 								</Text>
-								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-find-replace.jpg?v=2020-10-28T13:51:55.637Z" border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" />
+								<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-editor-find-replace-2x.png?v=2020-10-29T15:12:04.820Z" border-radius="4px" margin="0px 0px 12px 0px" object-position="0px 0px" />
 								<Text
 									display="block"
 									font="--base"
@@ -1309,15 +1316,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1364,6 +1373,7 @@ export default (() => {
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -1438,6 +1448,7 @@ export default (() => {
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -1512,6 +1523,7 @@ export default (() => {
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -1562,15 +1574,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1617,6 +1631,7 @@ export default (() => {
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -1691,6 +1706,7 @@ export default (() => {
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -1765,6 +1781,7 @@ export default (() => {
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -1866,7 +1883,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				Sometimes, you may find it convenient to move a component or a group of component from one place to another. The cut and paste commands can be used for this purposes.
+				Sometimes you may find it convenient to move a component or a group of components from one place to another. The cut and paste commands can be used for this purpose.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -2148,7 +2165,7 @@ export default (() => {
 										text-overflow="clip"
 										hyphens="manual"
 									>
-										You can see all the options right-clicking on the code editor and selecting Command Palette.
+										You can see all the options by right-clicking on the code editor and selecting Command Palette.
 									</Span>
 								</Text>
 							</Box>
@@ -2377,15 +2394,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2428,10 +2447,11 @@ export default (() => {
 							<Text
 								color="--light"
 								text-align="center"
-								margin="16px 0px 16px 0px"
+								margin="16px 0px 0px 0px"
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -2482,15 +2502,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -2525,10 +2547,11 @@ export default (() => {
 							<Text
 								color="--light"
 								text-align="center"
-								margin="16px 0px 16px 0px"
+								margin="16px 0px 0px 0px"
 								md-font="normal 500 36px/1.2 --fontFamily-googleOpenSansCondensed"
 								sm-font="normal 500 24px/1.2 --fontFamily-googleOpenSansCondensed"
 								text-transform="uppercase"
+								letter-spacing="1.5px"
 							>
 								Trips
 							</Text>
@@ -2638,7 +2661,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				You’ve worked through on how to use the code editor. What about a little practice now?
+				You’ve worked through how to use the code editor. How about practicing a little now?
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -2740,15 +2763,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -2770,15 +2795,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -2855,8 +2882,30 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				Now, you can create your project on the fly! If you want to remember something, you can always come back to this guide.
+				Now you can create your own project on the fly! If you want to double-check something or refrech your memory, you can always come back to this guide.
 			</Text>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });

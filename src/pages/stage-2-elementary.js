@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Em, Image, Span, List, Icon, Button, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Em, Image, Span, List, Icon, Button, Strong } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -43,7 +43,7 @@ export default (() => {
 				width="66.66%"
 				color="--lightD2"
 			>
-				To liven up the pages and make them responsive and adaptive, specify custom styles for the hover state and at breakpoints
+				To bring the pages to life and make them responsive and adaptive, specify custom styles for the hover state and at breakpoints.
 			</Text>
 		</Section>
 		<Section padding="100px 0" sm-padding="40px 0">
@@ -97,9 +97,9 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				When you mouse over an element, it may be configured to change styles. In the{" "}
+				An element can be configured to change styles when you mouse over it. In the{" "}
 				<Em>
-					preview mode{" "}
+					Preview mode{" "}
 				</Em>
 				<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
 				, hover over the example card.{" "}
@@ -146,7 +146,14 @@ export default (() => {
 								color="--darkL2"
 							>
 								Choose the card{" "}
-								<Em>
+								<Em
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
 									background
 								</Em>
 								{" "}(
@@ -168,9 +175,13 @@ export default (() => {
 								>
 									Box
 								</Span>
-								{"  "}) and switch the state to hover.
+								{"  "}) and switch the state to{" "}
+								<Em>
+									hover
+								</Em>
+								. This state changes the element look when mousing over it.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-hover-state.jpg?v=2020-10-28T07:22:37.214Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-hover-state.svg?v=2020-10-29T09:02:03.858Z" border-radius="4px" />
 							<Text
 								display="inline-block"
 								font="--base"
@@ -178,7 +189,11 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								That's how the card is going to look like when you mouse over it. Currently, the way the card looks is default. Let's change the styles to check out the effect.
+								Let's change the{" "}
+								<Em>
+									hover
+								</Em>
+								{" "}styles to check out the effect.
 							</Text>
 						</Box>
 					</Box>
@@ -208,7 +223,7 @@ export default (() => {
 							<Text
 								display="block"
 								font="--base"
-								margin="0px 0px 16px 0px"
+								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
 							>
@@ -234,7 +249,7 @@ export default (() => {
 								>
 									Background
 								</Em>
-								{" "}group. Click in the input field to open the window with settings. There, specify the{" "}
+								{" "}group. Click in the input field to open the settings window. There, specify the{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -258,7 +273,7 @@ export default (() => {
 								</Em>
 								{" "}property.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-background-size.jpg?v=2020-10-28T07:25:46.072Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-background-size.svg?v=2020-10-29T09:20:19.414Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -300,11 +315,11 @@ export default (() => {
 									text-overflow="clip"
 									hyphens="manual"
 								>
-									the preview mode
+									the preview mode{" "}
 								</Em>
-								. For this, click on the button{" "}
+								by clicking on the button{" "}
 								<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
-								{" "}or combination of keys:
+								{" "}or using the shortcuts:
 								<br />
 								Mac:{" "}
 								<Span
@@ -448,7 +463,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Mouse over the card to check out how the effect is applied.
+								Mouse over the card to check that the effect has been applied.
 							</Text>
 							<Text
 								display="inline-block"
@@ -474,7 +489,7 @@ export default (() => {
 									hyphens="manual"
 									text-transform="uppercase"
 								>
-									Note
+									Tip
 								</Span>
 								<br />
 								<Span
@@ -515,15 +530,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -571,7 +588,7 @@ export default (() => {
 								</Span>
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -594,15 +611,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -642,7 +661,7 @@ export default (() => {
 								INTO THE WILD{"  "}
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -713,7 +732,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				When mousing over an element, the styles change. Yet, at the moment it happens abruptly. Let's make the transitions smoother.
+				When mousing over an element, the styles change. But at the moment it happens abruptly. Let's make the transitions smoother.
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -755,6 +774,13 @@ export default (() => {
 								color="--darkL2"
 							>
 								Choose the card background (
+								<Image
+									width="24px"
+									height="24px"
+									vertical-align="top"
+									src="https://artemzhigalin.ru/src/onboarding-tutorial-box.svg"
+									margin="0px 2px 0px 2px"
+								/>
 								<Span
 									color="--primary"
 									overflow-wrap="normal"
@@ -809,9 +835,9 @@ export default (() => {
 									tab
 								</Span>
 								. 
-Click in the input field to open the window with settings.{" "}
+Click in the input field to open the settings window.{" "}
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-transition-section.jpg?v=2020-10-28T07:30:15.538Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-transition-section.svg?v=2020-10-29T09:20:48.559Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -893,7 +919,7 @@ Click in the input field to open the window with settings.{" "}
 									text-overflow="clip"
 									hyphens="manual"
 								>
-									property that we've changed before.
+									property that we've changed in the stage 1.
 								</Span>
 							</Text>
 						</Box>
@@ -1095,10 +1121,10 @@ Click in the input field to open the window with settings.{" "}
 									text-overflow="clip"
 									hyphens="manual"
 								>
-									. This means the delay before the transition in seconds.
+									. This sets the delay in seconds before the transition.
 								</Span>
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-transition-filled.jpg?v=2020-10-28T07:30:24.899Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-transition-filled.svg?v=2020-10-29T09:22:35.218Z" border-radius="4px" />
 						</Box>
 					</Box>
 					<Box
@@ -1149,15 +1175,17 @@ Click in the input field to open the window with settings.{" "}
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1196,7 +1224,7 @@ Click in the input field to open the window with settings.{" "}
 								INTO THE WILD{"  "}
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -1219,15 +1247,17 @@ Click in the input field to open the window with settings.{" "}
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -1268,7 +1298,7 @@ Click in the input field to open the window with settings.{" "}
 								INTO THE WILD{"  "}
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -1342,7 +1372,7 @@ Click in the input field to open the window with settings.{" "}
 				md-width="100%"
 				lg-width="100%"
 			>
-				In Quarkly, it's very convenient to set up styles to fit a wide range of devices. See it for yourself by making the card adaptive.{" "}
+				In Quarkly, it's really easy to set up styles to suit a wide range of devices. See it for yourself by making the card adaptive.{" "}
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -1392,7 +1422,7 @@ Click in the input field to open the window with settings.{" "}
 								Grab the page border and drag it to the left. As the page width decreases, the example card will rebuild itself. This happens thanks to custom styles at breakpoints. Let's reproduce this behavior.
 							</Text>
 							<Image
-								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-page-resize.png?v=2020-10-28T07:38:49.782Z"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-page-resize.svg?v=2020-10-29T09:43:35.489Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
@@ -1434,9 +1464,9 @@ Click in the input field to open the window with settings.{" "}
 								sm-margin="12px 0px 12px 0px"
 								padding="0px 12px 0px 0px"
 							>
-								Get back to the default page width. For this, click on the arrow icon next to the window sizes in the top bar and choose default.
+								First return to the default page width by clicking on the arrow icon next to the window sizes in the top bar and choosing Default.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-default-breakpoint-state.jpg?v=2020-10-28T07:38:49.789Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-default-breakpoint-state.svg?v=2020-10-29T09:23:14.413Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -1472,7 +1502,7 @@ Click in the input field to open the window with settings.{" "}
 								color="--darkL2"
 								sm-margin="12px 0px 12px 0px"
 							>
-								Now narrow the page width until you see the violet notification bar saying, "
+								Now decrease the page width until you see the blue notification bar saying, "
 								<Strong
 									overflow-wrap="normal"
 									word-break="normal"
@@ -1493,9 +1523,17 @@ Click in the input field to open the window with settings.{" "}
 								>
 									.
 								</Span>
-								" This means you entered the zone where the LG breakpoint works.
+								" This means you entered the zone where the{" "}
+								<Em>
+									lg
+								</Em>
+								{" "}
+								<Em>
+									breakpoint{" "}
+								</Em>
+								works.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-lg.jpg?v=2020-10-28T07:42:55.695Z" border-radius="4px" margin="0px 0px 16px 0px" object-position="0px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-breakpoint-lg.svg?v=2020-10-29T09:37:45.935Z" border-radius="4px" margin="0px 0px 16px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -1530,7 +1568,7 @@ Click in the input field to open the window with settings.{" "}
 							color="--darkL2"
 							sm-margin="12px 0px 12px 0px"
 						>
-							Set up styles for elements from the example:
+							Finally, set up styles for elements from the example:
 						</Text>
 					</Box>
 				</List>
@@ -1547,15 +1585,17 @@ Click in the input field to open the window with settings.{" "}
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1576,15 +1616,17 @@ Click in the input field to open the window with settings.{" "}
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -1643,7 +1685,7 @@ Click in the input field to open the window with settings.{" "}
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -1721,7 +1763,7 @@ Click in the input field to open the window with settings.{" "}
 				<Em>
 					hover
 				</Em>
-				{" "}state and at multiple breakpoints. What about a little practice now?
+				{" "}state and at multiple breakpoints. How about practicing a little now?
 			</Text>
 			<Box display="flex" width="100%">
 				<List
@@ -1780,15 +1822,17 @@ Click in the input field to open the window with settings.{" "}
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1809,15 +1853,17 @@ Click in the input field to open the window with settings.{" "}
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						EXAMPLE
 					</Text>
@@ -1856,7 +1902,7 @@ Click in the input field to open the window with settings.{" "}
 								INTO THE WILD
 							</Text>
 							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.{"  "}
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember{"  "}
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -1918,7 +1964,7 @@ Click in the input field to open the window with settings.{" "}
 				margin="0px 0px 20px 0px"
 				color="--dark"
 			>
-				Move on to the next stage
+				Move to the next stage
 			</Text>
 			<Text
 				as="p"
@@ -1927,17 +1973,14 @@ Click in the input field to open the window with settings.{" "}
 				width="66.66%"
 				color="--darkL2"
 			>
-				Congrats! You've got new hands-off skills to work with Quarkly elements! At the next stage, you are going to get familiar with components and learn how to:
+				Congrats! You've got new hands-on skills to work with Quarkly elements! In the next stage you're going to get familiar with components and learn how to:
 			</Text>
 			<List margin="0px 0px 16px 0px">
-				<Text font="--base">
-					Create components
-				</Text>
 				<Text font="--base">
 					Understand their benefits
 				</Text>
 				<Text font="--base">
-					Update components
+					Create and update components
 				</Text>
 				<Text font="--base">
 					Reset changes and detach components
@@ -1957,7 +2000,7 @@ Click in the input field to open the window with settings.{" "}
 					INTO THE WILD
 				</Override>
 				<Override slot="text1">
-					A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.{"  "}
+					A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 				</Override>
 				<Override slot="button">
 					JOIN
@@ -1992,5 +2035,27 @@ Click in the input field to open the window with settings.{" "}
 				/>
 			</Box>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });

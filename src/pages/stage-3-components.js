@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Text, Box, Span, Image, Em, List, Icon, Button } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Span, Image, Em, List, Icon, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -44,7 +44,7 @@ export default (() => {
 				width="66.66%"
 				color="--lightD2"
 			>
-				To speed up your workflow and make it seamless, you can convert a group of elements into a component. In addition, this approach reduces the code and makes the project clearer
+				To speed up your workflow and make it more efficient, you can convert a group of elements into a component. This approach also reduces the amount of code and generally makes the project cleaner.
 			</Text>
 		</Section>
 		<Section padding="100px 0" sm-padding="40px 0">
@@ -101,7 +101,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				If an element is repeated in the project, you can convert it into a component, duplicate and change its content
+				If an element is repeated in the project, you can convert it into a component, duplicate and change its content.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -146,7 +146,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the card container, right-click and select “Create Component”.
+									Select the card container, right-click and select “Convert to Component”.
 								</Text>
 								<Text
 									display="inline-block"
@@ -175,11 +175,11 @@ export default (() => {
 										Note
 									</Span>
 									<br />
-									You can convert only one element that can contain other elements.
+									You can convert only one element, but that element can contain other elements.
 								</Text>
 							</Box>
 							<Image
-								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-convert-to-component.jpg?v=2020-10-28T07:54:39.456Z"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-convert-to-component.svg?v=2020-10-29T09:44:49.544Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
@@ -264,7 +264,7 @@ export default (() => {
 										Tip
 									</Span>
 									<br />
-									You can also duplicate elements using the shortcut
+									You can also duplicate elements using the shortcuts
 									<br />
 									Mac:{" "}
 									<Span
@@ -373,7 +373,7 @@ export default (() => {
 									.
 								</Text>
 							</Box>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-context-menu-duplicate.jpg?v=2020-10-28T07:56:19.373Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-context-menu-duplicate.svg?v=2020-10-29T09:45:00.462Z" border-radius="4px" margin="24px 0px 0px 0px" object-position="0px 0px" />
 						</Box>
 					</Box>
 					<Box
@@ -432,15 +432,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -498,7 +500,7 @@ export default (() => {
 								sm-margin="10px 0px 4px 0px"
 								md-margin="16px 0px 8px 0px"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
 								background="--color-secondary"
@@ -524,17 +526,19 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
-						ПРИМЕР
+						EXAMPLE
 					</Text>
 					<Box
 						background="rgba(237, 242, 246, 0) repeating-linear-gradient(-45deg,--color-light 0px,--color-light 5px,rgba(0,0,0,0) 5px,rgba(0,0,0,0) 10px) center center space"
@@ -556,7 +560,7 @@ export default (() => {
 								JOIN
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 						</Components.CardExample>
 						<Components.CardExample margin="0px 32px 0px 0px">
@@ -567,7 +571,7 @@ export default (() => {
 								JOIN
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 						</Components.CardExample>
 						<Components.CardExample>
@@ -578,7 +582,7 @@ export default (() => {
 								JOIN
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 						</Components.CardExample>
 					</Box>
@@ -639,7 +643,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				You can change the styles and content of each component, and the structure will be preserved
+				You can change the styles and content of each component, and the structure will be kept.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -705,15 +709,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -734,7 +740,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -745,7 +751,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -756,7 +762,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -769,15 +775,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -798,7 +806,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -810,7 +818,7 @@ export default (() => {
 							</Override>
 							<Override slot="icon" font="42px sans-serif" margin="0px 0px 12px 0px" />
 							<Override slot="text1" font="normal 300 22px/1.5 --fontFamily-sansHelvetica">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" background="--color-indigo" color="--light">
 								JOIN
@@ -821,7 +829,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1" font="normal 300 24px/1.5 --fontFamily-googleOpenSansCondensed">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" border-radius="12px" background="--color-green" color="--light">
 								JOIN
@@ -932,7 +940,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the last component that you styled at the previous step. Click on the{" "}
+									Select the last component that you styled in the previous step. Click on the{" "}
 									<Em>
 										“3 dots”
 									</Em>
@@ -947,11 +955,11 @@ export default (() => {
 									>
 										“Push All to Master”
 									</Em>
-									{" "}in the drop-down menu.
+									{" "}from the drop-down menu.
 								</Text>
 							</Box>
 							<Image
-								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-menu-push-all.jpg?v=2020-10-28T07:59:39.597Z"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-menu-push-all.svg?v=2020-10-29T14:17:28.293Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
@@ -973,15 +981,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1002,7 +1012,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								Join
@@ -1014,7 +1024,7 @@ export default (() => {
 							</Override>
 							<Override slot="icon" font="42px sans-serif" margin="0px 0px 12px 0px" />
 							<Override slot="text1" font="normal 300 22px/1.5 --fontFamily-sansHelvetica">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" background="--color-indigo" color="--light">
 								JOIN
@@ -1025,7 +1035,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1" font="normal 300 24px/1.5 --fontFamily-googleOpenSansCondensed">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" border-radius="12px" background="--color-green" color="--light">
 								JOIN
@@ -1039,15 +1049,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1071,7 +1083,7 @@ export default (() => {
 								JOIN
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 						</Components.CardExampleStep3>
 						<Components.CardExampleStep3 margin="0px 32px 0px 0px" border-radius="36px">
@@ -1080,7 +1092,7 @@ export default (() => {
 							</Override>
 							<Override slot="icon" font="42px sans-serif" margin="0px 0px 12px 0px" />
 							<Override slot="text1" font="normal 300 22px/1.5 --fontFamily-sansHelvetica">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" background="--color-indigo" color="--light">
 								JOIN
@@ -1094,7 +1106,7 @@ export default (() => {
 								JOIN
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 						</Components.CardExampleStep3>
 					</Box>
@@ -1159,7 +1171,7 @@ export default (() => {
 				<Em>
 					Reset All Overrides
 				</Em>
-				{" "}option
+				{" "}option.
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<Box
@@ -1196,11 +1208,7 @@ export default (() => {
 								width="100%"
 								color="--darkL2"
 							>
-								Choose the second component that you styled. Click on the{" "}
-								<Em>
-									“3 dots”
-								</Em>
-								{" "}icon. Select{" "}
+								Choose the second component that you styled. Select{" "}
 								<Em
 									overflow-wrap="normal"
 									word-break="normal"
@@ -1211,11 +1219,11 @@ export default (() => {
 								>
 									the Reset All Overrides
 								</Em>
-								{" "}option in the drop-down menu.
+								{" "}option from the drop-down menu.
 							</Text>
 						</Box>
 						<Image
-							src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-menu-reset-all.jpg?v=2020-10-28T08:22:26.522Z"
+							src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-menu-reset-all.svg?v=2020-10-29T14:18:03.856Z"
 							border-radius="4px"
 							margin="24px 0px 0px 0px"
 							sm-margin="0px 0px 0px 0px"
@@ -1236,15 +1244,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1265,7 +1275,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								Join
@@ -1277,7 +1287,7 @@ export default (() => {
 							</Override>
 							<Override slot="icon" font="42px sans-serif" margin="0px 0px 12px 0px" />
 							<Override slot="text1" font="normal 300 22px/1.5 --fontFamily-sansHelvetica">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" background="--color-indigo" color="--light">
 								JOIN
@@ -1288,7 +1298,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1301,15 +1311,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1330,7 +1342,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1341,7 +1353,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1352,7 +1364,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1" font="normal 300 24px/1.5 --fontFamily-googleOpenSansCondensed">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" border-radius="12px" background="--color-green" color="--light">
 								JOIN
@@ -1417,7 +1429,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				Sometimes, you may need to turn a component back into a set of elements. This may be necessary for changing the structure of an element or adding new elements to the component. To do that, use the{" "}
+				Sometimes you may need to turn a component back into a set of elements, for example if you want to change the structure of an element or add new elements to the component. To do that, use the{" "}
 				<Em
 					overflow-wrap="normal"
 					word-break="normal"
@@ -1474,11 +1486,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Select the second component. Click on the{" "}
-									<Em>
-										“3 dots”
-									</Em>
-									{" "}icon in the upper right corner of the right panel and select{" "}
+									Choose the second component and select the{" "}
 									<Em
 										overflow-wrap="normal"
 										word-break="normal"
@@ -1487,13 +1495,13 @@ export default (() => {
 										text-overflow="clip"
 										hyphens="manual"
 									>
-										the Detach
+										Detach
 									</Em>
-									{" "}option.
+									{" "}option next to the component name.
 								</Text>
 							</Box>
 							<Image
-								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-detach.jpg?v=2020-10-28T08:32:05.719Z"
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-component-detach.svg?v=2020-10-29T14:18:14.819Z"
 								border-radius="4px"
 								margin="24px 0px 0px 0px"
 								sm-margin="0px 0px 0px 0px"
@@ -1535,7 +1543,7 @@ export default (() => {
 									width="100%"
 									color="--darkL2"
 								>
-									Style the resulting elements as in the example below.
+									Style the resulting elements to match the example below.
 								</Text>
 							</Box>
 						</Box>
@@ -1554,15 +1562,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1583,7 +1593,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1594,7 +1604,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1605,7 +1615,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1618,15 +1628,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1647,7 +1659,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button">
 								JOIN
@@ -1705,7 +1717,7 @@ export default (() => {
 								md-margin="16px 0px 8px 0px"
 								font="normal 300 18px/1.5 --fontFamily-sans"
 							>
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Icon
 								category="md"
@@ -1725,7 +1737,7 @@ export default (() => {
 								INTO THE WILD
 							</Override>
 							<Override slot="text1" font="normal 300 24px/1.5 --fontFamily-googleOpenSansCondensed">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="button" border-radius="12px" background="--color-green" color="--light">
 								JOIN
@@ -1790,7 +1802,7 @@ export default (() => {
 				md-width="100%"
 				lg-width="100%"
 			>
-				{" \n    "}You’ve worked through the main options for using components on a page. What about a little practice now?
+				{" \n    "}You’ve worked through the main options for using components on a page. How about practicing a little now?
 			</Text>
 			<Box display="flex" flex-direction="column" width="100%">
 				<List
@@ -1892,15 +1904,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						WORKSPACE
 					</Text>
@@ -1922,15 +1936,17 @@ export default (() => {
 						font="--capture"
 						margin="0 auto 0px auto"
 						text-transform="uppercase"
-						color="--grey"
+						color="--light"
 						display="inline-block"
-						background="#FFF"
+						background="--color-indigo"
 						padding="6px 12px 6px 12px"
 						position="relative"
 						top="13px"
 						border-style="solid"
 						border-width="1px"
-						border-color="--color-lightD2"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 					>
 						Example
 					</Text>
@@ -1951,7 +1967,7 @@ export default (() => {
 								Sea
 							</Override>
 							<Override slot="text2">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Override slot="text">
 								TOUR
@@ -1966,7 +1982,7 @@ export default (() => {
 							</Override>
 							<Override slot="icon" icon="FaMountain" />
 							<Override slot="text2">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 							<Text
 								position="absolute"
@@ -1996,7 +2012,7 @@ export default (() => {
 								TOUR
 							</Override>
 							<Override slot="text2">
-								A wonderful journey to woods and mountains will heal your mind, body, and soul. It will be a trip to remember.
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Override>
 						</Components.CardExampleSuper>
 					</Box>
@@ -2045,7 +2061,7 @@ export default (() => {
 				margin="0px 0px 20px 0px"
 				color="--dark"
 			>
-				Move on to the next stage
+				Move to the next stage
 			</Text>
 			<Text
 				as="p"
@@ -2054,7 +2070,7 @@ export default (() => {
 				width="50%"
 				color="--darkL2"
 			>
-				You’ve learned how to work with components in Quarkly. At the next stage, you will get to know theme
+				You’ve learned how to work with components in Quarkly. In the next stage, you'll get to know about themes
 
 
  and will learn:
@@ -2070,7 +2086,7 @@ export default (() => {
 					How to change a value
 				</Text>
 				<Text font="--base">
-					What are breakpoints and how to work with them.
+					What breakpoints are and how to work with them.
 				</Text>
 			</List>
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 0px" quarkly-title="Step">
@@ -2102,5 +2118,27 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
+		<Link
+			font={"--capture"}
+			font-size={"10px"}
+			position={"fixed"}
+			bottom={"12px"}
+			right={"12px"}
+			z-index={"4"}
+			border-radius={"4px"}
+			padding={"5px 12px 4px"}
+			background-color={"--dark"}
+			opacity={"0.6"}
+			hover-opacity={"1"}
+			color={"--light"}
+			cursor={"pointer"}
+			transition={"--opacityOut"}
+			quarkly-title={"Badge"}
+			text-decoration-line={"initial"}
+			href={"https://quarkly.io/"}
+			target={"_blank"}
+		>
+			Made on Quarkly
+		</Link>
 	</Theme>;
 });
