@@ -12,48 +12,40 @@ const defaultProps = {
 	"box-sizing": "border-box",
 	"padding": "48px 36px 72px 36px",
 	"opacity": "1",
-	"transition": "background 0.3s ease 0s",
-	"sm-padding": "36px 36px 48px 36px",
-	"margin": "0px 0px 0px 0px",
-	"background": "rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/210% no-repeat",
-	"hover-background": "rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/230% no-repeat"
+	"margin": "0px 32px 0px 0px",
+	"lg-margin": "0px 32px 24px 0px",
+	"background": "rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover",
+	"hover-background": "rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 100% 0%/cover",
+	"transition": "background 0.3s ease 0s"
 };
 const overrides = {
 	"icon": {
 		"kind": "Icon",
 		"props": {
-			"font": "64px sans-serif",
-			"color": "--light",
-			"md-font": "54px sans-serif",
-			"sm-font": "36px sans-serif",
 			"category": "fa",
-			"icon": FaTree
+			"icon": FaTree,
+			"color": "--light",
+			"font": "44px sans-serif"
 		}
 	},
 	"text": {
 		"kind": "Text",
 		"props": {
-			"font": "normal 500 42px/1.2 --fontFamily-googleOpenSansCondensed",
 			"text-transform": "uppercase",
 			"color": "--light",
 			"text-align": "center",
 			"margin": "16px 0px 0px 0px",
-			"md-font": "normal 600 36px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-			"sm-font": "normal 600 24px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-			"children": "ЛЕС И ГОРЫ"
+			"font": "--headline3",
+			"children": "INTO THE WILD"
 		}
 	},
 	"text1": {
 		"kind": "Text",
 		"props": {
-			"font": "--lead",
 			"color": "--lightD2",
 			"text-align": "center",
-			"md-font": "normal 300 16px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-			"sm-font": "normal 300 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-			"sm-margin": "10px 0px 4px 0px",
-			"md-margin": "16px 0px 8px 0px",
-			"children": "Удивительное путешествие по лесам и горам оздоровит вас и запомниться на всю жизнь"
+			"font": "--base",
+			"children": "A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember"
 		}
 	},
 	"button": {
@@ -68,15 +60,12 @@ const overrides = {
 			"margin": "24px 0px 0px 0px",
 			"opacity": "1",
 			"box-shadow": "0 12px 3px -4px rgba(3, 18, 7, 0.3)",
-			"md-font": "normal 300 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-			"sm-font": "normal 300 12px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
-			"sm-padding": "12px 18px 12px 18px",
-			"children": "Присоединиться"
+			"children": "JOIN"
 		}
 	}
 };
 
-const CardExampleStep2 = props => {
+const CardExample = props => {
 	const {
 		override,
 		children,
@@ -91,8 +80,8 @@ const CardExampleStep2 = props => {
 	</Box>;
 };
 
-Object.assign(CardExampleStep2, { ...Box,
+Object.assign(CardExample, { ...Box,
 	defaultProps,
 	overrides
 });
-export default CardExampleStep2;
+export default CardExample;

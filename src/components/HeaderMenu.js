@@ -20,7 +20,8 @@ const overrides = {
 		"kind": "Menu",
 		"props": {
 			"display": "flex",
-			"padding": "20px 0px 18px 0px"
+			"padding": "20px 0px 18px 0px",
+			"lg-flex-wrap": "wrap"
 		}
 	},
 	"menuOverride": {
@@ -42,35 +43,40 @@ const overrides = {
 		"kind": "Override",
 		"props": {
 			"slot": "link-stage-1-basics",
-			"children": "1. Basics"
+			"lg-padding": "8px 8px 8px 8px",
+			"children": "1.Basics"
 		}
 	},
 	"menuOverride2": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-stage-2-elementary",
-			"children": "2. Hover & Adaptive"
+			"lg-padding": "8px 8px 8px 8px",
+			"children": "2.Hover & Adaptive"
 		}
 	},
 	"menuOverride3": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-stage-3-components",
-			"children": "3. Components"
+			"lg-padding": "8px 8px 8px 8px",
+			"children": "3.Components"
 		}
 	},
 	"menuOverride4": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-stage-4-theme",
-			"children": "4. Theme"
+			"lg-padding": "8px 8px 8px 8px",
+			"children": "4.Theme"
 		}
 	},
 	"menuOverride5": {
 		"kind": "Override",
 		"props": {
 			"slot": "link-stage-5-code-editor",
-			"children": "5. Code Editor"
+			"lg-padding": "8px 8px 8px 8px",
+			"children": "5.Code Editor"
 		}
 	},
 	"menuOverride6": {
@@ -122,7 +128,13 @@ const overrides = {
 			"color": "--purple",
 			"font": "600 12px -apple-system, system-ui, \"Segoe UI\", Roboto, Oxygen, Ubuntu, Cantarell, \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\", sans-serif",
 			"hover-color": "--purple",
-			"cursor": "default"
+			"cursor": "default",
+			"lg-padding": "8px 8px 8px 8px"
+		}
+	},
+	"SectionContent": {
+		"props": {
+			"lg-flex-direction": "column"
 		}
 	}
 };

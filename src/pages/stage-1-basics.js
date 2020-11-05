@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Text, Box, Em, Image, Span, Icon, List, Button, Strong } from "@quarkly/widgets";
+import { Theme, Link, Text, Box, Em, Image, Span, Icon, List, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { Override, Section } from "@quarkly/components";
 import * as Components from "components";
@@ -26,6 +26,8 @@ export default (() => {
 			border-width="0px 0px 3px 0px"
 			border-style="solid"
 			border-color="--color-primary"
+			md-padding="80px 0px 60px 0px"
+			quarkly-title="Hero"
 		>
 			<Override slot="SectionContent" align-items="flex-start" flex-direction="column" />
 			<Text
@@ -35,6 +37,9 @@ export default (() => {
 				margin="20px 0 0 0"
 				width="33.33%"
 				color="--light"
+				lg-width="80%"
+				sm-width="100%"
+				md-width="100%"
 			>
 				Quarkly Basics
 			</Text>
@@ -44,11 +49,14 @@ export default (() => {
 				margin="20px 0 0 0"
 				width="66.66%"
 				color="--lightD2"
+				lg-width="80%"
+				sm-width="100%"
+				md-width="100%"
 			>
 				Project pages consist of styled elements. Here you will learn how to add elements to the page, fill them with information, and style them.
 			</Text>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 1. Add Elements">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -69,7 +77,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 1 OF 6
+					STEP 1 OF 7
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -89,6 +97,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Add elements
 			</Text>
@@ -98,6 +108,9 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-width="100%"
+				md-margin="0px 0 16px 0"
+				lg-width="100%"
 			>
 				To start, open the{" "}
 				<Em>
@@ -116,7 +129,7 @@ export default (() => {
 				</Em>
 				{" "}tab. Next, drag elements into the workspace.
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -124,6 +137,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box
 						width="auto"
@@ -133,6 +148,7 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -147,7 +163,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
@@ -159,6 +175,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Сhoose
 								<Image
@@ -192,6 +209,8 @@ export default (() => {
 						flex-direction="row"
 						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
+						md-margin="0px 0px 0px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -206,7 +225,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
@@ -218,6 +237,7 @@ export default (() => {
 								margin="20px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 8px 0px"
 							>
 								After that,
 
@@ -347,6 +367,7 @@ export default (() => {
 								margin="20px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
+								lg-margin="20px 0px 0px 0px"
 							>
 								The first text element —
 								<Image
@@ -379,6 +400,7 @@ export default (() => {
 						flex-direction="row"
 						flex-wrap="nowrap"
 						quarkly-title="Item 3"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -393,7 +415,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
@@ -404,6 +426,7 @@ export default (() => {
 							margin="20px 0px 16px 0px"
 							width="100%"
 							color="--darkL2"
+							sm-margin="12px 0px 16px 0px"
 						>
 							Double-click on the text and button elements to change their content according to the example.
 						</Text>
@@ -415,6 +438,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<Text
 						text-align="center"
@@ -496,7 +521,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 2. Style the Background">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -517,7 +542,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 2 OF 6
+					STEP 2 OF 7
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -537,6 +562,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Style the background
 			</Text>
@@ -546,6 +573,9 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
+				lg-width="100%"
 			>
 				Now we’ve created the card structure, let's style it a bit by adding a{" "}
 				<Em>
@@ -557,7 +587,7 @@ export default (() => {
 				</Em>
 				.
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -565,6 +595,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box
 						width="auto"
@@ -574,6 +606,7 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -588,7 +621,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
@@ -600,6 +633,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Choose{" "}
 								<Image
@@ -621,7 +655,7 @@ export default (() => {
 									Box
 								</Span>
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-selected-box.svg?v=2020-10-27T19:10:47.815Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-selected-box.svg?v=2020-10-27T19:10:47.815Z" border-radius="4px" max-width="100%" />
 						</Box>
 					</Box>
 					<Box
@@ -632,6 +666,7 @@ export default (() => {
 						flex-direction="row"
 						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -646,7 +681,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
@@ -658,6 +693,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Navigate to the{"  "}
 								<Em
@@ -708,7 +744,7 @@ export default (() => {
 									</Em>
 								</Span>
 							</Text>
-							<Image src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" />
+							<Image src="https://artemzhigalin.ru/src/onboarding-tutorial-2-1-wh.svg" border-radius="4px" max-width="100%" />
 						</Box>
 					</Box>
 					<Box
@@ -719,6 +755,7 @@ export default (() => {
 						flex-direction="row"
 						flex-wrap="nowrap"
 						quarkly-title="Item 3"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -733,7 +770,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
@@ -745,6 +782,7 @@ export default (() => {
 								margin="20px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 8px 0px"
 							>
 								Now go to{" "}
 								<Em
@@ -786,6 +824,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-width="100%"
+					md-padding="0px 0px 0px 0px"
 				>
 					<Text
 						text-align="center"
@@ -864,7 +904,7 @@ export default (() => {
 						min-height="320px"
 						text-align="left"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?fit=crop&w=750&q=80) center/cover" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?fit=crop&w=750&q=80) 50% 50%/cover" height="320px">
 							<Icon category="md" icon={MdFace} />
 							<Text>
 								Into the Wild
@@ -880,7 +920,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 3. Style your Text and Button">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -901,7 +941,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 3 OF 6
+					STEP 3 OF 7
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -921,6 +961,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Style your text and button
 			</Text>
@@ -930,10 +972,13 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
+				lg-width="100%"
 			>
 				Let's put your knowledge of styles into practice and try to style the button and text as to match the example.
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -941,6 +986,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box
 						width="auto"
@@ -950,6 +997,7 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -964,7 +1012,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
@@ -976,6 +1024,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Style your heading and description according to the example. This time use the{" "}
 								<Em
@@ -999,7 +1048,7 @@ export default (() => {
 									{" "}tab
 								</Span>
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-typography-section.svg?v=2020-10-27T19:37:29.655Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-typography-section.svg?v=2020-10-27T19:37:29.655Z" border-radius="4px" max-width="100%" />
 							<Text
 								display="inline-block"
 								font="normal 300 14px/1.7 --fontFamily-sans"
@@ -1186,8 +1235,9 @@ export default (() => {
 								>
 									v
 								</Span>
-								, 
-						Windows:
+								,{" "}
+								<br />
+								Windows:
 								<br />
 								<Span
 									min-width="18px"
@@ -1355,6 +1405,7 @@ export default (() => {
 						flex-direction="row"
 						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -1369,7 +1420,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
@@ -1381,6 +1432,7 @@ export default (() => {
 								margin="20px 0px 8px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 8px 0px"
 							>
 								Now style{" "}
 								<Image
@@ -1461,8 +1513,8 @@ export default (() => {
 									</Text>
 								</Box>
 							</List>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-background-section.svg?v=2020-10-27T19:37:29.672Z" border-radius="4px" />
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-borders-section.svg?v=2020-10-27T19:37:29.672Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-background-section.svg?v=2020-10-27T19:37:29.672Z" border-radius="4px" max-width="100%" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-borders-section.svg?v=2020-10-27T19:37:29.672Z" border-radius="4px" max-width="100%" />
 						</Box>
 					</Box>
 					<Box
@@ -1473,6 +1525,8 @@ export default (() => {
 						flex-direction="row"
 						flex-wrap="nowrap"
 						quarkly-title="Item 3"
+						sm-flex-direction="column"
+						lg-margin="0px 0px 12px 0px"
 					>
 						<Text
 							background="--color-indigo"
@@ -1487,7 +1541,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
@@ -1499,6 +1553,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Add the shadow for{" "}
 								<Image
@@ -1543,7 +1598,7 @@ export default (() => {
 								</Em>
 								property. Copy the value from the example.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-effects-section.svg?v=2020-10-27T19:37:29.668Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-effects-section.svg?v=2020-10-27T19:37:29.668Z" border-radius="4px" max-width="100%" />
 						</Box>
 					</Box>
 					<Box
@@ -1554,6 +1609,7 @@ export default (() => {
 						flex-direction="row"
 						flex-wrap="nowrap"
 						quarkly-title="Item 3"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -1568,7 +1624,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							4
@@ -1580,6 +1636,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Finally, add indents for{" "}
 								<Image
@@ -1621,21 +1678,23 @@ export default (() => {
 									</Em>
 									tab
 								</Span>
-								. Specify margin{" "}
+								. Specify{" "}
 								<Em>
-									25px
+									margin 
+							24px
 								</Em>
-								{" "}for the top field, padding{" "}
+								{" "}for the top field,{" "}
 								<Em>
-									50px
+									padding 
+							34px
 								</Em>
 								{" "}for the sides and{" "}
 								<Em>
-									15px
+									12px
 								</Em>
 								{" "}for the top and bottom fields.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-indents-section.svg?v=2020-10-27T19:37:29.664Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-indents-section.svg?v=2020-10-27T19:37:29.664Z" border-radius="4px" max-width="100%" />
 						</Box>
 					</Box>
 				</List>
@@ -1645,6 +1704,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<Text
 						text-align="center"
@@ -1678,7 +1739,7 @@ export default (() => {
 						text-align="left"
 						display="flex"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?fit=crop&w=750&q=80) center/cover" border-radius="12px" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?fit=crop&w=750&q=80) 50% 50%/cover" border-radius="12px" height="320px">
 							<Icon category="md" icon={MdFace} />
 							<Text>
 								Into the Wild
@@ -1723,12 +1784,12 @@ export default (() => {
 						min-height="320px"
 						text-align="left"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover" border-radius="12px" height="320px">
 							<Icon category="md" icon={MdFace} />
-							<Text font="--headline2" text-transform="uppercase" color="--light" text-align="center">
+							<Text font="--headline3" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -1749,7 +1810,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 4. Change the Font">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -1770,7 +1831,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 4 OF 6
+					STEP 4 OF 7
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -1790,6 +1851,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Change the font
 			</Text>
@@ -1799,10 +1862,13 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
+				lg-width="100%"
 			>
 				Apply the distinctive font to the heading.
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -1810,6 +1876,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box
 						width="auto"
@@ -1819,6 +1887,7 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -1833,7 +1902,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							1
@@ -1845,6 +1914,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Select the heading. On the{" "}
 								<Em
@@ -1894,6 +1964,7 @@ export default (() => {
 								width="242px"
 								height="226px"
 								object-position="top"
+								max-width="100%"
 							/>
 						</Box>
 					</Box>
@@ -1905,6 +1976,7 @@ export default (() => {
 						flex-direction="row"
 						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -1919,7 +1991,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							2
@@ -1931,6 +2003,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								In the modal window, search for{" "}
 								<Em>
@@ -1947,6 +2020,7 @@ export default (() => {
 						justify-content="flex-start"
 						flex-direction="row"
 						quarkly-title="Item 2"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -1961,7 +2035,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							3
@@ -1973,6 +2047,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Now choose the new font for the heading. Open the panel with the font settings and choose{"  "}
 								<Em>
@@ -1980,7 +2055,7 @@ export default (() => {
 								</Em>
 								{" "}for the Family field.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-choosing-font-family.svg?v=2020-10-27T20:30:36.826Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-choosing-font-family.svg?v=2020-10-27T20:30:36.826Z" border-radius="4px" max-width="100%" margin="0px 0px 18px 0px" />
 						</Box>
 					</Box>
 				</List>
@@ -1990,6 +2065,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<Text
 						text-align="center"
@@ -2023,12 +2100,12 @@ export default (() => {
 						text-align="left"
 						display="flex"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover" border-radius="12px" height="320px">
 							<Icon category="md" icon={MdFace} />
-							<Text font="--headline2" text-transform="uppercase" color="--light" text-align="center">
+							<Text font="--headline3" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -2078,12 +2155,12 @@ export default (() => {
 						min-height="320px"
 						text-align="left"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover" border-radius="12px" height="320px">
 							<Icon category="md" icon={MdFace} />
-							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -2101,10 +2178,41 @@ export default (() => {
 							</Button>
 						</Box>
 					</Box>
+					<Text
+						display="inline-block"
+						font="normal 300 14px/1.5 --fontFamily-sans"
+						color="--darkL2"
+						background="rgba(0, 119, 204, 0.04)"
+						padding="8px 14px 16px 14px"
+						border-radius="6px"
+						border-width="1px"
+						border-style="solid"
+						border-color="--color-lightD2"
+						text-align="left"
+						max-width="480px"
+						margin="0px 0px 0px 0px"
+					>
+						<Span
+							font="--capture"
+							letter-spacing="1px"
+							color="--grey"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							text-transform="uppercase"
+						>
+							TIP
+						</Span>
+						<br />
+						The example uses Roboto Condensed instead of OpenSans Condensed because you have not connected it yet from Google Fonts.
+					</Text>
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 5. Change the Icon">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -2125,7 +2233,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 5 OF 6
+					STEP 5 OF 7
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -2145,6 +2253,7 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
 			>
 				Change the icon
 			</Text>
@@ -2154,10 +2263,12 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
 			>
 				Replace the icon with a more fitting one.
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -2165,6 +2276,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box
 						width="auto"
@@ -2224,7 +2337,7 @@ export default (() => {
 								text-overflow="clip"
 								hyphens="manual"
 							>
-								tree
+								tree{" "}
 							</Em>
 							into the search bar. Click on the icon{" "}
 							<Icon category="fa" icon={FaTree} display="inline-block" vertical-align="middle" />
@@ -2275,6 +2388,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<Text
 						text-align="center"
@@ -2308,12 +2423,12 @@ export default (() => {
 						text-align="left"
 						display="flex"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover" border-radius="12px" height="320px">
 							<Icon category="md" icon={MdFace} />
-							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -2363,12 +2478,12 @@ export default (() => {
 						min-height="320px"
 						text-align="left"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
-							<Icon category="fa" icon={FaTree} font="64px sans-serif" color="--light" />
-							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover" border-radius="12px" height="320px">
+							<Icon category="fa" icon={FaTree} font="44px sans-serif" color="--light" />
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -2389,7 +2504,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 6. Center Align Elements">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -2410,7 +2525,7 @@ export default (() => {
 					position="relative"
 					z-index="1"
 				>
-					STEP 6 OF 6
+					STEP 6 OF 7
 				</Text>
 				<Box
 					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
@@ -2430,6 +2545,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Center align elements{" "}
 			</Text>
@@ -2439,6 +2556,9 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
+				lg-width="100%"
 			>
 				By default, the content is left-aligned. Change this to center-aligned{" "}
 				<Span
@@ -2461,7 +2581,7 @@ export default (() => {
 				</Span>
 				{" "}with the help of display flex.
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column" sm-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -2469,6 +2589,8 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box
 						width="auto"
@@ -2478,6 +2600,7 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -2504,6 +2627,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Select
 								<Span
@@ -2567,7 +2691,7 @@ export default (() => {
 								</Span>
 								{"  "}will use flexbox — the more convenient way to align elements.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-display-flex.svg?v=2020-10-29T09:06:15.535Z" border-radius="4px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-display-flex.svg?v=2020-10-29T09:06:15.535Z" border-radius="4px" max-width="100%" />
 						</Box>
 					</Box>
 					<Box
@@ -2578,6 +2702,7 @@ export default (() => {
 						flex-direction="row"
 						quarkly-title="Item 2"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -2604,6 +2729,7 @@ export default (() => {
 								margin="20px 0px 16px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
 							>
 								Once you've chosen the flex value for display, new properties will appear under{"  "}
 								<Em>
@@ -2611,7 +2737,13 @@ export default (() => {
 								</Em>
 								{" "}Search for Flex direction and choose the column value.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-direction-column.svg?v=2020-10-29T09:17:53.875Z" border-radius="4px" margin="0px 0px 24px 0px" />
+							<Image
+								src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-direction-column.svg?v=2020-10-29T09:17:53.875Z"
+								border-radius="4px"
+								margin="0px 0px 24px 0px"
+								max-width="100%"
+								sm-margin="0px 0px 0px 0px"
+							/>
 						</Box>
 					</Box>
 					<Box
@@ -2622,6 +2754,7 @@ export default (() => {
 						flex-direction="row"
 						flex-wrap="nowrap"
 						quarkly-title="Item 3"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
@@ -2648,10 +2781,11 @@ export default (() => {
 								margin="20px 0px 18px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 18px 0px"
 							>
 								Choose the center value for Align items and Justify content properties.
 							</Text>
-							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-ai-jc-center.svg?v=2020-10-29T09:18:06.412Z" border-radius="4px" margin="0px 0px 24px 0px" />
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-flex-ai-jc-center.svg?v=2020-10-29T09:18:06.412Z" border-radius="4px" margin="0px 0px 24px 0px" max-width="100%" />
 							<Text
 								display="inline-block"
 								font="normal 300 14px/1.5 --fontFamily-sans"
@@ -2690,6 +2824,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<Text
 						text-align="center"
@@ -2723,12 +2859,12 @@ export default (() => {
 						text-align="left"
 						display="flex"
 					>
-						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover" border-radius="12px" height="320px">
-							<Icon category="fa" icon={FaTree} font="64px sans-serif" color="--light" />
-							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+						<Box width="100%" background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover" border-radius="12px" height="320px">
+							<Icon category="fa" icon={FaTree} font="44px sans-serif" color="--light" />
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -2780,21 +2916,20 @@ export default (() => {
 					>
 						<Box
 							width="100%"
-							background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover"
+							background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover"
 							border-radius="12px"
 							height="320px"
 							display="flex"
 							flex-direction="column"
 							align-items="center"
 							justify-content="center"
-							padding="48px 36px 72px 36px"
 							opacity="1"
 						>
-							<Icon category="fa" icon={FaTree} font="64px sans-serif" color="--light" />
-							<Text font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+							<Icon category="fa" icon={FaTree} font="44px sans-serif" color="--light" />
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
 								Into the Wild
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
+							<Text font="--base" color="--lightD2" text-align="center">
 								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 							</Text>
 							<Button
@@ -2815,7 +2950,332 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 7. Add Padding">
+			<Override slot="SectionContent" align-items="flex-start" />
+			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
+				<Text
+					as="p"
+					font="--capture"
+					margin="0 0 20px 0"
+					text-transform="uppercase"
+					color="white"
+					letter-spacing="1px"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					display="inline-block"
+					padding="0px 0px 4px 0px"
+					position="relative"
+					z-index="1"
+				>
+					STEP 7 OF 7
+				</Text>
+				<Box
+					background="rgba(0, 0, 0, 0) url(https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/brush-stroke.svg?v=2020-10-16T13:20:42.549Z) 0% 0% /100% no-repeat scroll padding-box"
+					display="inline-block"
+					width="136px"
+					height="46px"
+					position="absolute"
+					top="-8px"
+					right="auto"
+					bottom="auto"
+					left="-29px"
+				/>
+			</Box>
+			<Text
+				as="h2"
+				font="--headline2"
+				md-font="--headline2"
+				margin="0px 0px 20px 0px"
+				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
+			>
+				Add paddings
+			</Text>
+			<Text
+				as="p"
+				font="--lead"
+				margin="0px 0 30px 0"
+				width="50%"
+				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
+				lg-width="100%"
+			>
+				By default,{" "}
+				<Span
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					color="--primary"
+				>
+					<Image
+						width="24px"
+						height="24px"
+						vertical-align="text-top"
+						src="https://artemzhigalin.ru/src/onboarding-tutorial-box.svg"
+						margin="0px 2px 0px 2px"
+					/>
+					Box
+				</Span>
+				{" "}doesn't have paddings. Let's add them to make our card more attractive.
+			</Text>
+			<Box display="flex" width="100%" md-flex-direction="column" sm-flex-direction="column">
+				<List
+					as="ol"
+					list-style-type="none"
+					padding="0px 12px 0px 0px"
+					margin="0px 0px 16px 0px"
+					width="33.33%"
+					box-sizing="border-box"
+					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
+				>
+					<Box
+						width="auto"
+						display="flex"
+						align-items="flex-start"
+						justify-content="flex-start"
+						quarkly-title="Item 1"
+						flex-wrap="nowrap"
+						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
+					>
+						<Text
+							background="--color-indigo"
+							font="--base"
+							color="--lightD2"
+							padding="2px 8px 2px 8px"
+							border-radius="33px"
+							margin="16px 12px 16px 0px"
+							text-align="center"
+							flex="0 0 auto"
+							min-width="12px"
+							border-color="--color-darkL2"
+							border-style="solid"
+							border-width="1px"
+							sm-margin="16px 12px 0px 0px"
+							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+						>
+							1
+						</Text>
+						<Box width="100%">
+							<Text
+								display="block"
+								font="--base"
+								margin="20px 0px 16px 0px"
+								width="100%"
+								color="--darkL2"
+								sm-margin="12px 0px 16px 0px"
+							>
+								Select
+								<Span
+									color="--primary"
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									<Image
+										width="24px"
+										height="24px"
+										vertical-align="top"
+										src="https://artemzhigalin.ru/src/onboarding-tutorial-box.svg"
+										margin="0px 2px 0px 2px"
+									/>
+									Box
+								</Span>
+								{" "}on the page and open the{" "}
+								<Span
+									overflow-wrap="normal"
+									word-break="normal"
+									white-space="normal"
+									text-indent="0"
+									text-overflow="clip"
+									hyphens="manual"
+								>
+									<Em
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
+										text-indent="0"
+										text-overflow="clip"
+										hyphens="manual"
+									>
+										Indents{" "}
+									</Em>
+									tab
+								</Span>
+								. Specify{" "}
+								<Em>
+									48px
+								</Em>
+								{" "}for the top field,{" "}
+								<Em>
+									36px
+								</Em>
+								{" "}for the sides and{" "}
+								<Em>
+									72px
+								</Em>
+								{" "}for the bottom field.
+							</Text>
+							<Image src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-indents-section.svg?v=2020-10-27T19:37:29.664Z" border-radius="4px" max-width="100%" />
+						</Box>
+					</Box>
+				</List>
+				<Box
+					width="66.66%"
+					text-align="center"
+					position="relative"
+					padding="0px 0px 0px 54px"
+					box-sizing="border-box"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
+				>
+					<Text
+						text-align="center"
+						as="p"
+						font="--capture"
+						margin="0 auto 0px auto"
+						text-transform="uppercase"
+						color="--light"
+						display="inline-block"
+						background="--color-indigo"
+						padding="6px 12px 6px 12px"
+						position="relative"
+						top="13px"
+						border-style="solid"
+						border-width="1px"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+					>
+						WORKSPACE
+					</Text>
+					<Box
+						background="rgba(237, 242, 246, 0) repeating-linear-gradient(-45deg,--color-light 0px,--color-light 5px,rgba(0,0,0,0) 5px,rgba(0,0,0,0) 10px) center center space"
+						margin="0px 0px 20px 0px"
+						border-style="dashed"
+						border-width="1px"
+						border-color="--color-grey"
+						box-sizing="border-box"
+						padding="30px 30px 30px 30px"
+						min-height="320px"
+						text-align="left"
+						display="flex"
+					>
+						<Box
+							width="100%"
+							background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover"
+							border-radius="12px"
+							height="320px"
+							display="flex"
+							flex-direction="column"
+							align-items="center"
+							justify-content="center"
+						>
+							<Icon category="fa" icon={FaTree} font="44px sans-serif" color="--light" />
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+								Into the Wild
+							</Text>
+							<Text font="--base" color="--lightD2" text-align="center">
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
+							</Text>
+							<Button
+								background="--color-secondary"
+								color="--darkL2"
+								padding="12px 34px 12px 34px"
+								border-radius="24px"
+								text-transform="uppercase"
+								letter-spacing="1.2px"
+								margin="24px 0px 0px 0px"
+								box-shadow="0 12px 3px -4px rgba(3, 18, 7, 0.3)"
+								opacity="1"
+							>
+								Join
+							</Button>
+						</Box>
+					</Box>
+					<Text
+						text-align="center"
+						as="p"
+						font="--capture"
+						margin="0 auto 0px auto"
+						text-transform="uppercase"
+						color="--light"
+						display="inline-block"
+						background="--color-indigo"
+						padding="6px 12px 6px 12px"
+						position="relative"
+						top="13px"
+						border-style="solid"
+						border-width="1px"
+						border-color="--color-darkL2"
+						border-radius="6px"
+						text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
+					>
+						EXAMPLE
+					</Text>
+					<Box
+						background="rgba(237, 242, 246, 0) repeating-linear-gradient(-45deg,--color-light 0px,--color-light 5px,rgba(0,0,0,0) 5px,rgba(0,0,0,0) 10px) center center space"
+						border-style="dashed"
+						border-width="1px"
+						border-color="--color-grey"
+						box-sizing="border-box"
+						margin="0px 0px 20px 0px"
+						padding="30px 30px 30px 30px"
+						display="flex"
+						min-height="320px"
+						text-align="left"
+					>
+						<Box
+							width="100%"
+							background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover"
+							border-radius="12px"
+							height="320px"
+							display="flex"
+							flex-direction="column"
+							align-items="center"
+							justify-content="center"
+							padding="48px 36px 72px 36px"
+							opacity="1"
+						>
+							<Icon category="fa" icon={FaTree} font="44px sans-serif" color="--light" />
+							<Text font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed" text-transform="uppercase" color="--light" text-align="center">
+								Into the Wild
+							</Text>
+							<Text font="--base" color="--lightD2" text-align="center">
+								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
+							</Text>
+							<Button
+								background="--color-secondary"
+								color="--darkL2"
+								padding="12px 34px 12px 34px"
+								border-radius="24px"
+								text-transform="uppercase"
+								letter-spacing="1.2px"
+								margin="24px 0px 0px 0px"
+								opacity="1"
+								box-shadow="0 12px 3px -4px rgba(3, 18, 7, 0.3)"
+							>
+								Join
+							</Button>
+						</Box>
+					</Box>
+				</Box>
+			</Box>
+		</Section>
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Try It Yourself!">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -2856,6 +3316,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Try it yourself!
 			</Text>
@@ -2865,10 +3327,13 @@ export default (() => {
 				margin="0px 0 30px 0"
 				width="50%"
 				color="--darkL2"
+				md-margin="0px 0 16px 0"
+				md-width="100%"
+				lg-width="100%"
 			>
 				You've created your first card and learnt the basics of web design. How about practicing a little now?{" "}
 			</Text>
-			<Box display="flex" width="100%">
+			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
 					as="ol"
 					list-style-type="none"
@@ -2876,6 +3341,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					width="33.33%"
 					box-sizing="border-box"
+					md-width="100%"
 				>
 					<Box
 						width="auto"
@@ -2885,12 +3351,13 @@ export default (() => {
 						quarkly-title="Item 1"
 						flex-wrap="nowrap"
 						margin="0px 0px 12px 0px"
+						sm-flex-direction="column"
 					>
 						<Text
 							background="--color-indigo"
 							font="--base"
 							color="--light"
-							padding="2px 8px 2px 8px"
+							padding="1px 6px 2px 6px"
 							border-radius="33px"
 							margin="16px 12px 16px 0px"
 							text-align="center"
@@ -2899,7 +3366,7 @@ export default (() => {
 							border-color="--color-darkL2"
 							border-style="solid"
 							border-width="1px"
-							sm-margin="16px 12px 0px 0px"
+							sm-margin="12px 12px 0px 0px"
 							text-shadow="0 1px 1px rgba(25, 30, 34, 0.3)"
 						>
 							★
@@ -2911,6 +3378,7 @@ export default (() => {
 								margin="20px 0px 18px 0px"
 								width="100%"
 								color="--darkL2"
+								sm-margin="12px 0px 18px 0px"
 							>
 								Build a new card on your own. If you forget something scroll back to the top and revise the materials. Happy designing!
 							</Text>
@@ -2952,6 +3420,8 @@ export default (() => {
 					position="relative"
 					padding="0px 0px 0px 54px"
 					box-sizing="border-box"
+					md-padding="0px 0px 0px 0px"
+					md-width="100%"
 				>
 					<Text
 						text-align="center"
@@ -2983,6 +3453,7 @@ export default (() => {
 						padding="30px 30px 30px 30px"
 						min-height="320px"
 						text-align="left"
+						display="flex"
 					/>
 					<Text
 						text-align="center"
@@ -3018,7 +3489,7 @@ export default (() => {
 					>
 						<Box
 							width="100%"
-							background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/cover"
+							background="#FFF"
 							border-radius="8px"
 							height="320px"
 							display="flex"
@@ -3026,42 +3497,29 @@ export default (() => {
 							align-items="center"
 							justify-content="center"
 							padding="48px 36px 72px 36px"
-							opacity="1"
+							border-width="4px"
+							border-style="solid"
+							border-color="--color-lightD2"
 						>
-							<Icon category="fa" icon={FaTree} font="64px sans-serif" color="--light" />
-							<Text
-								font="normal 500 48px/1.2 --fontFamily-googleOpenSansCondensed"
-								text-transform="uppercase"
-								color="--light"
-								text-align="center"
-								margin="16px 0px 0px 0px"
-							>
-								<Strong font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed">
-									Into the Wild
-								</Strong>
+							<Icon
+								category="fa"
+								icon={FaTree}
+								font="64px sans-serif"
+								color="--red"
+								margin="0px 0px 12px 0px"
+							/>
+							<Text font="--headline3" color="--darkL2" text-align="center" margin="24px 0px 0px 0px">
+								Woods & Mountains
 							</Text>
-							<Text font="--lead" color="--lightD2" text-align="center">
-								A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
+							<Text font="--base" color="--grey" text-align="center" margin="16px 0px 0px 0px">
+								43 places
 							</Text>
-							<Button
-								background="--color-secondary"
-								color="--darkL2"
-								padding="12px 34px 12px 34px"
-								border-radius="24px"
-								text-transform="uppercase"
-								letter-spacing="1.2px"
-								margin="24px 0px 0px 0px"
-								opacity="1"
-								box-shadow="0 12px 3px -4px rgba(3, 18, 7, 0.3)"
-							>
-								Join
-							</Button>
 						</Box>
 					</Box>
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0">
+		<Section padding="100px 0" sm-padding="40px 0 60px 0" md-padding="60px 0 90px 0" quarkly-title="What's Next?">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -3102,6 +3560,8 @@ export default (() => {
 				md-font="--headline2"
 				margin="0px 0px 20px 0px"
 				color="--dark"
+				sm-font="--headline3"
+				lg-width="100%"
 			>
 				Move to the next stage
 			</Text>
@@ -3111,10 +3571,12 @@ export default (() => {
 				margin="0px 0 0px 0"
 				width="50%"
 				color="--darkL2"
+				lg-width="100%"
+				md-width="100%"
 			>
 				Congrats! You've done a great job getting to know the Quarkly basics. In the next stage you're going to deepen your knowledge and learn how to:
 			</Text>
-			<List margin="0px 0px 16px 0px" color="--darkL2" font="--base">
+			<List margin="0px 0px 16px 0px" color="--darkL2" font="--base" sm-padding="0px 0px 0px 20px">
 				<Text>
 					Style states: hover, focused and other
 				</Text>
@@ -3131,14 +3593,18 @@ export default (() => {
 				margin="0px 0 16px 0"
 				width="50%"
 				color="--darkL2"
+				lg-width="80%"
+				md-width="100%"
 			>
-				Turn on the Preview mode
+				Enable Preview
 				<Image vertical-align="-5px" src="https://uploads.quarkly.io/5f44d57c7f10ba001eace3a0/images/onboarding-tutorial-code-preview.svg?v=2020-10-24T19:04:24.532Z" margin="0px 0px 0px 0px" />
-				{" "}и наведите курсор на карточку ниже ↓
+				{" "}and mouse over the card below ↓
 			</Text>
 			<Box
 				width="100%"
-				background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/160%"
+				background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 50% 50%/cover"
+				hover-background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) 100% 0%/cover"
+				transition="background 0.3s ease 0s"
 				border-radius="8px"
 				display="flex"
 				flex-direction="column"
@@ -3147,8 +3613,6 @@ export default (() => {
 				box-sizing="border-box"
 				padding="48px 36px 72px 36px"
 				opacity="1"
-				hover-background="rgba(0, 0, 0, 0) url(https://images.unsplash.com/photo-1593431074633-21ef64707d29?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0MjIzN30) center/190%"
-				transition="background 0.3s ease 0s"
 				sm-padding="36px 36px 48px 36px"
 				margin="0px 0px 48px 0px"
 				max-width="440px"
@@ -3156,13 +3620,13 @@ export default (() => {
 				<Icon
 					category="fa"
 					icon={FaTree}
-					font="64px sans-serif"
+					font="44px sans-serif"
 					color="--light"
 					md-font="54px sans-serif"
 					sm-font="36px sans-serif"
 				/>
 				<Text
-					font="normal 500 42px/1.2 --fontFamily-googleRobotoCondensed"
+					font="normal 500 28px/1.2 --fontFamily-googleRobotoCondensed"
 					text-transform="uppercase"
 					color="--light"
 					text-align="center"
@@ -3173,11 +3637,11 @@ export default (() => {
 					INTO THE WILD
 				</Text>
 				<Text
-					font="--lead"
+					font="--base"
 					color="--lightD2"
 					text-align="center"
 					md-font="normal 300 16px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
-					sm-font="normal 300 14px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					sm-font="--base"
 					sm-margin="10px 0px 4px 0px"
 					md-margin="16px 0px 8px 0px"
 				>
@@ -3213,6 +3677,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					position="relative"
 					z-index="1"
+					sm-font="italic 700 20px/1.2 --fontFamily-sans"
 				>
 					Stage 2. Hover & Adaptive →
 				</Text>
@@ -3226,6 +3691,8 @@ export default (() => {
 					left="-13px"
 					right="auto"
 					bottom="auto"
+					sm-width="95.874px"
+					sm-top="-9px"
 				/>
 			</Box>
 		</Section>

@@ -17,24 +17,14 @@ export default (() => {
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Components.HeaderMenu>
-			<Override slot="SectionContent" lg-flex-direction="column" />
-			<Override slot="menu" lg-flex-wrap="wrap" />
-			<Override slot="menuOverride1" lg-padding="8px 8px 8px 8px">
-				1.Basics
-			</Override>
-			<Override slot="menuOverride12" lg-padding="8px 8px 8px 8px" />
-			<Override slot="menuOverride2" lg-padding="8px 8px 8px 8px">
-				2.Hover & Adaptive
-			</Override>
-			<Override slot="menuOverride3" lg-padding="8px 8px 8px 8px">
-				3.Components
-			</Override>
-			<Override slot="menuOverride4" lg-padding="8px 8px 8px 8px">
-				4.Theme
-			</Override>
-			<Override slot="menuOverride5" lg-padding="8px 8px 8px 8px">
-				5.Code Editor
-			</Override>
+			<Override slot="SectionContent" />
+			<Override slot="menu" />
+			<Override slot="menuOverride1" />
+			<Override slot="menuOverride12" />
+			<Override slot="menuOverride2" />
+			<Override slot="menuOverride3" />
+			<Override slot="menuOverride4" />
+			<Override slot="menuOverride5" />
 		</Components.HeaderMenu>
 		<Section
 			padding="130px 0px 100px 0px"
@@ -44,6 +34,7 @@ export default (() => {
 			border-style="solid"
 			border-color="--color-primary"
 			md-padding="80px 0px 60px 0px"
+			quarkly-title="Hero"
 		>
 			<Override slot="SectionContent" align-items="flex-start" flex-direction="column" />
 			<Text
@@ -116,7 +107,7 @@ export default (() => {
 				/>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 1. Pages">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -127,6 +118,7 @@ export default (() => {
 					width="50%"
 					box-sizing="border-box"
 					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -177,7 +169,7 @@ export default (() => {
 						margin="0px 0 30px 0"
 						width="100%"
 						color="--darkL2"
-						md-margin="0px 0 2px 0"
+						md-margin="0px 0 0px 0"
 					>
 						Drag the page wherever you want!
 					</Text>
@@ -340,7 +332,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 2. Zooming">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -351,6 +343,7 @@ export default (() => {
 					width="50%"
 					box-sizing="border-box"
 					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -429,6 +422,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -1002,7 +996,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 3. Theme">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -1421,7 +1415,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 4. Props panel">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -1433,6 +1427,7 @@ export default (() => {
 					box-sizing="border-box"
 					md-width="100%"
 					md-margin="0px 0px 16px 0px"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -1629,7 +1624,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 5. Pages and Layers">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -1640,6 +1635,7 @@ export default (() => {
 					width="50%"
 					box-sizing="border-box"
 					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -1726,6 +1722,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -1787,6 +1784,7 @@ export default (() => {
 									height="42px"
 									object-fit="none"
 									object-position="0% 0%"
+									sm-margin="16px 0px 12px 0px"
 								/>
 								<Text
 									display="inline-block"
@@ -2170,7 +2168,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 6. Component">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -2181,6 +2179,7 @@ export default (() => {
 					width="50%"
 					box-sizing="border-box"
 					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -2286,6 +2285,7 @@ export default (() => {
 						align-items="flex-start"
 						text-align="left"
 						sm-margin="0px 0px 0px 0px"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -2457,7 +2457,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 7. Code Editor">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -2552,6 +2552,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -2861,7 +2862,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 8. Preview">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -2872,6 +2873,7 @@ export default (() => {
 					width="50%"
 					box-sizing="border-box"
 					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -2950,6 +2952,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -3180,7 +3183,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0">
+		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 60px 0" quarkly-title="Step 9. Undo / Redo">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box display="flex" width="100%" md-flex-direction="column">
 				<List
@@ -3191,6 +3194,7 @@ export default (() => {
 					width="50%"
 					box-sizing="border-box"
 					md-width="100%"
+					sm-padding="0px 0px 0px 0px"
 				>
 					<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 						<Text
@@ -3269,6 +3273,7 @@ export default (() => {
 						flex-direction="column"
 						align-items="flex-start"
 						text-align="left"
+						sm-padding="0px 0px 0px 0px"
 					>
 						<Box
 							width="auto"
@@ -3679,7 +3684,7 @@ export default (() => {
 				</Box>
 			</Box>
 		</Section>
-		<Section padding="100px 0" sm-padding="40px 0" md-padding="60px 0 120px 0">
+		<Section padding="100px 0" sm-padding="40px 0 60px 0" md-padding="60px 0 120px 0" quarkly-title="What's Next?">
 			<Override slot="SectionContent" align-items="flex-start" />
 			<Box position="relative" display="inline-block" margin="0px 0px 0px 21px" quarkly-title="Step">
 				<Text
@@ -3781,11 +3786,19 @@ export default (() => {
 					text-transform="uppercase"
 					color="--light"
 					text-align="center"
-					sm-height="100%"
+					sm-font="normal 500 32px/1.2 --fontFamily-googleRobotoCondensed"
+					sm-margin="16px 0px 26px 0px"
+					sm-height="auto"
 				>
 					Into the Wild
 				</Text>
-				<Text font="--lead" color="--lightD2" text-align="center" sm-height="100%">
+				<Text
+					font="--lead"
+					color="--lightD2"
+					text-align="center"
+					sm-height="100%"
+					sm-font="normal 300 16px/1.5 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+				>
 					A wonderful journey into the woods and mountains that will heal your mind, body, and soul. It’ll be a trip to remember
 				</Text>
 				<Button
@@ -3815,6 +3828,7 @@ export default (() => {
 					margin="0px 0px 16px 0px"
 					position="relative"
 					z-index="1"
+					sm-font="italic 700 20px/1.2 --fontFamily-sans"
 				>
 					Stage 1.  Basics →
 				</Text>
@@ -3828,6 +3842,8 @@ export default (() => {
 					left="-13px"
 					right="auto"
 					bottom="auto"
+					sm-width="91.874px"
+					sm-top="-10px"
 				/>
 			</Box>
 		</Section>
